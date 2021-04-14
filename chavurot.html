@@ -1,0 +1,68 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<style type="text/css">.content_title {
+        display: none;
+    }
+</style>
+<div class="container-fluid" style="width: 100%;">
+<div class="row">
+<div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
+<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px; border-radius:20px;"><a href="/community">CONNECT</a><br />
+<a class="indent" href="/membership-form">Membership Form</a><br />
+<a class="double-indent " href="/membership">Membership</a><br />
+<a class="indent " href="/interest-groups">Interest Groups</a><br />
+<a class="indent " href="/judaica">Judaica Shop</a><br />
+<a class="indent " href="/sisterhood">Sisterhood</a><br />
+<a class="double-indent" href="/sisterhood-contact">Contact</a><br />
+<a class="indent active-side-link" href="/chavurot">Chavurot</a></div>
+</div>
+
+<div class="col-12 col-lg-9 order-1 order-lg-2 right-column">
+<h2 style="color: var(--text-blue);">What are Chavurot?</h2>
+
+<p>Chavurah—What is it? How do I join one? A Chavurah is a small group of Temple B’nai Torah families, couples, or individuals who share common interests and a desire to gather together on a regular basis in order to develop their own closeknit Jewish community, an extended family within our larger congregational family. </p>
+
+<p>Think of the possibilities:</p>
+
+<ul class="possibility-ul">
+	<li class="p-0 m-0">get to know more of your Jewish community</li>
+	<li class="p-0 m-0">have fun and try a lot of things you might not do on your own—like hiking, boating, camping and theatre, dining, movies, social get-together, book reviews—or anything your group can think up</li>
+	<li class="p-0 m-0">create an extended family with whom you can celebrate Jewish holidays</li>
+	<li class="p-0 m-0">create opportunities for children (and adults) to bond with one another within a family framework</li>
+	<li class="p-0 m-0">become a part of families supporting one another during life-cycle events: bar and bat mitzvahs, illness, deaths, significant birthdays/anniversaries, career events</li>
+</ul>
+
+<p><strong>Read the <a href="https://images.shulcloud.com/14479/uploads/chavurah_handbook_v2.pdf" rel="noopener noreferrer" style="color: var(--link-color) !important;" target="_blank" title="TBT Chavurah Handbook">TBT Chavurah Handbook</a> and find out:</strong> What is a Chavurah?, how to make your Chavurah work, the 6 C’s, favorite tips, program ideas, celebrating holidays together and becoming an extended family.</p>
+
+<p>You can also download the <a href="https://images.shulcloud.com/14479/uploads/chavurot_application.pdf" style="color: var(--link-color) !important;">application</a>, fill it out, and send it to the Temple office. </p>
+
+<p><strong>Interest Groups:</strong></p>
+
+<p>An alternative to a Chavurah are a variety of interest groups that have been formed. These groups offer the chance to share your interests with other Jews in our community and build friendships. Go to our <a href="/interest-groups" style="color: var(--link-color) !important;" title="interest group page">interest group page</a> to learn more.</p>
+</div>
+</div>
+</div>
+<script>
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
+    if (viewportWidth > 767) {
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
+                activeNavLink.classList.add('bottom-border');
+            }, 2000);
+    } else {
+        activeNavLink.classList.add('lightest-grey-background');
+    }
+</script>
+<style type="text/css">#nav_section>.no_subcontent:nth-child(6)>a  {
+            color: var(--link-color) !important;
+        }
+</style>

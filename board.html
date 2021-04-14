@@ -1,0 +1,137 @@
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" integrity="sha512-glciccPoOqr5mfDGmlJ3bpbvomZmFK+5dRARpt62nZnlKwaYZSfFpFIgUoD8ujqBw4TmPa/F3TX28OctJzoLfg==" rel="stylesheet" />
+<style type="text/css">/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.hover-grow {
+       -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+            transform: scale(1,1);
+             -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    -webkit-box-shadow:4px 4px 4px rgba(0,0,0,0.5);
+                    box-shadow:4px 4px 4px rgba(0,0,0,0.5);
+}
+.hover-grow:hover{
+             -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+            -webkit-box-shadow:8px 8px 8px rgba(0,0,0,0.5);
+                    box-shadow:8px 8px 8px rgba(0,0,0,0.5);
+        -webkit-transform: scale(1.1,1.1);
+            -ms-transform: scale(1.1,1.1);
+                transform: scale(1.1,1.1);
+}
+ @media only screen and (max-width: 1000px){
+        #link-wrapper{
+            margin: 10px auto;
+            float: none;
+            clear: both;
+        }
+        .directors-div, .blue-buttons-div {
+            text-align: center;
+        }
+    }
+</style>
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 col-lg-5 order-2 order-lg-1"> 
+<div id="link-wrapper" style=" margin-right: 20px; border-radius:20px;"><a href="/about-us">About</a><br />
+<a class="indent" href="/vision">Our Vision</a><br />
+<a class="indent" href="/our-people">Our People</a><br />
+<a class="double-indent active-side-link" href="/board">Board of Directors</a><br />
+<a class="double-indent" href="/clergy">Clergy</a><br />
+<a class="double-indent" href="/staff">Staff</a><br />
+<a class="indent" href="/our-location">Our Location</a><br />
+<a class="double-indent" href="/kashrut-policy">Kashrut Policy</a><br />
+<a class="double-indent" href="/rosen-ritt-library">Rosen-Ritt Library</a><br />
+<a class="double-indent" href="/directions">Directions</a><br />
+<a class="indent" href="/our-history">Our History</a><br />
+<a class="double-indent" href="/wall-of-connections">Wall of Connections Art Gallery</a><br />
+<a class="indent" href="/join-our-community">Join Our Community</a><br />
+<a class="indent" href="/visitors">Visitors</a><br />
+<a class="indent" href="/contact-us">Contact Us</a></div>
+</div>
+
+<div class="col-12 col-lg-7 order-1 order-lg-2 directors-div">
+<h3 style="color: var(--text-blue);"><span style="font-size:28px;">Temple Board of Directors</span></h3>
+
+<p>Donna Blankinship – President</p>
+
+<p>Amy McGinnis – 1st Vice President</p>
+
+<p>Rachael Klein— Vice President</p>
+
+<p>Nicola Walker – Secretary</p>
+
+<p>Jackie Frank – Treasurer</p>
+
+<p>Greg Glockner – Immediate Past President</p>
+
+<p style="text-align: center;"> </p>
+
+<div class="blue-buttons-div  text-center d-flex justify-content-center flex-column "><a class="hvr  hvr-outline-out hvr-outline-out-blue blue-background poofy-button" href="/clergy">Our Clergy</a> <a class="hvr  hvr-outline-out hvr-outline-out-blue blue-background poofy-button" href="/staff">Staff</a></div>
+</div>
+</div>
+</div>
+<script>var links = document.querySelectorAll('.ripplelink');
+
+for (var i = 0, len = links.length; i < len; i++) {
+  links[i].addEventListener('click', function(e) {
+    var targetEl = e.target;
+    var inkEl = targetEl.querySelector('.ink');
+
+    if (inkEl) {
+      inkEl.classList.remove('animate');
+    }
+    else {
+      inkEl = document.createElement('span');
+      inkEl.classList.add('ink');
+      inkEl.style.width = inkEl.style.height = Math.max(targetEl.offsetWidth, targetEl.offsetHeight) + 'px';
+      targetEl.appendChild(inkEl);
+    }
+
+    inkEl.style.left = (e.offsetX - inkEl.offsetWidth / 2) + 'px';
+    inkEl.style.top = (e.offsetY - inkEl.offsetHeight / 2) + 'px';
+    inkEl.classList.add('animate');
+  }, false);
+}
+</script><script>
+        var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
+        activeNavLink.classList.add('bottom-border');
+    </script>
+<style type="text/css">#nav_section>/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.no_subcontent:nth-child(2)>a  {
+            color: var(--link-color) !important;
+        }
+        .hover-grow {
+       -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+            transform: scale(1,1);
+             -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    -webkit-box-shadow:4px 4px 4px rgba(0,0,0,0.5);
+                    box-shadow:4px 4px 4px rgba(0,0,0,0.5);
+}
+.hover-grow:hover{
+             -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+            -webkit-box-shadow:8px 8px 8px rgba(0,0,0,0.5);
+                    box-shadow:8px 8px 8px rgba(0,0,0,0.5);
+        -webkit-transform: scale(1.1,1.1);
+            -ms-transform: scale(1.1,1.1);
+                transform: scale(1.1,1.1);
+}
+</style>

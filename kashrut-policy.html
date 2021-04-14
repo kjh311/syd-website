@@ -1,0 +1,71 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<div id="link-wrapper" style="float:left; margin-right: 30px; border-radius: 20px; display:inline"><a href="/about-us">About</a><br />
+<a class="indent" href="/vision">Our Vision</a><br />
+<a class="indent" href="/our-people">Our People</a><br />
+<a class="double-indent" href="/board">Board of Directors</a><br />
+<a class="double-indent " href="/clergy">Clergy</a><br />
+<a class="double-indent" href="/staff">Staff</a><br />
+<a class="indent" href="/our-location">Our Location</a><br />
+<a class="double-indent active-side-link" href="/kashrut-policy">Kashrut Policy</a><br />
+<a class="double-indent" href="/rosen-ritt-library">Rosen-Ritt Library</a><br />
+<a class="double-indent" href="/directions">Directions</a><br />
+<a class="indent" href="/our-history">Our History</a><br />
+<a class="double-indent" href="/wall-of-connections">Wall of Connections Art Gallery</a><br />
+<a class="indent" href="/join-our-community">Join Our Community</a><br />
+<a class="indent" href="/visitors">Visitors</a><br />
+<a class="indent" href="/contact-us">Contact Us</a></div>
+
+<p>The following food is to be avoided on TBT grounds and at official Temple-wide program events at other locations:</p>
+
+<ul>
+	<li style="display: block; position: relative; padding-left: 20px;">- Combination of milk and meat ingredients in the same dish</li>
+	<li style="display: block; position: relative; padding-left: 20px;">- Pork products of any kind</li>
+	<li style="display: block; position: relative; padding-left: 20px;">- Shellfish</li>
+</ul>
+
+<p>For off-site functions where an owner-operator maintains a more strict Kashrut policy, that policy will be observed.</p>
+
+<p>For off-site functions sponsored by Temple which provide communal food service, the above policy shall apply except within private homes.</p>
+
+<p>For events within private homes, notice shall be given in advance as to whether the policy will be followed, and if not, efforts should be made to accommodate anyone who asks within a reasonable period that provision be made so that he/she may observe these guidelines.</p>
+
+<p>The above policy shall not apply to off-site functions sponsored by Temple organizations at which commercially prepared food is ordered individually, but efforts will be made to accommodate anyone who wishes to observe these guidelines.</p>
+
+<p><i>Approved by the Temple B’nai Torah Board of Directors, August 6, 1997</i></p>
+<script>
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
+    if (viewportWidth > 767) {
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
+                activeNavLink.classList.add('bottom-border');
+            }, 2000);
+    } else {
+        activeNavLink.classList.add('lightest-grey-background');
+    }
+</script>
+<style type="text/css">/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.no_subcontent:nth-child(2)>a  {
+            color: var(--link-color) !important;
+        }
+        @media only screen and (max-width: 767px) {
+            #link-wrapper {
+                width: 100%;
+            }
+        }
+</style>

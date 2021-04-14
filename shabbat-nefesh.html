@@ -1,0 +1,52 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4 order-2 order-lg-1 text-primary" id="link-wrapper" style="   margin-bottom: 3vh;  border-radius:20px;"><a href="/worship">Worship</a><br />
+<a class="indent" href="/services">Services</a><br />
+<a class="double-indent" href="/tefilab">TefiLAB</a><br />
+<a class="double-indent" href="/shabbat-in-the-park">Shabbat in the Park</a><br />
+<a class="double-indent active-side-link" href="/shabbat-nefesh">Shabbat Nefesh</a><br />
+<a class="indent " href="/livestream">Livestream</a><br />
+<a href="/participate">Participate</a><br />
+<a class="oneg-kiddush" href="/oneg-kiddush">Sponsor an Oneg or Kiddush Luncheon</a><br />
+<a href="/bnai-mitzvah">B’nai Mitzvah Process</a><br />
+<a href="/yahrzeits">Yahrzeits</a></div>
+
+<div class="col-12 col-lg-8 order-1 order-lg-2">
+<p>Periodically through the year, we create services specifically designed to help us be more fully alive to God’s presence in the world…to build a life that is God-centered, as we reclaim the unique spirituality of Judaism, deeply embedded in social consciousness. Join us as our worship re-energizes Jewish piety by making it more emotionally satisfying, inclusive, experimental, experiential, and compelling, reconnecting to God through our hearts and our minds, through openness to a Jewish life that emphasizes joy and celebration of the grandeur of the universe, and through studying the deepest spiritual truths of the Jewish people. Join us at TBT for a unique worship experience…a Soul Shabbat…where we can set aside the rubric prayers of the past and seek deeper meaning in our Shabbat moments. Come help us create a sacred moment in time…Let’s pray!</p>
+</div>
+</div>
+</div>
+<script>
+        var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+        activeNavLink.classList.add('bottom-border');
+    </script>
+<style type="text/css">#nav_section>.no_subcontent:nth-child(3)>a  {
+            color: var(--link-color) !important;
+        }
+</style>
+<script>
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+    if (viewportWidth > 767) {
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+                activeNavLink.classList.add('bottom-border');
+            }, 2000);
+    } else {
+        activeNavLink.classList.add('lightest-grey-background');
+    }
+</script>
+<style type="text/css">.no_subcontent:nth-child(3)>a  {
+            color: var(--link-color) !important;
+        }
+</style>

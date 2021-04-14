@@ -1,0 +1,880 @@
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">--><!--<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>--><!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />--><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<style type="text/css">/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.life-learning-header{
+            padding: 5vh 10vw 2vh 10vw;
+            margin: 0 !important;
+            background: #2881B6;
+        }
+        .life-learning-header p{
+            color: white !important;
+            font-size: 2em !important;
+            font-weight: 300 !important;
+        }
+        .content_title{
+            display: none;
+        }
+        .tab-content{
+            border: 1px solid  #DEE2E6;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            overflow: hidden;
+            -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+                    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+        }
+         .nav-tabs{
+             border: 1px solid  #DEE2E6;
+           background: #DEE2E6 !important; 
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            overflow: hidden;
+            -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+                    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+        }
+        .nav-item1 {
+            width: 33.3%;
+        }
+        .nav-item2 {
+            width: 33.3%;
+        }
+        .nav-item3 {
+            width: 33.3%;
+        }
+        .nav-item4 {
+            width: 100%;
+        }
+        .nav-item{
+            padding: 0 !important;
+            margin: 0 !important;
+            text-align: center;
+            /*border: 2px solid #fff;*/
+           
+        }
+        .tab-wrap-div{
+             padding: 0 !important;
+            margin: 0 !important;
+           
+        }
+        .proverb{
+            font-size: 1.3em !important;
+            color: #2881B6 !important;
+            position: relative;
+            left: 20px !important;
+        }
+        .scroll-img{
+            float: left;
+        }
+        .tab-pane{
+            background: white;
+        }
+        .torah-link{
+            border: #fff solid 1px;
+        }
+        .gallery div {
+
+        }
+        .gallery>div>img{
+
+            position: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .image-div{
+              position: relative;
+          width: 100%;
+          max-width: 400px;
+        }
+        .gallery__Image {
+             display: block;
+             width: 100%;
+            height: auto;
+        }
+          @media screen and (max-width: 768px) {
+              .nav-item1, .nav-item2, .nav-item3 {
+                  width: 100%;
+              }
+          }
+</style>
+<div class="container-fluid" style="width: 100%;">
+<div class="row">
+<div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
+<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"><a class="active-side-link" href="/learn">Lifelong Learning</a><br />
+<a class="indent" href="/tots">Tots</a><br />
+<a class="indent " href="/kids">Kids</a><br />
+<a class="indent" href="/teens">Teens</a><br />
+<a class="indent " href="/adults">Adults</a><br />
+<a href="/bnai-mitzvah">B'nai Mitzvah Process</a></div>
+</div>
+
+<div class="col-12 col-lg-9 order-1 order-lg-2 "> 
+<div class="life-learning-header text-center">
+<p>What does Lifelong Learning look like at TBT?</p>
+</div>
+
+<p style="margin-top: 5vh;">Temple B’nai Torah is a community dedicated to Lifelong Learning. We seek greater Jewish involvement that is built on experience, study, and active questioning. Jewish expression takes a variety of forms and we encourage each individual to find their own unique connection with Jewish tradition. We offer a wide variety of engaging and social opportunities including our vibrant religious school for people of all ages. At TBT there is something for everyone!</p>
+
+<div class="col-12 tab-wrap-div"> 
+<ul class="nav nav-tabs" style="list-style-type:none; padding: 0; margin: 0;">
+	<li class="nav-item nav-item1" style="list-style-type:none;"><a class="nav-link active--tab active" data-toggle="tab" href="#tots" style="margin:0;">Tots</a></li>
+	<li class="nav-item nav-item2" style="list-style-type:none;"><a class="nav-link torah-link " data-toggle="tab" href="#kids" style="margin:0;">Kids</a></li>
+	<li class="nav-item nav-item3" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#teens" style="margin:0;">Teens</a></li>
+	<li class="nav-item nav-item4" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#adults" style="margin:0;">Adult Learning and Cultural Arts</a></li>
+</ul>
+<!-- Tab panes -->
+
+<div class="tab-content">
+<div class="container tab-pane active show fade" id="tots">  <!--<h3 style="color: #2881B6;">TOTS</h3>-->
+<p>Our Tot Shabbat program for parents and children 0-5 welcomes Shabbat with singing, dancing, stories, and blessings. We also offer Pajama Havdalah programs throughout the year with stories, snacks, activities and havdalah.</p>
+
+<p><a href="/tots" style="color:#2881B6;">For more information… </a></p>
+</div>
+
+<div class="container tab-pane fade " id="kids">  <!--<h3 style="color: #2881B6;">Kids</h3>-->
+<p>In our Sunday Religious School program (Grades preK-6) we help students to see the world through a Jewish lens. We also offer ways for parents to participate in their child’s education through family programs and holiday celebrations. Each year is filled with special events that translate Jewish learning into opportunities for Jewish celebration and growth.</p>
+
+<p><a href="/kids" style="color:#2881B6;">For more information… </a></p>
+</div>
+
+<div class="container tab-pane fade " id="teens">  <!--<h3 style="color: #2881B6;">Teens</h3>-->
+<p>We are committed to supporting teens in learning to make their own Jewish choices by continuing their Jewish education beyond religious school and b’nai mitzvah, through high school. 7th graders prepare for B’nai Mitzvah while also engaging in the significance of social justice and social action programs. Grades 8-12 participate in Mosaic, our twice a month lunch and learn program for teens. In addition, 10th graders participate in Confirmation. We have a 6/7 Junior Youth Group (JTY) and for grades 8-12 B’nai Torah Youth (BTY) and NFTY for grades 9-12 (regional and national youth programs).</p>
+
+<p><a href="/teens" style="color:#2881B6;">For more information… </a></p>
+</div>
+
+<div class="container tab-pane fade " id="adults">  <!--<h3 style="color: #2881B6;">Adults</h3>-->
+<p>Adults can learn, connect, and participate in a variety of educational and cultural opportunities including guest speakers, classes, and outings.</p>
+
+<p><a href="/adults" style="color:#2881B6;">For more information… </a></p>
+</div>
+</div>
+
+<div class="gallery" style="margin-top: 10vh;">
+<div class="image-div "><img alt="lorem" class="gallery__Image" data-description="TBT-TDHS 8th Grade Trip to Los Angeles" data-large="https://templebnaitorah.shulcloud.com/_preview/large/uploads/8th-Grade-LA-Trip-2.jpg" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/8th-Grade-LA-Trip-3.jpg" />
+<div class="overlay"> </div>
+
+<p style="color: var(-light-grey;"> TBT-TDHS 8th Grade Trip to Los Angeles</p>
+</div>
+
+<div class="image-div d-flex justify-content-start flex-column"><img alt="lorem" class="gallery__Image" data-description="Cooking Mifgash" data-large="https://templebnaitorah.shulcloud.com/_preview/large/uploads/Cooking-Mifgash-2.jpg" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/Cooking-Mifgash-2.jpg" />
+<div class="overlay"> </div>
+
+<p style="color: var(-light-grey;;"> Cooking Mifgash</p>
+</div>
+
+<div class="image-div d-flex justify-content-start flex-column"><img alt="lorem" class="gallery__Image" data-description="Hebrew Class" data-large="https://templebnaitorah.shulcloud.com/_preview/large/uploads/Grade-3-2.jpg" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/Grade-3-2.jpg" />
+<div class="overlay"> </div>
+
+<p style="color: var(-light-grey;;">Hebrew Class</p>
+</div>
+
+<div class="image-div d-flex justify-content-start flex-column"><img alt="lorem" class="gallery__Image" data-description="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/Grade-3-family-ed-2.jpg" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/Grade-3-family-ed-2.jpg" />
+<div class="overlay"> </div>
+
+<p style="color: var(-light-grey;;">Understanding the Jewish Calendar: Family Education Program</p>
+</div>
+
+<div class="image-div"><img alt="lorem" class="gallery__Image" data-description="Family Game Day" data-large="https://templebnaitorah.shulcloud.com/_preview/large/uploads/Grd-4-5-Games-Social4-2.jpg" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/Grd-4-5-Games-Social4-2.jpg" />
+<div class="overlay"> </div>
+
+<p style="color: var(-light-grey;;">Family Game Day</p>
+</div>
+
+<div class="image-div"><img alt="lorem" class="gallery__Image" data-description="Happy at Nisayon (Religious School)" data-large="https://templebnaitorah.shulcloud.com/_preview/large/uploads/Music-group-photo-2.jpg" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/Music-group-photo-2.jpg" />
+<div class="overlay"> </div>
+
+<p style="color: var(-light-grey;;">Happy at Nisayon (Religious School)</p>
+</div>
+
+<div class="image-div"><img alt="lorem" class="gallery__Image" data-description="Family Tu B’Shevat Seder" data-large="https://templebnaitorah.shulcloud.com/_preview/large/uploads/tu-bishvat-morning-2_12_17-7-2.jpg" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/tu-bishvat-morning-2_12_17-7-2.jpg" />
+<div class="overlay"> </div>
+
+<p style="color: var(-light-grey;;">Family Tu B’Shevat Seder</p>
+</div>
+
+<div class="image-div"><img alt="lorem" class="gallery__Image" data-description="Parshat Noah K-3 Family Field Trip at the Cougar Mountain Zoo" data-large="https://templebnaitorah.shulcloud.com/_preview/large/uploads/Zoo-group-photo-2.jpg" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/Zoo-group-photo-3.jpg" />
+<div class="overlay"> </div>
+
+<p style="color: var(-light-grey;;">Parshat Noah K-3 Family Field Trip at the Cougar Mountain Zoo</p>
+</div>
+
+<div class="image-div"><img alt="lorem" class="gallery__Image" data-description="TBT-TDHS 10th Grade Trip to the Religious Action Center of Reform Judaism’s L’Taken Seminar in Washington DC" data-large="https://templebnaitorah.shulcloud.com/_preview/large/uploads/RAC-LTaken-2.jpg" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/RAC-LTaken-3.jpg" />
+<div class="overlay"> </div>
+
+<p style="color: var(-light-grey;;">TBT-TDHS 10th Grade Trip to the Religious Action Center of Reform Judaism’s L’Taken Seminar in Washington DC</p>
+</div>
+
+<div class="image-div"><img alt="lorem" class="gallery__Image" data-description="Little Jacob Danziger" data-large="https://templebnaitorah.shulcloud.com/_preview/large/uploads/jacob-2.jpg" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/jacob-2.jpg" />
+<div class="overlay"> </div>
+
+<p style="color: var(-light-grey;;">Little Jacob Danziger</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    jQuery(window).on('load', function() {
+        
+        $('.nav-item').click(function(){
+            if($(this).hasClass('active'){
+                $(this).addClass('white');
+                $(this).siblings().removeClass('white').addClass('light-grey');
+            });
+      });    
+       
+    });     
+     </script><!--</div>--><!--</div>-->
+<style type="text/css">.asyncGallery {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      z-index: 1000;
+      visibility: hidden;
+      background-color: rgba(0, 0, 0, 0.8);
+      transition: opacity 200ms, visibility 200ms;
+    }
+    
+    .asyncGallery.is-visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .asyncGallery__Item {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      visibility: hidden;
+      overflow: hidden;
+      transform: translate(-50%, -50%);
+      transition: opacity 200ms, visibility 200ms;
+    }
+    
+    .asyncGallery__Item.is-visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .asyncGallery__ItemImage img {
+      max-height: 80vh;
+      display: block;
+    }
+    
+    .asyncGallery__ItemDescription,
+    .asyncGallery__Loader {
+      color: #fff;
+      opacity: 1;
+      z-index: 1001;
+    }
+    
+    .asyncGallery__Loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      color: #fff;
+      z-index: 100;
+    }
+    
+    .asyncGallery__Loader.is-visible {
+      display: block;
+    }
+    
+    .asyncGallery button {
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      padding: 0;
+      font-size: 0;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    
+    .asyncGallery__Close {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      width: 30px;
+      height: 30px;
+      z-index: 1000;
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+      background-image: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTEycHgiIHZlcnNpb249IjEuMSIgaGVpZ2h0PSI1MTJweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCI+CiAgPGc+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjguOTQxLDMxLjc4NkwwLjYxMyw2MC4xMTRjLTAuNzg3LDAuNzg3LTAuNzg3LDIuMDYyLDAsMi44NDljMC4zOTMsMC4zOTQsMC45MDksMC41OSwxLjQyNCwwLjU5ICAgYzAuNTE2LDAsMS4wMzEtMC4xOTYsMS40MjQtMC41OWwyOC41NDEtMjguNTQxbDI4LjU0MSwyOC41NDFjMC4zOTQsMC4zOTQsMC45MDksMC41OSwxLjQyNCwwLjU5YzAuNTE1LDAsMS4wMzEtMC4xOTYsMS40MjQtMC41OSAgIGMwLjc4Ny0wLjc4NywwLjc4Ny0yLjA2MiwwLTIuODQ5TDM1LjA2NCwzMS43ODZMNjMuNDEsMy40MzhjMC43ODctMC43ODcsMC43ODctMi4wNjIsMC0yLjg0OWMtMC43ODctMC43ODYtMi4wNjItMC43ODYtMi44NDgsMCAgIEwzMi4wMDMsMjkuMTVMMy40NDEsMC41OWMtMC43ODctMC43ODYtMi4wNjEtMC43ODYtMi44NDgsMGMtMC43ODcsMC43ODctMC43ODcsMi4wNjIsMCwyLjg0OUwyOC45NDEsMzEuNzg2eiIvPgogIDwvZz4KPC9zdmc+Cg==");
+    }
+    
+    .asyncGallery__Counter {
+      position: absolute;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      right: 40px;
+      bottom: 40px;
+    }
+    
+    .asyncGallery__Dots {
+      position: absolute;
+      left: 50%;
+      bottom: 40px;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      transform: translateX(-50%);
+      list-style-type: none;
+      z-index: 1000;
+    }
+    
+    .asyncGallery__Dots button {
+      padding: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border: 0;
+      outline: 0;
+      border-radius: 50%;
+    }
+    
+    .asyncGallery__Dots li {
+      opacity: 0.2;
+      transition: opacity 200ms;
+    }
+    
+    .asyncGallery__Dots li + li {
+      margin-left: 10px;
+    }
+    
+    .asyncGallery__Dots li.is-active {
+      opacity: 1;
+    }
+    
+    .asyncGallery__Next,
+    .asyncGallery__Prev {
+      position: absolute;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      z-index: 1000;
+      transition: transform 200ms, opacity 200ms;
+      transform: translateY(-50%);
+    }
+    
+    .asyncGallery__Next:disabled,
+    .asyncGallery__Prev:disabled {
+      opacity: 0.2;
+      cursor: default;
+    }
+    
+    .asyncGallery__Next:before,
+    .asyncGallery__Prev:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 129 129' xmlns:xlink='http://www.w3.org/1999/xlink' enable-background='new 0 0 129 129'%3E%3Cg%3E%3Cpath d='m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+    }
+    
+    .asyncGallery__Next {
+      right: 40px;
+      z-index: 1001;
+    }
+    
+    .asyncGallery__Next:hover {
+      transform: translateX(2px) translateY(-50%);
+    }
+    
+    .asyncGallery__Next:before {
+      transform: translate3d(-50%, -50%, 0);
+    }
+    
+    .asyncGallery__Prev {
+      left: 40px;
+      z-index: 1001;
+    }
+    
+    .asyncGallery__Prev:hover {
+      transform: translateX(-2px) translateY(-50%);
+    }
+    
+    .asyncGallery__Prev:before {
+      transform: translate3d(-50%, -50%, 0) scale(-1);
+    }
+    
+    /* DEMO */
+    * {
+    
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      /*align-items: center;*/
+      align-items: flex-start;
+    }
+    
+    .gallery>.image-div {
+      max-width: calc(33.333% - 40px);
+      margin: 20px;
+      transition: opacity 200ms;
+      cursor: pointer;
+
+    }
+    
+    
+    
+    .gallery div img:hover {
+      /*opacity: 0.8;*/
+      opacity: 0.6;
+    }
+    
+    .gallery div img {
+      max-width: 100%;
+      width: 100%;
+      min-height: 100%;
+
+    }
+    
+        .gallery>div>.gallery__Image {
+       
+      }
+    
+    
+    @media screen and (max-width: 768px) {
+      .asyncGallery__Close {
+        top: 15px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+      }
+    
+      .asyncGallery__Dots {
+        bottom: 15px;
+      }
+    
+      .asyncGallery__Counter {
+        right: 15px;
+        bottom: 15px;
+        font-size: 12px;
+      }
+    
+      .asyncGallery__Item {
+        width: 100%;
+      }
+    
+      .asyncGallery__ItemImage img {
+        max-height: none;
+        max-width: 100%;
+      }
+    
+      .asyncGallery__ItemDescription {
+        padding: 0 20px;
+      }
+    
+      .asyncGallery__Next,
+      .asyncGallery__Prev {
+        /*display: none;*/
+      }
+    
+      /* DEMO */
+      .gallery {
+        display: block;
+      }
+      
+        .gallery>.image-div  {
+        max-width: 100%;
+        margin: 20px 0 0;
+        width: auto;
+        height: auto;
+        max-height: auto;
+        /*padding-bottom: 5vh;*/
+      }
+      
+      .gallery>.image-div {
+          
+      }
+    
+
+
+      
+    
+    
+    }
+</style>
+<script>class AsyncGallery {
+      constructor(settings) {
+        this.settings = {
+          images: ".gallery__Image",
+          loop: true,
+          next: undefined,
+          prev: undefined,
+          dots: undefined,
+          close: undefined,
+          loader: undefined,
+          counter: undefined,
+          counterDivider: "/",
+          keyboardNavigation: true,
+          hiddenElements: []
+        };
+    
+        Object.assign(this.settings, settings);
+    
+        this.gallery = null;
+        this.index = 0;
+        this.items = [...document.querySelectorAll(this.settings.images)];
+    
+        this.addedItems = {};
+    
+        this.touch = {
+          endX: 0,
+          startX: 0
+        };
+    
+        this.init();
+      }
+    
+      get loading() {
+        return !this.settings.hiddenElements.includes("loader");
+      }
+    
+      get dotsVisible() {
+        return !this.settings.hiddenElements.includes("dots");
+      }
+    
+      init() {
+        this.clearUncomplete();
+        this.createElements();
+        this.bindEvents();
+      }
+    
+      clearUncomplete() {
+        this.items = this.items.filter(item => {
+          return item.dataset.large;
+        });
+      }
+    
+      createElements() {
+        this.gallery = document.createElement("DIV");
+        this.gallery.classList.add("asyncGallery");
+    
+        this.createSingleElement({
+          element: "prev",
+          type: "BUTTON",
+          event: "click",
+          func: this.getPrevious
+        });
+    
+        this.createSingleElement({
+          element: "next",
+          type: "BUTTON",
+          event: "click",
+          func: this.getNext
+        });
+    
+        this.createSingleElement({
+          element: "close",
+          type: "BUTTON",
+          event: "click",
+          func: this.closeGallery
+        });
+    
+        this.createSingleElement({
+          element: "loader",
+          type: "SPAN",
+          text: "Loading..."
+        });
+    
+        this.createSingleElement({
+          element: "counter",
+          type: "SPAN",
+          text: "0/0"
+        });
+    
+        this.createSingleElement({
+          element: "dots",
+          type: "UL",
+          text: ""
+        });
+    
+        if (!this.settings.hiddenElements.includes("dots")) {
+          this.items.forEach((item, i) => {
+            let dot = document.createElement("LI");
+            dot.dataset.index = i;
+            let button = document.createElement("BUTTON");
+            button.innerHTML = i;
+            button.addEventListener("click", () => {
+              this.index = i;
+              this.getItem(i);
+            });
+    
+            dot.append(button);
+            this.dots.append(dot);
+          });
+        }
+    
+        window.document.body.append(this.gallery);
+      }
+    
+      createSingleElement({ element, type, event = "click", func, text }) {
+        if (!this.settings.hiddenElements.includes(element)) {
+          if (!this.settings[element]) {
+            this[element] = document.createElement(type);
+            this[element].classList.add(
+              `asyncGallery__${this.capitalizeFirstLetter(element)}`
+            );
+            this[element].innerHTML = text !== undefined ? text : element;
+            this.gallery.append(this[element]);
+          } else {
+            this[element] = document.querySelector(this.settings[element]);
+            this.gallery.append(this[element]);
+          }
+    
+          if (func) {
+            this[element].addEventListener(event, func.bind(this));
+          }
+        }
+      }
+    
+      getItem(i, content = null) {
+        let contentObj = content;
+        if (contentObj === null) {
+          contentObj = {};
+          contentObj.src = this.items[i].dataset.large;
+          contentObj.description = this.items[i].dataset.description;
+        }
+    
+        if (!this.settings.hiddenElements.includes("counter")) {
+          this.counter.innerHTML = `
+              <span class="asyncGallery__Current">${this.index + 1}</span>${
+            this.settings.counterDivider
+          }<span class="asyncGallery__Current">${this.items.length}</span>
+              `;
+        }
+    
+        if (!this.addedItems.hasOwnProperty(i)) {
+          let image = document.createElement("IMG");
+    
+          let galleryItem = document.createElement("DIV");
+          galleryItem.classList.add("asyncGallery__Item");
+    
+          if (this.loading) {
+            this.loader.classList.add("is-visible");
+          }
+    
+          this.clearVisible();
+    
+          if (this.dotsVisible) {
+            this.gallery
+              .querySelector(`.asyncGallery__Dots li[data-index="${i}"]`)
+              .classList.add("is-active");
+          }
+    
+          image.src = contentObj.src;
+          image.alt = contentObj.description ? contentObj.description : "";
+    
+          galleryItem.innerHTML = `
+              <div class="asyncGallery__ItemImage">
+                ${image.outerHTML}
+              </div>
+              `;
+    
+          if (contentObj.description) {
+            galleryItem.innerHTML += `
+                <div class="asyncGallery__ItemDescription">
+                  <p>${contentObj.description}</p>
+                </div>
+                `;
+          }
+    
+          this.gallery.append(galleryItem);
+          this.addedItems[i] = galleryItem;
+    
+          image.addEventListener("load", () => {
+            this.addedItems[i].loaded = true;
+            if (!this.gallery.querySelector(".asyncGallery__Item.is-visible")) {
+              this.addedItems[i].classList.add("is-visible");
+            }
+    
+            if (this.loading) {
+              this.loader.classList.remove("is-visible");
+            }
+          });
+        } else {
+          this.clearVisible();
+          if (this.addedItems[this.index].loaded) {
+            this.addedItems[this.index].classList.add("is-visible");
+            if (this.loading) {
+              this.loader.classList.remove("is-visible");
+            }
+          } else if (this.loading) {
+            this.loader.classList.add("is-visible");
+          }
+    
+          if (this.dotsVisible) {
+            this.gallery
+              .querySelector(`.asyncGallery__Dots li[data-index="${i}"]`)
+              .classList.add("is-active");
+          }
+        }
+    
+        if (!this.settings.loop) {
+          if (this.index === 0) this.prev.setAttribute("disabled", true);
+          else this.prev.removeAttribute("disabled");
+    
+          if (this.index === this.items.length - 1)
+            this.next.setAttribute("disabled", true);
+          else this.next.removeAttribute("disabled");
+        }
+      }
+    
+      clearVisible() {
+        if (this.gallery.querySelector(".asyncGallery__Item.is-visible")) {
+          this.gallery
+            .querySelector(".asyncGallery__Item.is-visible")
+            .classList.remove("is-visible");
+        }
+    
+        if (this.gallery.querySelector(".asyncGallery__Dots li.is-active")) {
+          this.gallery
+            .querySelector(".asyncGallery__Dots li.is-active")
+            .classList.remove("is-active");
+        }
+      }
+    
+      closeGallery() {
+        this.gallery.classList.remove("is-visible");
+        this.clearVisible();
+      }
+    
+      capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      }
+    
+      handleGesure() {
+        if (this.touch.endX > this.touch.startX + 20) {
+          this.getPrevious();
+        } else if (this.touch.endX < this.touch.startX - 20) {
+          this.getNext();
+        }
+      }
+    
+      getPrevious() {
+        if (this.settings.loop) {
+          this.index--;
+          if (this.index === -1) {
+            this.index = this.items.length - 1;
+          }
+          this.getItem(this.index);
+        } else if (this.index > 0) {
+          this.index--;
+          this.getItem(this.index);
+        }
+      }
+    
+      getNext() {
+        if (this.settings.loop) {
+          this.index++;
+          if (this.index === this.items.length) {
+            this.index = 0;
+          }
+          this.getItem(this.index);
+        } else if (this.index < this.items.length - 1) {
+          this.index++;
+          this.getItem(this.index);
+        }
+      }
+    
+      bindEvents() {
+        this.items.forEach((item, i) => {
+          item.addEventListener("click", e => {
+            this.gallery.classList.add("is-visible");
+            this.index = i;
+            this.getItem(i, {
+              src: e.target.dataset.large,
+              description: e.target.dataset.description
+            });
+          });
+        });
+    
+        document.addEventListener("keyup", e => {
+          if (this.gallery.classList.contains("is-visible")) {
+            if (e.key === "Escape") this.closeGallery();
+            if (this.settings.keyboardNavigation) {
+              if (e.keyCode === 39) this.getNext();
+              else if (e.keyCode === 37) this.getPrevious();
+            }
+          }
+        });
+    
+        this.gallery.addEventListener(
+          "touchstart",
+          e => {
+            this.touch.startX = e.changedTouches[0].screenX;
+          },
+          false
+        );
+    
+        this.gallery.addEventListener(
+          "touchend",
+          e => {
+            this.touch.endX = e.changedTouches[0].screenX;
+            this.handleGesure();
+          },
+          false
+        );
+      }
+    }
+    
+    new AsyncGallery();
+    
+    
+    </script>
+<script>
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
+    if (viewportWidth > 767) {
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
+                activeNavLink.classList.add('bottom-border');
+            }, 2000);
+    } else {
+        activeNavLink.classList.add('lightest-grey-background');
+    }
+</script>
+<style type="text/css">#nav_section>.no_subcontent:nth-child(5)>a  {
+            color: var(--link-color) !important;
+        }
+</style>

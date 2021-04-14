@@ -1,0 +1,67 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<style type="text/css">/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+    .tefilab-logo {
+        animation: fadeInLeft 1000ms both;
+    }
+    
+    .tefilab-services {
+        background: var(--text-blue);
+        padding: 5vh 5vw !important;
+        font-size: 1.5rem !important;;
+    }
+</style>
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 col-lg-3 text-primary order-4 order-lg-1" id="link-wrapper" style="height: 100%;   margin-bottom: 30px; margin-right-20px; border-radius:20px;"><a href="/worship">Worship</a><br />
+<a class="indent" href="/services">Services</a><br />
+<a class="double-indent active-side-link" href="/tefilab">TefiLAB</a><br />
+<a class="double-indent" href="/shabbat-in-the-park">Shabbat in the Park</a><br />
+<a class="double-indent" href="/shabbat-nefesh">Shabbat Nefesh</a><br />
+<a class="indent " href="/livestream">Livestream</a><br />
+<a href="/participate">Participate</a><br />
+<a class="oneg-kiddush" href="/oneg-kiddush">Sponsor an Oneg or Kiddush Luncheon</a><br />
+<a href="/bnai-mitzvah">B’nai Mitzvah Process</a><br />
+<a href="/yahrzeits">Yahrzeits</a></div>
+
+<div class="col-12 col-lg-4  order-1 order-lg-2 " style="margin-bottom: 30px;"><img class="tefilab-logo mx-auto" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/TefiLAB-logo.png" /></div>
+
+<div class="col-12 col-lg-5 order-2 order-lg-3" style="margin-bottom: 30px;">There is no one “right way” to pray. Many communities have different customs and communal rituals that help to enhance their worship experience. Over the next year, TBT will take the first Shabbat evening and the third Shabbat morning of each month to experiment with prayer during our special TefiLAB services. We will dream creatively together about how we use different musical modes, our sanctuary space, the prayer book, our wonderfully talented TBT members and anything else that can enhance our worship experience in TBT’s living laboratory of prayer.</div>
+
+<div class="col-12 col-lg-9 offset-lg-3 order-3 order-lg-4" style="margin-bottom: 30px;">
+<p class="tefilab-services text-center mx-auto d-flex justify-content-center align-items-center text-white flex-column">Please note...<br />
+TefiLAB services on the first Shabbat Friday of each month will be at 6:30 PM.</p>
+</div>
+</div>
+</div>
+<script>
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+    if (viewportWidth > 767) {
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+                activeNavLink.classList.add('bottom-border');
+            }, 2000);
+    } else {
+        activeNavLink.classList.add('lightest-grey-background');
+    }
+</script>
+<style type="text/css">.no_subcontent:nth-child(3)>a  {
+            color: var(--link-color) !important;
+        }
+</style>

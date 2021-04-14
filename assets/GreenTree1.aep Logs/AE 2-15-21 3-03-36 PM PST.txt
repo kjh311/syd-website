@@ -1,0 +1,1 @@
+  2/15/21 3:03:36 PM PST: Starting composition “tempConverterComp”.  Output To: /private/var/folders/tk/l_7d1k6n3ll85264516jfbpw0000gn/T/TemporaryItems/Bodymovin/o6w8xg1rlz/raw/images/img_0.png    2/15/21 3:03:36 PM PST: Finished composition “tempConverterComp”.  Total Time Elapsed: 0 SecondsLog closed on 2/15/21 at 3:03:36 PM PST

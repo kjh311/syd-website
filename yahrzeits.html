@@ -1,0 +1,338 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /><meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style type="text/css">/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+.flame-img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+.current-photo {
+    min-width: 80%;
+    max-width: 100%;
+    margin: 3vh auto 0 auto;
+    border-radius: 10%;
+    
+
+  -webkit-mask-image: radial-gradient(ellipse 80% 85% at 50% 50%, black 40%, transparent 55%);
+  mask-image: radial-gradient(ellipse 80% 85% at 50% 50%, black 40%, transparent 55%);
+  -webkit-mask-position: top;
+  mask-position: top;
+
+}
+}
+.current-photo:hover {
+    /*cursor: URL("https://images.shulcloud.com/14479/uploads/sym98.cur");*/
+}
+.link-color {
+    color: var(--link-color) !important;
+}
+.bold {
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+    padding: 0 2vw;
+    font-family: var(--font-times);
+}
+/*.bold::before {*/
+/*    background-image: url(https://images.shulcloud.com/14479/uploads/candle-flame.png);*/
+/*    background-size: 100px 100px;*/
+/*}*/
+.padding-top {
+    padding-top: 4vh !important;
+}
+.bold {
+    font-weight: 800 !important;
+}
+.italic {
+    font-style: italic;
+}
+.italic:before, .italic:after {
+    content: '"';
+}
+.table-wrap {
+    border: 2px solid black;
+    border-radius: 5vw;
+    height: auto;
+    /*background: var(--dark-grey);*/
+    background: #000000;
+}
+.json-li {
+    padding: 3vh 0 !important;
+    margin: 0 auto !important;
+    font-size: 1.4rem !important;
+    color: var(--light-grey);
+    font-weight: 500 !important;
+    max-width: 80% !important;
+    border-bottom: 1px solid var(--lighter-grey) !important;
+    color: white !important;
+}
+
+.shallom-img{
+    width: 100%;
+    -webkit-animation: fadeInLeft 1000ms both;
+            animation: fadeInLeft 1000ms both;
+}
+#link-wrapper{
+    height: 100%;
+}
+.shallom-div{
+    background: #333333;
+    padding: 0 15px 25px 15px;
+}
+.thoughts-text{
+    font-size: 2.5rem !important;
+    line-height: 37px !important;
+}
+.second-container{
+    margin-top: 50px;
+}
+#link-wrapper{
+        max-height: 100%;
+    }
+    #maincontent.default UL, #maincontent UL{
+        padding: 0 !important;
+    }
+    .tab-content{
+        border: 1px solid  #DEE2E6;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        overflow: hidden;
+        -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    }
+     .nav-tabs{
+         border: 1px solid  #DEE2E6;
+       background: #DEE2E6 !important; 
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        overflow: hidden;
+        -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+       
+       
+    }
+    .nav-item{
+        padding: 0 !important;
+        margin: 0 !important;
+       text-align: center;
+    }
+    .tab-wrap-div{
+         padding: 0 !important;
+        margin: 0 !important;
+       
+    }
+    .scroll-img{
+        float: left;
+    }
+    .tab-pane{
+        background: white;
+    }
+    .tab-pane>ul>li{
+        list-style-type: none !important;
+        text-align: center;
+    }
+     .tab-pane>ul{
+       text-align: center;
+    }
+    .torah-link{
+        /*border: 1px solid red;*/
+        border: #fff solid 1px;
+    }
+    .nav-item1, .nav-item2, .nav-item3, .nav-item4 {
+        width: 25%;
+    } 
+    @media only screen and (max-width: 1000px) {
+        .thoughts-text {
+                margin-top: 3vh !important;
+            }
+    }
+     @media only screen and (max-width: 767px) {
+          .nav-item1, .nav-item2, .nav-item3, .nav-item4 {
+              width: 100%;
+          }
+          .current-photo {
+                width: 80%;
+                max-width: 80%;
+            }
+            .second-container {
+                margin-bottom: 3vh !important;
+            }
+            .shaddom-div {
+                margin-top: 3vh !important;
+            }
+            .json-li {
+                max-width: 90% !important;
+                margin: 0 auto;
+            }
+            .container, .order-1 {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            
+            
+     }
+</style>
+<div class="container shallom-div"> 
+<div class="row">
+<div class="col-12 col-lg-8"><img class="shallom-img" src="https://templebnaitorah.shulcloud.com/_preview/large/uploads/Shalom.png" /></div>
+
+<div class="col-12 col-lg-4">
+<p class="text-white text-center thoughts-text"><span style="font-size:36px;">Our thoughts and prayers go out to the families and friends of our loved ones.</span></p>
+</div>
+</div>
+</div>
+
+<div class="container second-container">
+<div class="row">
+<div class="col-12 col-lg-3 text-primary order-2 order-lg-1" id="link-wrapper" style="   margin-bottom: 30px;  border-radius:20px;"><a href="/worship">Worship</a><br />
+<a class="indent" href="/services">Services</a><br />
+<a class="double-indent" href="/tefilab">TefiLAB</a><br />
+<a class="double-indent" href="/shabbat-in-the-park">Shabbat in the Park</a><br />
+<a class="double-indent" href="/shabbat-nefesh">Shabbat Nefesh</a><br />
+<a class="indent " href="/livestream">Livestream</a><br />
+<a href="/participate">Participate</a><br />
+<a class="oneg-kiddush" href="/oneg-kiddush">Sponsor an Oneg or Kiddush Luncheon</a><br />
+<a href="/bnai-mitzvah">B’nai Mitzvah Process</a><br />
+<a class="active-side-link" href="/yahrzeits">Yahrzeits</a></div>
+
+<p class="d-block d-md-none"> </p>
+
+<div class="col-12 col-lg-9 order-1 order-lg-2">
+<div class="table-wrap d-flex justify-content-center">
+<ul id="json-ul" style="list-style-type:none !important;">
+</ul>
+</div>
+
+<p> </p>
+</div>
+</div>
+<script>
+jQuery(window).on('load', function() {
+    
+    $('.nav-item').click(function(){
+        if($(this).hasClass('active'){
+            $(this).addClass('white');
+            $(this).siblings().removeClass('white').addClass('light-grey');
+        });
+   });    
+   
+
+   
+});     
+</script></div>
+<script>
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+    if (viewportWidth > 767) {
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+                activeNavLink.classList.add('bottom-border');
+            }, 2000);
+    } else {
+        activeNavLink.classList.add('lightest-grey-background');
+    }
+</script>
+<style type="text/css">#nav_section>.no_subcontent:nth-child(3)>a  {
+            color: var(--link-color) !important;
+        }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script><script type="text/javascript">   
+// USING GOOGLE SHEET AS A DATABASE:
+//   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/15DXyfrQBs2v0Tj-3sZXez6_UFuTuY5YYRrxerh98S2g/edit?usp=sharing';
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1irCooaDFbFa8JlbC1nkfFM4y2AHKon0ipUCspaAkGpc/edit?usp=sharing';
+  
+  var jsonUl = document.getElementById('json-ul');
+
+  function init() {
+    Tabletop.init( {
+      key: publicSpreadsheetUrl,
+      callback: showInfo,
+      simpleSheet: true 
+    } )
+  }
+  
+  function showInfo(data, tabletop) {
+
+    for (var i = 0; i < data.length; i++) {
+        
+        var header = document.createElement('h3');
+        var currentName = data[i].name;
+        var headerName = document.createTextNode(currentName);
+        header.appendChild(headerName);
+        var currentDateOfDeath = data[i].date_of_death;
+        var currentBriefComments = data[i].brief_comments;
+        var currentPersonalPage = data[i].more_info;
+        var currentImage = data[i].image_link;
+        var entry = document.createElement('li');
+        var lineBreak = document.createElement("br");
+        entry.style.listStyleType = "none";
+        entry.style.textAlign = "center";
+        entry.classList.add('json-li');
+        console.log(currentImage);
+        
+        if(currentName) {
+            var el_span = document.createElement('span');
+            el_span.setAttribute('class', 'bold');
+            el_span.appendChild(document.createTextNode(currentName));
+             entry.appendChild(el_span);
+        }
+        
+        if(currentImage) {
+            entry.appendChild(document.createElement("br"));
+            // var currentPhoto = '<img class="current-photo' src="https://previews.123rf.com/images/kiuikson/kiuikson1608/kiuikson160800101/62132275-portrait-of-sexy-man-in-black-suit.jpg" />
+            var currentPhoto = document.createElement('img');
+            currentPhoto.setAttribute('class', 'current-photo hover-grow-no-shadow');
+            currentPhoto.setAttribute('src', currentImage);
+            // alert('image of ' + currentName)
+            entry.appendChild(currentPhoto);
+        }
+        
+        
+        entry.appendChild(document.createElement("br"));
+        entry.appendChild(document.createTextNode(currentDateOfDeath));
+        
+        if(currentBriefComments) {
+            entry.appendChild(document.createElement("br"));
+            var el_span = document.createElement('span');
+            el_span.setAttribute('class', 'italic');
+            el_span.appendChild(document.createTextNode(currentBriefComments));
+            entry.appendChild(el_span);
+        }
+        
+        if(currentPersonalPage) {
+            entry.appendChild(document.createElement("br"));
+            var el_span = document.createElement('span');
+            var personalPageLink = document.createElement('a');
+            // personalPageLink.attr('target', '_blank');
+            personalPageLink.setAttribute('class', 'link-color');
+            el_span.appendChild(personalPageLink);
+            personalPageLink.href = currentPersonalPage;
+            personalPageLink.appendChild(document.createTextNode("Read more about " + currentName + " →"));
+            // personalPageLink.appendChild(document.createTextNode("About " + currentName + " »"));
+            entry.appendChild(el_span);
+        }
+        
+        entry.appendChild(document.createElement("br"));
+        var flameImg = document.createElement('img');
+        flameImg.setAttribute('class', 'flame-img');
+        flameImg.setAttribute('src', 'https://images.shulcloud.com/14479/uploads/candle.gif');
+        entry.appendChild(flameImg)
+        jsonUl.appendChild(entry);
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', init)
+</script>
