@@ -43,13 +43,12 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-12 col-lg-4 order-2 order-lg-1">
-<div class="text-primary" id="link-wrapper" style=" d-inline   margin-bottom: 30px; border-radius:20px;"><strong><a href="/worship"><span style="color:#2980b9;">Worship</span></a><br />
-<a class="indent" href="/services"><span style="color:#2980b9;">Services</span></a><br />
-<a class="indent active-side-link" href="/livestream"><span style="color:#2980b9;">Livestream</span></a><br />
-<a href="/participate"><span style="color:#2980b9;">Participate</span></a><br />
-<a class="oneg-kiddush" href="/oneg-kiddush"><span style="color:#2980b9;">Sponsor an Oneg or Kiddush Luncheon</span></a><br />
-<a href="/bnai-mitzvah"><span style="color:#2980b9;">B’nai Mitzvah Process</span></a><br />
-<span style="color:#2980b9;"><a href="/yahrzeits">Yahrzeits</a></span></strong></div>
+<div class="text-primary" id="link-wrapper" style=" d-inline   margin-bottom: 30px; border-radius:20px;"><a href="/worship">Pray</a><br />
+<a class="indent active-side-link" href="/livestream">Livestream</a><br />
+<a href="/participate">Participate</a><br />
+<a class="oneg-kiddush" href="/oneg-kiddush">Sponsor an Oneg or Kiddush Luncheon</a><br />
+<a href="/bnai-mitzvah">B-Mitzvah Process</a><br />
+<a href="/yahrzeits">Yahrzeits</a></div>
 </div>
 
 <div class="col-12 col-lg-8 order-1 order-lg-2">
@@ -87,19 +86,10 @@
 <h3 class="text-center " style=" margin-top: 50px; color: #2881B6;">Youtube</h3>
 
 <div class="embed-responsive livestream-youtube embed-responsive-16by9" style="z-index:999; display:block; width: 100%; height: 100%;"><iframe allowfullscreen="" class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLEuBdNnSHjrZLazABOyOHZzyOHEQ74bcs"></iframe></div>
-<script>
-    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
-    if (viewportWidth > 767) {
-        setTimeout(function(){ 
-                var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
-                activeNavLink.classList.add('bottom-border');
-            }, 2000);
-    } else {
-        activeNavLink.classList.add('lightest-grey-background');
-    }
-</script>
-
+<!--</div>--> <!--</div>--> <script>
+        var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+        activeNavLink.classList.add('bottom-border');
+    </script>
 <style type="text/css">#nav_section>.no_subcontent:nth-child(3)>a  {
             color: var(--link-color) !important;
         }

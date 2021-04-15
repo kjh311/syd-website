@@ -18,6 +18,12 @@
         #link-wrapper {
             width: 100%;
         }
+        
+    }
+    @media only screen and (max-width: 639px) {
+        .rounded-full>img {
+            max-width: 40vw;
+        }
     }
 </style>
 <p> </p>
@@ -101,6 +107,33 @@
 </div>
 </div>
 </section>
+<!--Jessica Brumer-->
+
+<section class="text-gray-700 body-font" style="margin-top: -100px;">
+<div class="container px-5 py-24 mx-auto flex flex-col">
+<div class="lg:w-4/6 mx-auto">
+<div class="flex flex-col sm:flex-row mt-10">
+<div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+<div class="rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400"><img class="hover-grow-no-shadow " src="https://images.shulcloud.com/14479/uploads/Jessica_Brumer.jpg" style="border-radius:20px" /></div>
+
+<div class="flex flex-col items-center text-center justify-center">
+<h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Jessica Brumer</h2>
+
+<div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"> </div>
+
+<p class="text-base text-gray-600">Director of Youth Engagement, CLASP Fellow</p>
+<br />
+<a href="mailto:jbrumer@templebnaitorah.org
+" style="word-wrap: break-word; color: var(--link-color) !important;">jbrumer@templebnaitorah.org </a></div>
+</div>
+
+<div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+<p class="leading-relaxed text-lg mb-4 text-left">Jessica graduated from the University of Washington, Bothell with a degree in Educational Studies. Her family has been members of Temple B’nai Torah for over 27 years and Jessica was active in BTY and NFTY-NW in her teenage years. She has also been involved in URJ Camp Kalsman since its inception in 2007, first as a camper, then as a counselor and ropes specialist and now as part of the leadership staff. Jessica has always wanted to work with youth in her professional life and her involvement in Temple B’nai Torah, URJ Camp Kalsman and the Jewish Day School of Metropolitan Seattle (where she attended from Kindergarten – 8th grade) has led her to where she is today, a CLASP (Camp Leaders and Synagogue Professional) Fellow at Temple B’nai Torah which brings camp and synagogue life together. She loves working with and mentoring the next generation of young leaders at Temple B’nai Torah.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 <!--Larisa Babak-->
 
 <section class="text-gray-700 body-font" style="margin-top: -100px;">
@@ -108,7 +141,7 @@
 <div class="lg:w-4/6 mx-auto">
 <div class="flex flex-col sm:flex-row mt-10">
 <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-<div class="rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400"><img class="hover-grow-no-shadow" src="https://images.shulcloud.com/14479/uploads/Larisa-B.jpg" style="border-radius:20px" /></div>
+<div class="rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400"><img class="hover-grow-no-shadow" src="https://images.shulcloud.com/14479/uploads/Larisa.jpg" style="border-radius:20px" /></div>
 
 <div class="flex flex-col items-center text-center justify-center">
 <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Larisa Babak</h2>
@@ -135,16 +168,25 @@
 <a class="double-indent " href="/clergy">Clergy</a><br />
 <a class="double-indent active-side-link" href="/staff">Staff</a><br />
 <a class="indent" href="/our-location">Our Location</a><br />
-<a class="double-indent" href="/kashrut-policy">Kashrut Policy</a><br />
-<a class="double-indent" href="/rosen-ritt-library">Rosen-Ritt Library</a><br />
 <a class="double-indent" href="/directions">Directions</a><br />
 <a class="indent" href="/our-history">Our History</a><br />
-<a class="double-indent" href="/wall-of-connections">Wall of Connections Art Gallery</a><br />
-<a class="indent" href="/join-our-community">Join Our Community</a><br />
-<a class="indent" href="/visitors">Visitors</a><br />
+<a class="indent" href="/membership-form">Join Our Community</a><br />
 <a class="indent" href="/contact-us">Contact Us</a></div>
 
-<div class="text-center d-flex justify-content-center flex-column "><a class="hvr  hvr-outline-out hvr-outline-out-blue blue-background poofy-button" href="/board">Board of Directors</a> <a class="hvr  hvr-outline-out hvr-outline-out-blue blue-background poofy-button" href="/clergy">Our Clergy</a>  <!--<a class="btn blue-buttons ripplelink btn-lg hover-grow" href="/board" role="button" style="width: auto; margin: 20px; text-decoration: none;" type="button">Board of Directors</a> <a class="btn blue-buttons ripplelink btn-lg  hover-grow" href="/clergy" role="button" style="width: auto; margin: 20px; text-decoration: none;" type="button">Clergy</a>--></div>
+<div class="text-center d-flex justify-content-center flex-column "><a class="hvr  hvr-outline-out hvr-outline-out-blue blue-background poofy-button" href="/board">Board of Directors</a> <a class="hvr  hvr-outline-out hvr-outline-out-blue blue-background poofy-button" href="/clergy">Our Clergy</a><br />
+<!--<a class="btn blue-buttons ripplelink btn-lg hover-grow" href="/board" role="button" style="width: auto; margin: 20px; text-decoration: none;" type="button">Board of Directors</a> <a class="btn blue-buttons ripplelink btn-lg  hover-grow" href="/clergy" role="button" style="width: auto; margin: 20px; text-decoration: none;" type="button">Clergy</a>--></div>
+<script>
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
+    if (viewportWidth > 767) {
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
+                activeNavLink.classList.add('bottom-border');
+            }, 2000);
+    } else {
+        activeNavLink.classList.add('lightest-grey-background');
+    }
+</script>
 <style type="text/css">#nav_section>/*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,

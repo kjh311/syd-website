@@ -11,11 +11,13 @@
 <div class="container-fluid volenteer-container">
 <div class="row">
 <div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
-<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-bottom: 30px; border-radius:20px;"><a href="/tikun-olam">Tikun Olam</a><br />
+<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-bottom: 30px; border-radius:20px;"><a href="/tikun-olam">Social Action</a><br />
+<a class="indent" href="/tent-city-4">Tent City 4</a><br />
 <a class="indent active-side-link" href="/volunteer">Volunteer</a><br />
-<a class="double-indent" href="/chavurot-2">TBT Commities</a><br />
-<a class="indent" href="/mitzvah-corps">Miztvah Corp</a><br />
-<a class="indent" href="/tikun-olam-2">Going Green at TBT</a></div>
+<a class="double-indent " href="/chavurot-2">TBT Committies</a><br />
+<a class="indent" href="/mitzvah-corps">Mitzvah Corp</a><br />
+<a class="indent" href="/tikun-olam-2">Going Green at TBT</a><br />
+<a class="indent" href="/vaccine">Vaccine</a></div>
 </div>
 
 <div class="col-12 col-lg-9 order-1 order-lg-2 right-column">
@@ -39,22 +41,19 @@
 </div>
 </div>
 <!--row--></div>
-<!--container-->
-
-<script>
+<!--container--><script>
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    var activeNavLink = document.querySelector(".no_subcontent:nth-child(4)");
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
     if (viewportWidth > 767) {
         setTimeout(function(){ 
-                var activeNavLink = document.querySelector(".no_subcontent:nth-child(4)");
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
                 activeNavLink.classList.add('bottom-border');
             }, 2000);
     } else {
         activeNavLink.classList.add('lightest-grey-background');
     }
 </script>
-
-<style type="text/css">#nav_section>.no_subcontent:nth-child(4)>a  {
+<style type="text/css">#nav_section>.no_subcontent:nth-child(5)>a  {
             color: var(--link-color) !important;
         }
 </style>

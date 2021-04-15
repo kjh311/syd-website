@@ -14,7 +14,12 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
+#nav_section>li:nth-child(6)>a  {
+            color: var(--link-color) !important;
+        }
+.content_title {
+    display: none;
+}
 .solomike-fancy{
         font-family: 'Oregano', cursive !important;
         color: #2881B6 !important;
@@ -45,18 +50,37 @@
         padding: 2vw;
         background: var(--text-blue);
     }
+    
+    
+    .top-youtube {
+        width: 50vw; 
+        /*height: 56.25vw;*/
+        height: 28vw; /* 100/56.25 = 560/315 = 1.778 */
+        /*width="560"*/
+        /*height="315"*/
+    }
+    
+    @media only screen and (max-width: 992px) {
+            .top-youtube {
+                width: 75vw !important; 
+                /*height: 56.25vw !important;*/
+                height: 40.25vw !important;
+            }
+    }
 </style>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
 <link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet" />
 <div class="container-fluid" style="width: 100% !important;">
 <div class="row">
+<div class="col-12 col-lg-9 offset-lg-3"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="top-youtube" frameborder="0" src="https://www.youtube.com/embed/PfHFPIKW67U"></iframe></div>
+
 <div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
 <div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"><a href="/learn">Lifelong Learning</a><br />
 <a class="indent active-side-link" href="/tots">Tots</a><br />
 <a class="indent " href="/kids">Kids</a><br />
 <a class="indent" href="/teens">Teens</a><br />
 <a class="indent " href="/adults">Adults</a><br />
-<a href="/bnai-mitzvah">B'nai Mitzvah Process</a></div>
+<a href="/bnai-mitzvah">B-Mitzvah Process</a></div>
 </div>
 
 <div class="col-12 col-lg-9 order-1 order-lg-2 "> 
@@ -70,7 +94,7 @@
 
 <p class="text-left">In 2009, Temple B’nai Torah saw the unexpected passing of Mike “Solomike” Negrin, a beloved and committed member of our community. Mike generously left Temple B’nai Torah a bequest to strengthen our temple in the future – a fund dedicated to the establishment of an early childhood center. Through this fund, we hope to engage new families and children in Jewish communal life through a rewarding and enriching educational program.</p>
 
-<p class="text-left"><b>For questions please contact us at </b><a href="mailto:totshabbat@templebnaitorah.org" style="color: var(--link-color) !important;">totshabbat@templebnaitorah.org</a></p>
+<p class="text-left"><b>For more information please contact us at </b><a href="mailto:contact@templebnaitorah.org" style="color: var(--link-color) !important;">contact@templebnaitorah.org</a></p>
 
 <p> </p>
 </div>
@@ -78,45 +102,45 @@
 <div class="col-12  col-lg-6 p-3 m-0   text-center right-column">
 <h1>Tots</h1>
 
-<p> </p>
+<p class="tot-text">Tot Shabbat</p>
 
-<p class="tot-text">Tot Shabbat & PJ Havdalah</p>
+<p class="text-left">Our Tot Shabbat program for parents and children 0-5 celebrates Shabbat with singing, dancing, stories, and blessings. On the first Friday of the month, join TBT and PJ Library for our virtual BimBamBaby! Solomike Shabbat at 5:30pm.</p>
 
-<p class="text-left">Our Tot Shabbat program for parents and children 0-5 welcomes Shabbat with singing, dancing, stories, and blessings. Join Cantor David Serkin-Poole and Chava Mirel for this free drop-in program, no RSVP required!</p>
+<p class="text-left">On the third Saturday of the month, join Rabbi Molly and Josh Niehaus for virtual Shabbat morning fun at 9:30am.</p>
 
 <p class="text-left">We also offer Pajama Havdalah programs throughout the year with stories, snacks, activities and havdalah.</p>
-
-<p> </p>
 <img class="teddy-img img-fluid hover-grow-no-shadow" src="https://templebnaitorah.shulcloud.com/_preview/large/uploads/PJ-Havdalah.jpg" />
+<p>Get our Monthly Tot Shabbat Newsletter!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 <p> </p>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 col-lg-9 offset-lg-3 d-flex justify-content-center flex-column">
+<h3 style="color: var(--text-blue); text-align: center;">More Videos from Previous Weeks</h3>
+
+<p> </p>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="top-youtube" frameborder="0" src="https://www.youtube.com/embed/3O7YUs75J08"></iframe></div>
+</div>
 </div>
 
-<div class="col-12   text-center bottom">
-<h2 class="text-white">Get our Monthly Tot Shabbat Newsletter!</h2>
-
-<div class="img-and-text-div"><img class="solomike-gif float-left d-block " src="https://images.shulcloud.com/14479/uploads/Solomike-logo-281x300.gif" />
-<p class="text-white subtext">For fun tips on creating a vibrant Jewish experience for your toddlers, and updates on coming events, make sure you subscribe to our "Tot Shabbat Newsletter!</p>
-
-<p class="d-flex justify-content-center align-items-center" style="padding: 1vw; border: 2px solid white; color: white !important;">Subscribe button coming soon...</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p> </p>
 <script>
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
     if (viewportWidth > 767) {
         setTimeout(function(){ 
-                var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
                 activeNavLink.classList.add('bottom-border');
-            }, 2000);
+                var previous = document.querySelector(".no_subcontent:nth-child(5)");
+                previous.classList.remove('bottom-border');
+            }, 1000);
     } else {
         activeNavLink.classList.add('lightest-grey-background');
     }
 </script>
-<style type="text/css">#nav_section>.no_subcontent:nth-child(5)>a  {
-            color: var(--link-color) !important;
-        }
-</style>

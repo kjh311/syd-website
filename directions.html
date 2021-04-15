@@ -14,6 +14,9 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+.link-color {
+    color: var(--link-color) !important;
+}
 
 #google-map{
         background:url(https://images.shulcloud.com/14479/uploads/loading1.gif);
@@ -39,13 +42,9 @@
 <a class="double-indent" href="/clergy">Clergy</a><br />
 <a class="double-indent" href="/staff">Staff</a><br />
 <a class="indent" href="/our-location">Our Location</a><br />
-<a class="double-indent" href="/kashrut-policy">Kashrut Policy</a><br />
-<a class="double-indent" href="/rosen-ritt-library">Rosen-Ritt Library</a><br />
-<a class="double-indent active-side-link" href="/directions">Directions</a><br />
+<!--<a class="double-indent" href="/kashrut-policy">Kashrut Policy</a><br />--> <!--<a class="double-indent" href="/rosen-ritt-library">Rosen-Ritt Library</a><br />--> <a class="double-indent active-side-link" href="/directions">Directions</a><br />
 <a class="indent" href="/our-history">Our History</a><br />
-<a class="double-indent" href="/wall-of-connections">Wall of Connections Art Gallery</a><br />
-<a class="indent" href="/join-our-community">Join Our Community</a><br />
-<a class="indent" href="/visitors">Visitors</a><br />
+<!--<a class="double-indent" href="/wall-of-connections">Wall of Connections Art Gallery</a><br />--> <a class="indent" href="/membership-form">Join Our Community</a><br />
 <a class="indent" href="/contact-us">Contact Us</a></div>
 </div>
 
@@ -103,6 +102,8 @@
 <script>
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
+    // activeNavLink.style.color = var(--link-color);
+    // activeNavLink.classList.add("link-color");
     if (viewportWidth > 767) {
         setTimeout(function(){ 
                 var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
@@ -112,16 +113,10 @@
         activeNavLink.classList.add('lightest-grey-background');
     }
 </script>
-<style type="text/css">/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-.no_subcontent:nth-child(2)>a  {
+<style type="text/css">#nav_section>li:nth-child(2)>a  {
             color: var(--link-color) !important;
         }
+
         @media only screen and (max-width: 767px) {
             #link-wrapper {
                 width: 100%;

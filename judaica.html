@@ -33,9 +33,11 @@
         padding-left: 3vw;
     }
     .judaica-form{
-        
-        padding: 10vh 3vw;
-        border: 2px solid black;
+        color: #fff !important;
+        font-size: 1.3rem;
+        background: var(--text-blue);
+        padding: 5vw;
+        /*border: 2px solid black;*/
     }
     @media only screen and (max-width: 767px) { 
         .shop-img {
@@ -51,14 +53,14 @@
 <div class="container-fluid shop-wrap" style="width: 100%;">
 <div class="row">
 <div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
-<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"><a href="/community">CONNECT</a><br />
-<a class="indent" href="/membership-form">Membership Form</a><br />
+<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"><a href="/community">Join</a><br />
+<a class="indent" href="/membership-form">Connect</a><br />
 <a class="double-indent " href="/membership">Membership</a><br />
 <a class="indent " href="/interest-groups">Interest Groups</a><br />
 <a class="indent active-side-link" href="/judaica">Judaica Shop</a><br />
 <a class="indent" href="/sisterhood">Sisterhood</a><br />
 <a class="double-indent" href="/sisterhood-contact">Contact</a><br />
-<a class="indent" href="/chavurot">Chavurot</a></div>
+<!--<a class="indent" href="/chavurot">Chavurot</a>--></div>
 </div>
 
 <div class="col-12 col-lg-9 order-1 order-lg-2 right-column">  <!--<div class="row p-0 m-0">--> <!--<div class="col-12 col-lg-6">-->
@@ -88,7 +90,9 @@
 
 <p><strong>We look forward to serving you. For contact information or to send us an email, use the form below!</strong></p>
 
-<div class="judaica-form d-flex justify-content-center align-items-center">Judaica Shop Contact Form coming soon...</div>
+<p> </p>
+
+<div class="judaica-form d-flex justify-content-center align-items-center">We look forward to serving you!</div>
 
 <p> </p>
 </div>
@@ -96,14 +100,21 @@
 </div>
 <script>
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(7)");
     if (viewportWidth > 767) {
-            activeNavLink.classList.add('bottom-border');
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(7)");
+                var previous  = document.querySelector(".no_subcontent:nth-child(6)");
+                var previous2 = document.querySelector(".no_subcontent:nth-child(5");
+                activeNavLink.classList.add('bottom-border');
+                previous.classList.remove('bottom-border');
+                previous2.classList.remove('bottom-border');
+            }, 1000);
     } else {
         activeNavLink.classList.add('lightest-grey-background');
     }
 </script>
-<style type="text/css">#nav_section>.no_subcontent:nth-child(6)>a  {
+<style type="text/css">#nav_section>.no_subcontent:nth-child(7)>a  {
             color: var(--link-color) !important;
         }
 </style>

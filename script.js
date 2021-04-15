@@ -1,6 +1,7 @@
 var activeNavLink = document.querySelectorAll(".no_subcontent");
 var selectedNav = document.querySelectorAll(".selected_nav");
 var navLink = document.querySelectorAll("#nav_section>.no_subcontent");
+var navSection = document.getElementById("nav_section");
 var homeButton = document.querySelectorAll("#nav_section>.no_subcontent:nth-child(1)>a");
 var firstNavLink = document.querySelector(".no_subcontent:nth-child(1)>a");
 var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
@@ -107,9 +108,9 @@ youtube.setAttribute("class", "navbar-top-links");
 youtube.innerHTML= '<li><i class="fa fa-youtube" style="font-size:30px"></i></li>';
 ul.appendChild(youtube);
 
-templeLogo = document.createElement('img');
-templeLogo.setAttribute('class', 'temple-logo-img');
-templeLogo.setAttribute('src', 'https://images.shulcloud.com/14479/uploads/logo-original.png');
+// templeLogo = document.createElement('img');
+// templeLogo.setAttribute('class', 'temple-logo-img');
+// templeLogo.setAttribute('src', 'https://images.shulcloud.com/14479/uploads/logo-original.png');
 // navbar.appendChild(templeLogo);
 
 // templeSVG = document.createElement('img');
@@ -119,7 +120,8 @@ templeLogo.setAttribute('src', 'https://images.shulcloud.com/14479/uploads/logo-
 
 searchIcon = document.createElement('li');
 searchIcon.setAttribute('class', 'search-container');
-searchIcon.innerHTML = '<button onclick="openSearchBar()" class="search-submit-button" type="submit"><i class="fa fa-search"></i></button>';
+// searchIcon.innerHTML = '<a href="/search" class="search-submit-button" ><i class="fa fa-search"></i></a>';
+searchIcon.innerHTML = '<button onclick="openSearchBar()" class="search-submit-button" ><i class="fa fa-search"></i></button>';
 // <form action="" onsubmit="myFunction()"><input class="search-input type="text" placeholder="Search.." name="search"></form>
 
 // searchbar.appendChild(searchBarForm);
@@ -130,6 +132,11 @@ searchIcon.innerHTML = '<button onclick="openSearchBar()" class="search-submit-b
 ul.appendChild(searchIcon);
 // ul.appendChild(searchBar);
 
+templeLogoDiv = document.createElement('div');
+templeLogoDiv.setAttribute('class', 'temple-logo-div');
+// templeLogoDiv.setAttribute('src', 'https://images.shulcloud.com/14479/uploads/OldLogoSVG.svg');
+navbar.appendChild(templeLogoDiv);
+
 
 //   <div class="search-container">
 //     <form action="/action_page.php">
@@ -138,38 +145,38 @@ ul.appendChild(searchIcon);
 //     </form>
 //   </div>
 
-sideBarLeft = document.getElementById('sidebar_left');
-searchBar = document.createElement('div');
-searchBar.setAttribute('class', 'search-bar search-bar-small');
-searchBar.innerHTML = '<form action="" onsubmit="searchComingSoon() class="d-flex flex-column justify-content-center align-items-center><input id="search-input" class="search-input search-input-small type="text" placeholder="Search this site.." name="search"><button  class="search-submit-button " type="submit"><i class="fa fa-search"></i></button></form>';
-sideBarLeft.appendChild(searchBar);
+// sideBarLeft = document.getElementById('sidebar_left');
+// searchBar = document.createElement('div');
+// searchBar.setAttribute('class', 'search-bar search-bar-small');
+// searchBar.innerHTML = '<form action="" onsubmit="searchComingSoon()" class="d-flex flex-column justify-content-center align-items-center"><span><input id="search-input" class="search-input search-input-small type="text" placeholder="Search this site.." name="search"><button  class="search-submit-button" type="submit"><i class="fa fa-search"></i></button></span></form>';
+// sideBarLeft.appendChild(searchBar);
 
-templeLogoDiv = document.createElement('div');
-templeLogoDiv.setAttribute('class', 'temple-logo-div');
-// templeLogoDiv.setAttribute('src', 'https://images.shulcloud.com/14479/uploads/OldLogoSVG.svg');
-navbar.appendChild(templeLogoDiv);
-searchInput = document.getElementById('search-input');
+// templeLogoDiv = document.createElement('div');
+// templeLogoDiv.setAttribute('class', 'temple-logo-div');
+// // templeLogoDiv.setAttribute('src', 'https://images.shulcloud.com/14479/uploads/OldLogoSVG.svg');
+// navbar.appendChild(templeLogoDiv);
+// searchInput = document.getElementById('search-input');
 
-function openSearchBar() {
+// function openSearchBar() {
 
-if(searchBar.classList.contains('search-bar-small')) {
-        searchBar.classList.remove('search-bar-small');
-        searchBar.classList.add('search-bar-big');
-        searchInput.classList.remove('search-input-small');
-        searchInput.classList.add('search-input-big');
-    } else {
-        searchBar.classList.remove('search-bar-big');
-        searchBar.classList.add('search-bar-small');
-        searchInput.classList.remove('search-input-big');
-        searchInput.classList.add('search-input-small');
-    }
-}
+// if(searchBar.classList.contains('search-bar-small')) {
+//         searchBar.classList.remove('search-bar-small');
+//         searchBar.classList.add('search-bar-big');
+//         searchInput.classList.remove('search-input-small');
+//         searchInput.classList.add('search-input-big');
+//     } else {
+//         searchBar.classList.remove('search-bar-big');
+//         searchBar.classList.add('search-bar-small');
+//         searchInput.classList.remove('search-input-big');
+//         searchInput.classList.add('search-input-small');
+//     }
+// }
 
-function searchComingSoon(event) {
+// function searchComingSoon(event) {
 
-    alert('Search Coming Soon!');
-        event.preventDefault();
-}
+//     alert('Search Coming Soon!');
+//         event.preventDefault();
+// }
 
 
 
@@ -207,6 +214,14 @@ if ( "onhashchange" in window  && window.screen.width < 767) {
     temple_name_mobile.innerHTML = '<iframe style="width: 90vw; height: 50px;"  id="temple-name-mobile-animation" loop="false"  src="https://kjh311.github.io/Temple_Name_Mobile/" title="#"></iframe>';
     content.appendChild(temple_name_mobile);
     
+    
+    
+    // add search:
+    searchMobileLi = document.createElement('li');
+    searchMobileLi.setAttribute('class', 'search-mobile-li no_subcontent');
+    searchMobileLi.innerHTML = '<a href="#" onclick="openSearchBar()" class="search-mobile-button">Search</a>';
+    navSection.appendChild(searchMobileLi);
+    
     // Mobile Drop Down Button Change on click:
     // mainnav = document.getElementById('top-nav');
     // topNav = document.getElementById('topnav');
@@ -227,7 +242,58 @@ if ( "onhashchange" in window  && window.screen.width < 767) {
     //         // alert('else!');
     //     }
     // });
+    
+    
+    //     searchMobileLi.addEventListener('click', function(event) {
+    //     var isNavBar = navbar.contains(event.target);
+    //     var isTopNav = topnav.contains(event.target);
+
+    //     if(!isNavBar && !isTopNav){
+    //         navbar.style.display = "none";
+    //         // navbar.classList.remove("bounceInDown");
+    //         // navbar.classList.add("bounceOut");
+    //     }
+    // });
 }
+
+
+
+sideBarLeft = document.getElementById('sidebar_left');
+searchBar = document.createElement('div');
+searchBar.setAttribute('class', 'search-bar search-bar-small');
+// googleSearchCode = "<script async src='https://cse.google.com/cse.js?cx=eeeb731488f7fccf2'></script><div class='gcse-search'></div>"
+// searchBar.innerHTML = '<form action="/search" method="GET" role="search class="d-flex flex-column justify-content-center align-items-center"><span><input id="search-input" class="search-input search-input-small type="text" placeholder="Search this site.." name="search"><button  class="search-submit-button" type="submit"><i class="fa fa-search"></i></button></span></form>';
+// searchBar.innerHTML = '<script async src="https://cse.google.com/cse.js?cx=eeeb731488f7fccf2"></script><div class="gcse-search"></div>'
+// searchBar.innerHTML = '<script async src="https://cse.google.com/cse.js?cx=6cb1f0e9022071fea"></script><div class="gcse-search"></div>'
+searchBar.innerHTML='<form action="/search" method="GET" role="search"><input id="search-input" class="search-input search-input-small" autocomplete="off" name="q" placeholder="Search this site.." title="Enter search here type="text"><button  class="search-submit-button" type="submit"><i class="fa fa-search"></i></button></form>'
+sideBarLeft.appendChild(searchBar);
+
+
+searchInput = document.getElementById('search-input');
+
+function openSearchBar() {
+
+if(searchBar.classList.contains('search-bar-small')) {
+    navbar.style.display = 'none';
+    
+        searchBar.classList.remove('search-bar-small');
+        searchBar.classList.add('search-bar-big');
+        searchInput.classList.remove('search-input-small');
+        searchInput.classList.add('search-input-big');
+        searchInput.focus();
+    } else {
+        searchBar.classList.remove('search-bar-big');
+        searchBar.classList.add('search-bar-small');
+        searchInput.classList.remove('search-input-big');
+        searchInput.classList.add('search-input-small');
+    }
+}
+
+// function searchComingSoon(event) {
+
+//     alert('Search Coming Soon!');
+//         event.preventDefault();
+// }
 
 // FOOTER:
 // .footer_inner>.global_terms_links>a
@@ -253,129 +319,145 @@ if ( "onhashchange" in window  && window.screen.width < 767) {
 
 // PAGE SPECIFIC:
 
-    var current = window.location.pathname;
-// homepage
-    if (current == '/') {
-        var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-        var activeNavLink = document.querySelector(".no_subcontent:nth-child(1)");
+//     var current = window.location.pathname;
+// // homepage
+//     if (current == '/') {
+//         var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+//         var activeNavLink = document.querySelector(".no_subcontent:nth-child(1)");
         
-        if (viewportWidth > 767) {
-            firstNavLink.classList.add('filter-bright');
-            setTimeout(function(){ 
-                    activeNavLink.classList.add('bottom-border');
-                }, 500);
-        } else {
-            activeNavLink.classList.add('lightest-grey-background');
-        }
-        var selectedNavLink = document.querySelector(".no_subcontent:nth-child(1)");
+//         if (viewportWidth > 767) {
+//             firstNavLink.classList.add('filter-bright');
+//             setTimeout(function(){ 
+//                     activeNavLink.classList.add('bottom-border');
+//                 }, 500);
+//         } else {
+//             activeNavLink.classList.add('lightest-grey-background');
+//         }
+//         var selectedNavLink = document.querySelector(".no_subcontent:nth-child(1)");
         
-        setTimeout(function(){
-            selectedNavLink.classList.remove('hvr-underline-from-center');
-        }, 1000);
+//         setTimeout(function(){
+//             selectedNavLink.classList.remove('hvr-underline-from-center');
+//         }, 1000);
         
-//   ask     
-        } else if (current == '/about-us' || current == '/vision' || current == '/our-people' || current == '/board'  || current == '/clergy' || current == '/staff' || current == '/our-location' || current == '/kashrut-policy' || current == '/rosen-ritt-library' || current == '/directions' || current == '/our-history' || current == '/wall-of-connections' || current == '/join-our-community' || current == '/visitors' || current == '/contact-us') {
-          var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-            var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
-            if (viewportWidth > 767) {
-                setTimeout(function(){ 
-                        activeNavLink.classList.add('bottom-border');
-                    }, 500);
-            } else {
-                activeNavLink.classList.add('lightest-grey-background');
-            }
-            var selectedNavLink = document.querySelector(".no_subcontent:nth-child(2)");
+// //   ask     
+//         } else if (current == '/about-us' || current == '/vision' || current == '/our-people' || current == '/board'  || current == '/clergy' || current == '/staff' || current == '/our-location' || current == '/kashrut-policy' || current == '/rosen-ritt-library' || current == '/directions' || current == '/our-history' || current == '/wall-of-connections' || current == '/join-our-community' || current == '/visitors' || current == '/contact-us') {
+//           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+//             var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
+//             if (viewportWidth > 767) {
+//                 setTimeout(function(){ 
+//                         activeNavLink.classList.add('bottom-border');
+//                     }, 500);
+//             } else {
+//                 activeNavLink.classList.add('lightest-grey-background');
+//             }
+//             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(2)");
             
-            setTimeout(function(){
-                selectedNavLink.classList.remove('hvr-underline-from-center');
-            }, 1000);
+//             setTimeout(function(){
+//                 selectedNavLink.classList.remove('hvr-underline-from-center');
+//             }, 1000);
             
-//  pray           
-        } else if (current == '/worship' || current == '/services' || current == '/tefilab' || current == '/shabbat-in-the-park'  || current == '/shabbat-nefesh' || current == '/livestream' || current == '/participate' || current == '/oneg-kiddush' || current == '/bnai-mitzvah' || current == '/yahrzeits') {
-          var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-            var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
-            if (viewportWidth > 767) {
-                setTimeout(function(){ 
-                        activeNavLink.classList.add('bottom-border');
-                    }, 500);
-            } else {
-                activeNavLink.classList.add('lightest-grey-background');
-            }
-            var selectedNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+// //  pray           
+//         } else if (current == '/worship' || current == '/services' || current == '/tefilab' || current == '/shabbat-in-the-park'  || current == '/shabbat-nefesh' || current == '/livestream' || current == '/participate' || current == '/oneg-kiddush' || current == '/bnai-mitzvah' || current == '/yahrzeits') {
+//           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+//             var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+//             if (viewportWidth > 767) {
+//                 setTimeout(function(){ 
+//                         activeNavLink.classList.add('bottom-border');
+//                     }, 500);
+//             } else {
+//                 activeNavLink.classList.add('lightest-grey-background');
+//             }
+//             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(3)");
             
-            setTimeout(function(){
-                selectedNavLink.classList.remove('hvr-underline-from-center');
-            }, 1000);
+//             setTimeout(function(){
+//                 selectedNavLink.classList.remove('hvr-underline-from-center');
+//             }, 1000);
+// // live
+//         // } else if (current == '/tent-city-4') {
+//         //   var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+//         //     var activeNavLink = document.querySelector(".no_subcontent:nth-child(4)");
+//         //     if (viewportWidth > 767) {
+//         //         setTimeout(function(){ 
+//         //                 activeNavLink.classList.add('bottom-border');
+//         //             }, 500);
+//         //     } else {
+//         //         activeNavLink.classList.add('lightest-grey-background');
+//         //     }
+//         //     var selectedNavLink = document.querySelector(".no_subcontent:nth-child(4)");
+            
+//         //     setTimeout(function(){
+//         //         selectedNavLink.classList.remove('hvr-underline-from-center');
+//         //     }, 1000);
     
-// act        
-        } else if (current == '/tikun-olam' || current == '/volunteer' || current == '/chavurot-2' || current == '/mitzvah-corps'  || current == '/tikun-olam-2') {
-          var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-            var activeNavLink = document.querySelector(".no_subcontent:nth-child(4)");
-            if (viewportWidth > 767) {
-                setTimeout(function(){ 
-                        activeNavLink.classList.add('bottom-border');
-                    }, 500);
-            } else {
-                activeNavLink.classList.add('lightest-grey-background');
-            }
-            var selectedNavLink = document.querySelector(".no_subcontent:nth-child(4)");
+// // act        
+//         } else if (current == '/tikun-olam' || '/tent-city-4' || current == '/volunteer' || current == '/chavurot-2' || current == '/mitzvah-corps'  || current == '/tikun-olam-2') {
+//           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+//             var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
+//             if (viewportWidth > 767) {
+//                 setTimeout(function(){ 
+//                         activeNavLink.classList.add('bottom-border');
+//                     }, 500);
+//             } else {
+//                 activeNavLink.classList.add('lightest-grey-background');
+//             }
+//             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(5)");
             
-            setTimeout(function(){
-                selectedNavLink.classList.remove('hvr-underline-from-center');
-            }, 1000);
+//             setTimeout(function(){
+//                 selectedNavLink.classList.remove('hvr-underline-from-center');
+//             }, 1000);
             
-// learn        
-        } else if (current == '/learn' || current == '/tots' || current == '/kids' || current == '/teens'  || current == '/adults') {
-          var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-            var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
-            if (viewportWidth > 767) {
-                setTimeout(function(){ 
-                        activeNavLink.classList.add('bottom-border');
-                    }, 500);
-            } else {
-                activeNavLink.classList.add('lightest-grey-background');
-            }
-            var selectedNavLink = document.querySelector(".no_subcontent:nth-child(5)");
+// // learn        
+//         } else if (current == '/learn' || current == '/tots' || current == '/kids' || current == '/teens'  || current == '/adults') {
+//           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+//             var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
+//             if (viewportWidth > 767) {
+//                 setTimeout(function(){ 
+//                         activeNavLink.classList.add('bottom-border');
+//                     }, 500);
+//             } else {
+//                 activeNavLink.classList.add('lightest-grey-background');
+//             }
+//             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(6)");
             
-            setTimeout(function(){
-                selectedNavLink.classList.remove('hvr-underline-from-center');
-            }, 1000);
+//             setTimeout(function(){
+//                 selectedNavLink.classList.remove('hvr-underline-from-center');
+//             }, 1000);
             
-// join        
-        } else if (current == '/community' || current == '/membership-form' || current == '/membership' || current == '/interest-groups'  || current == '/judaica' || current == '/sisterhood' || current == '/sisterhood-contact'  || current == '/chavurot') {
-          var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-            var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
-            if (viewportWidth > 767) {
-                setTimeout(function(){ 
-                        activeNavLink.classList.add('bottom-border');
-                    }, 500);
-            } else {
-                activeNavLink.classList.add('lightest-grey-background');
-            }
-            var selectedNavLink = document.querySelector(".no_subcontent:nth-child(6)");
+// // join        
+//         } else if (current == '/community' || current == '/membership-form' || current == '/membership' || current == '/interest-groups'  || current == '/judaica' || current == '/sisterhood' || current == '/sisterhood-contact'  || current == '/chavurot') {
+//           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+//             var activeNavLink = document.querySelector(".no_subcontent:nth-child(8)");
+//             if (viewportWidth > 767) {
+//                 setTimeout(function(){ 
+//                         activeNavLink.classList.add('bottom-border');
+//                     }, 500);
+//             } else {
+//                 activeNavLink.classList.add('lightest-grey-background');
+//             }
+//             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(8)");
             
-            setTimeout(function(){
-                selectedNavLink.classList.remove('hvr-underline-from-center');
-            }, 1000);
+//             setTimeout(function(){
+//                 selectedNavLink.classList.remove('hvr-underline-from-center');
+//             }, 1000);
 
-// contribute        
-        } else if (current == '/contribute') {
-          var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-            var activeNavLink = document.querySelector(".no_subcontent:nth-child(7)");
-            if (viewportWidth > 767) {
-                setTimeout(function(){ 
-                        activeNavLink.classList.add('bottom-border');
-                    }, 500);
-            } else {
-                activeNavLink.classList.add('lightest-grey-background');
-            }
-            var selectedNavLink = document.querySelector(".no_subcontent:nth-child(7)");
+// // contribute        
+//         } else if (current == '/contribute') {
+//           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+//             var activeNavLink = document.querySelector(".no_subcontent:nth-child(8)");
+//             if (viewportWidth > 767) {
+//                 setTimeout(function(){ 
+//                         activeNavLink.classList.add('bottom-border');
+//                     }, 500);
+//             } else {
+//                 activeNavLink.classList.add('lightest-grey-background');
+//             }
+//             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(8)");
             
-            setTimeout(function(){
-                selectedNavLink.classList.remove('hvr-underline-from-center');
-            }, 1000);
+//             setTimeout(function(){
+//                 selectedNavLink.classList.remove('hvr-underline-from-center');
+//             }, 1000);
             
-    }
+//     }
 
 
 
@@ -576,3 +658,6 @@ gsap.from(".link-wrapper-wrapper", {
       markers:false
     }
 }) 
+
+
+

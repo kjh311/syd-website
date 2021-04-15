@@ -8,7 +8,11 @@
 <link href="https://fonts.gstatic.com" rel="preconnect" />
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<style type="text/css">.content_title {
+<style type="text/css">.accordion-button {
+        font-size: 1.3rem;
+    }
+    
+    .content_title {
         display: none;
     }
     .blue-heading-text {
@@ -42,14 +46,14 @@ hyphens: auto;
 <div class="container-fluid" style="width: 100%;">
 <div class="row">
 <div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
-<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  border-radius:20px;"><a href="/community">CONNECT</a><br />
-<a class="indent" href="/membership-form">Membership Form</a><br />
+<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  border-radius:20px;"><a href="/community">Join</a><br />
+<a class="indent" href="/membership-form">Connect</a><br />
 <a class="double-indent " href="/membership">Membership</a><br />
 <a class="indent active-side-link" href="/interest-groups">Interest Groups</a><br />
 <a class="indent " href="/judaica">Judaica Shop</a><br />
 <a class="indent" href="/sisterhood">Sisterhood</a><br />
 <a class="double-indent" href="/sisterhood-contact">Contact</a><br />
-<a class="indent" href="/chavurot">Chavurot</a></div>
+<!--<a class="indent" href="/chavurot">Chavurot</a>--></div>
 </div>
 
 <div class="col-12 col-lg-9 order-1 order-lg-2 right-column">
@@ -57,52 +61,13 @@ hyphens: auto;
 
 <p>At TBT, one of the ways that we help people connect to their community is through shared intrests. There are so many ways to get involved with fellow congregants, as you study Torah or Jewish History and culture, grow beautiful produce for Hopelink in our garden, play games in our Mah Jongg or “Chosen Meeple” groups, sing with the choir, or find another way to get people engaged with each other. If you’re interested in something – and you don’t see it here – feel free to get in touch below and we’ll help you get it going!</p>
 
-<div id="accordion" style="margin-top: 60px;"><!--1-->
-<div class="card">
-<div class="card-header" id="headingOne">
-<h5 class="mb-0"><button aria-controls="collapseOne" aria-expanded="true" class="accordion-button btn btn-link text-white" data-target="#collapseOne" data-toggle="collapse">Hiking</button></h5>
-</div>
-
-<div aria-labelledby="headingOne" class="collapse show" data-parent="#accordion" id="collapseOne" style="">
-<div class="card-body">
-<p>Need motivation to get outside? Come hiking with us. We’ll explore local trails and parks (<1 hour drive) and enjoy the outdoors together.  Contact: <a href="mailto:Cliff.Cantor@outlook.com%C2%A0" style="color: var(--link-color) !important;">Cliff.Cantor@outlook.com </a></p>
-</div>
-</div>
-</div>
-<!--2-->
-
-<div class="card">
-<div class="card-header" id="heading2">
-<h5 class="mb-0"><button aria-controls="collapse2" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapse2" data-toggle="collapse">TBT Garden Club</button></h5>
-</div>
-
-<div aria-labelledby="heading2" class="collapse" data-parent="#accordion" id="collapse2" style="">
-<div class="card-body">
-<p>The TBT garden club meets throughout the year to tour gardens, attend the Flower and Garden Show, have garden discussions and do garden projects. Each event is coordinated by a member.  In addition, we have an annual Chanukah luncheon with a garden gift exchange. Contact <a href="mailto:tbtconnects@templebnaitorah.org%C2%A0" style="color: var(--link-color) !important;">tbtconnects@templebnaitorah.org </a></p>
-</div>
-</div>
-</div>
-<!--3-->
-
-<div class="card">
-<div class="card-header" id="heading3">
-<h5 class="mb-0"><button aria-controls="collapse3" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapse3" data-toggle="collapse">French Speakers Group</button></h5>
-</div>
-
-<div aria-labelledby="heading3" class="collapse" data-parent="#accordion" id="collapse3" style="">
-<div class="card-body">
-<p>This group invites all those wishing to practice their French conversation skills, whether just starting out, polishing rusty memories or enjoying a certain competence.  All are welcome to come and share this lovely language. Contact Jennifer Stock at <a href="mailto:jlmstock@comcast.net" style="color: var(--link-color) !important;">jlmstock@comcast.net</a>. </p>
-</div>
-</div>
-</div>
-<!--4-->
-
+<div id="accordion" style="margin-top: 60px;"><!--4-->
 <div class="card">
 <div class="card-header" id="heading4">
-<h5 class="mb-0"><button aria-controls="collapse4" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapse4" data-toggle="collapse">Sisterhood</button></h5>
+<h5 class="mb-0"><button aria-controls="collapse4" aria-expanded="true" class="accordion-button btn btn-link text-white" data-target="#collapse4" data-toggle="collapse">Sisterhood</button></h5>
 </div>
 
-<div aria-labelledby="heading4" class="collapse" data-parent="#accordion" id="collapse4" style="">
+<div aria-labelledby="heading4" class="collapse show" data-parent="#accordion" id="collapse4" style="">
 <div class="card-body">
 <p>The mission of the Sisterhood of Temple B’nai Torah is to build connections between the women of Sisterhood to each other and, in turn, the Temple, our community and the world-at-large, as part of Women of Reform Judaism.  We achieve this goal by providing opportunities for spiritual, social and intellectual growth.  Contact: Sarah Rose at <a href="mailto:sarahshoshanarose@gmail.com" style="color: var(--link-color) !important;">sarahshoshanarose@gmail.com</a></p>
 </div>
@@ -130,7 +95,7 @@ hyphens: auto;
 
 <div aria-labelledby="heading6" class="collapse" data-parent="#accordion" id="collapse6" style="">
 <div class="card-body">
-<p>The many layers of Biblical text are filled with stories and images both challenging and inspirational.  Join Rabbi Lipper on Shabbat morning in the Library at TBT as he leads us on an exploration of the Books of the TaNaKh.  We are moving book by book through the pages of the Hebrew Bible in hopes of uncovering the deeper messages of a text we call our own. Contact: Rabbi Lipper at <a href="mailto:rabbilipper@templebnaitorah.org" style="color: var(--link-color) !important;">rabbilipper@templebnaitorah.org</a> </p>
+<p>The many layers of Biblical text are filled with stories and images both challenging and inspirational.  Join Rabbi Sydney on Shabbat mornings in the Library at TBT as he leads us on an exploration of the Books of the TaNaKh.  We are moving book by book through the pages of the Hebrew Bible in hopes of uncovering the deeper messages of a text we call our own. Contact: Rabbi Sydney at <a href="mailto:rabbilipper@templebnaitorah.org" style="color: var(--link-color) !important;">rabbisydney@templebnaitorah.org</a> </p>
 </div>
 </div>
 </div>
@@ -199,33 +164,31 @@ hyphens: auto;
 </div>
 </div>
 </div>
-<!--12-->
 
 <div class="card">
 <div class="card-header" id="heading12">
-<h5 class="mb-0"><button aria-controls="collapse12" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapse12" data-toggle="collapse">Shabbat Dinner Club</button></h5>
+<h5 class="mb-0"><button aria-controls="collapse12" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapse12" data-toggle="collapse">Usher and Greeter Trainings</button></h5>
 </div>
 
 <div aria-labelledby="heading12" class="collapse" data-parent="#accordion" id="collapse12" style="">
 <div class="card-body">
-<p>Share Shabbat with dinner, challah, wine and conversation with up to seven other members of the TBT community.  Sign up and we will match individuals, couples and families for a Shabbat dinner at a member’s home.  Depending on the number of Shabbat Dinner Club members, you may dine with a different grouping each meal.  The Shabbat Dinner Club is a delightfully relaxed way to share Shabbat, broaden friendships at TBT, and deepen your sense of community.  Contact <a href="mailto:TBTConnects@templebnaitorah.org" style="color: var(--link-color) !important;">TBTConnects@templebnaitorah.org</a>. </p>
+<p>Would you be interested in greeting congregants and guests at our Shabbat Services or other events? You can volunteer once, twice or as often as you like. For more information <a href="/volunteer" style="color: var(--text-blue);">click here.</a></p>
 </div>
 </div>
 </div>
-<!--13-->
 
 <div class="card">
 <div class="card-header" id="heading13">
-<h5 class="mb-0"><button aria-controls="collapse13" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapse13" data-toggle="collapse">Choir</button></h5>
+<h5 class="mb-0"><button aria-controls="collapse13" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapse13" data-toggle="collapse">Social Action</button></h5>
 </div>
 
 <div aria-labelledby="heading13" class="collapse" data-parent="#accordion" id="collapse13" style="">
 <div class="card-body">
-<p>Do you like to sing? Please consider giving of yourself, your time and your good energy to enhance our TBT services by joining the choir. Share in the joy of Shabbat through singing sacred music and make new friendships too.  If you can hold your pitch and are available most Sunday afternoons – you’re in. </p>
+<p>We are committed to Tikkun Olam (Repair the World) and join together throughout the year to improve our broader community. <a href="/tikun-olam" style="color: var(--link-color) !important;">Learn more</a> about our decades long involvement in social action and join TOWG – our Tikkun Olam Working Group.</p>
 </div>
 </div>
 </div>
-<!--14-->
+<!--12--><!--14-->
 
 <div class="card">
 <div class="card-header" id="heading14">
@@ -244,14 +207,21 @@ hyphens: auto;
 </div>
 <script>
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(7)");
     if (viewportWidth > 767) {
-            activeNavLink.classList.add('bottom-border');
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(7)");
+                var previous  = document.querySelector(".no_subcontent:nth-child(6)");
+                var previous2 = document.querySelector(".no_subcontent:nth-child(5");
+                activeNavLink.classList.add('bottom-border');
+                previous.classList.remove('bottom-border');
+                previous2.classList.remove('bottom-border');
+            }, 1000);
     } else {
         activeNavLink.classList.add('lightest-grey-background');
     }
 </script>
-<style type="text/css">#nav_section>.no_subcontent:nth-child(6)>a  {
+<style type="text/css">#nav_section>.no_subcontent:nth-child(7)>a  {
             color: var(--link-color) !important;
         }
 </style>

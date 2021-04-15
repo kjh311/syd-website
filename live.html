@@ -1,0 +1,24 @@
+<p>Update this content.</p>
+<script>
+                jQuery(window).on('load', function() {
+                        $j(".header_slider").addClass('header_slider_final_position');
+                });
+ </script>
+<style type="text/css">#nav_section>li:nth-child(4)>a  {
+            color: var(--link-color) !important;
+        }
+</style>
+<script>
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(4)");
+    if (viewportWidth > 767) {
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(4)");
+                var next = document.querySelector(".no_subcontent:nth-child(5)");
+                activeNavLink.classList.add('bottom-border');
+                next.classList.remove('bottom-border');
+            }, 1000);
+    } else {
+        activeNavLink.classList.add('lightest-grey-background');
+    }
+</script>

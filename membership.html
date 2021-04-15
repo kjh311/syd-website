@@ -280,33 +280,38 @@
 
 <div class="center"> </div>
 
-<div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
+<div class="col-12 col-lg-4 order-2 order-lg-1 left-column">
 <div class="text-primary " style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"> </div>
 
-<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"><a href="/community">CONNECT</a><br />
-<a class="indent " href="/membership-form">Membership Form</a><br />
+<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"><a href="/community">Join</a><br />
+<a class="indent" href="/membership-form">Connect</a><br />
 <a class="double-indent active-side-link" href="/membership">Membership</a><br />
 <a class="indent" href="/interest-groups">Interest Groups</a><br />
 <a class="indent " href="/judaica">Judaica Shop</a><br />
 <a class="indent" href="/sisterhood">Sisterhood</a><br />
 <a class="double-indent" href="/sisterhood-contact">Contact</a><br />
-<a class="indent" href="/chavurot">Chavurot</a></div>
+<!--<a class="indent" href="/chavurot">Chavurot</a>--></div>
 </div>
 
 <div class="col-12 col-lg-9 order-1 order-lg-2 right-column">  <!--col--></div>
 <!--row--><a class="text-center mx-auto" id="dues-table" style="color: var(--text-blue); font-size: 1.5em; text-align: center;"></a></div>
-<!--container-->
-<script>
+<!--container--> <script>
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
+    var activeNavLink = document.querySelector(".no_subcontent:nth-child(7)");
     if (viewportWidth > 767) {
-            activeNavLink.classList.add('bottom-border');
+        setTimeout(function(){ 
+                var activeNavLink = document.querySelector(".no_subcontent:nth-child(7)");
+                var previous  = document.querySelector(".no_subcontent:nth-child(6)");
+                var previous2 = document.querySelector(".no_subcontent:nth-child(5");
+                activeNavLink.classList.add('bottom-border');
+                previous.classList.remove('bottom-border');
+                previous2.classList.remove('bottom-border');
+            }, 1000);
     } else {
         activeNavLink.classList.add('lightest-grey-background');
     }
 </script>
-
-<style type="text/css">#nav_section>.no_subcontent:nth-child(6)>a  {
+<style type="text/css">#nav_section>.no_subcontent:nth-child(7)>a  {
             color: var(--link-color) !important;
         }
 </style>
