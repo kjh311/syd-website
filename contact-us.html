@@ -11,6 +11,32 @@
 <style type="text/css">.join-container a{
         color: var(--text-blue) !important;
     }
+    .newsletter-div {
+        padding: 10px;
+        background: #c6c6c6;
+    }
+    .lower {
+        border-width: 0px 3px 3px 3px; 
+        border-style: solid;
+        border-color: #DADFE4;
+    }
+    .upper {
+        border-width: 3px 3px 0px 3px; 
+        border-style: solid;
+        border-color: #DADFE4;
+    }
+    .lower::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        width: 100%;
+        height: 30px;
+        background: #c6c6c6;
+        /*clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 100% 0%);*/
+        z-index: 100;
+            -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+                    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    }
     .search-bar, .subscribe-form {
         padding: 3vh 3vw;
         border: 2px solid var(--dark-grey);
@@ -47,17 +73,17 @@ Bellevue WA 98008<br />
 <h4 class="text-blue" style="text-align: left;">We are looking forward for the opportunity to connect with you and learn more about you and your interest in our community. Please use the message box to let us know more about what you are looking for and how we can best help you get connected!</h4>
 
 <div alt="" class="fck_widget_contact" contenteditable="false"><script src="https://www.google.com/recaptcha/api.js"></script><script>
-            function onSubmitemail60789f0ac09ba() {
-                 document.getElementById("frmemail60789f0ac09ba").submit();
+            function onSubmitemail6079d33caa6b4() {
+                 document.getElementById("frmemail6079d33caa6b4").submit();
                }
             </script>
-<form action="https://templebnaitorah.shulcloud.com/contact_us.php" class="contact_form" id="frmemail60789f0ac09ba" method="post">
+<form action="https://templebnaitorah.shulcloud.com/contact_us.php" class="contact_form" id="frmemail6079d33caa6b4" method="post">
 <fieldset><input name="destination" type="hidden" value="" />
 <div><label>Your Name: </label><input name="vars[name]" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" type="text" value="" /></div>
 
 <div><label>Your Email: </label><input name="vars[email]" type="text" value="" /></div>
 
-<div style="display:none;"><label>URL: </label><input name="url" type="text" value="email60789f0ac09ba" /></div>
+<div style="display:none;"><label>URL: </label><input name="url" type="text" value="email6079d33caa6b4" /></div>
 
 <div style="display:none;"><label>Website: </label><input name="website" type="text" value="" /></div>
 
@@ -70,6 +96,10 @@ Bellevue WA 98008<br />
 </form>
 </div>
 
+<br />
+<br />
+
+<div class="d-flex justify-content-between">
 <div id="link-wrapper" style="float: left; margin-right: 20px;"><a href="/about-us">About</a><br />
 <a class="indent" href="/vision">Our Vision</a><br />
 <a class="indent" href="/our-people">Our People</a><br />
@@ -81,6 +111,17 @@ Bellevue WA 98008<br />
 <a class="indent" href="/our-history">Our History</a><br />
 <!--<a class="double-indent" href="/wall-of-connections">Wall of Connections Art Gallery</a><br />--> <a class="indent" href="/membership-form">Join Our Community</a><br />
 <a class="indent active-side-link" href="/contact-us">Contact Us</a></div>
+
+<div class="newsletter-div d-flex flex-column justify-content-center align-items-center">
+<div class="upper" style="background: #c6c6c6; padding: 5vh 5vw; text-align:center;">
+<h3>Subscribe To Our Weekly Email</h3>
+
+<p>Our Weekly Email will keep you up to date on everything going on with TBT.</p>
+<img src="https://images.shulcloud.com/14479/uploads/subscribe.png" style="width:50%; text-align:center; margin: 0 auto;" /></div>
+
+<div class="lower d-flex justify-content-center align-items-center" style="position: relative; background-color: #349DE8 !important;  padding: 8vh 0; text-align:center; width: 100%;"><a class="subscription-button hover-grow-no-shadow" href="/member/subscriptions" style="padding: 20px; border-radius: 5px; background-color: #164363; color: #fff !important;">Subscribe!</a></div>
+</div>
+</div>
 </div>
 
 <div class="col-12">
@@ -121,7 +162,6 @@ Bellevue WA 98008<br />
 </div>
 </div>
 <!-- #main-content --></div>
-</div>
 <script>
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
@@ -150,3 +190,4 @@ Bellevue WA 98008<br />
             }
         }
 </style>
+</div>

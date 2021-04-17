@@ -1791,6 +1791,11 @@ li {
     border-radius: 25px !important;
 }
 
+
+.hvr-outline-out-info:before {
+    border: #18A2B8 solid 4px !important;
+    border-radius: 25px !important;
+}
 .hvr-outline-out-orange:before {
     border: var(--orange) solid 4px !important;
     border-radius: 25px !important;
