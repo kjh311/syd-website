@@ -1,6 +1,34 @@
 TRELLO:  https://trello.com/b/Lc5rGZb2/temple-website
 
 
+4-16
+
+Fonts on index slider 'less bubbly' font, letters are too round shaped
+
+Doesn't care about google search not being able to search yahrzeit spreadsheet.
+
+/tikun-olam page, sitemap at top
+
+change link to tent-city-4 to /homelessness and put tent-city-4 info on homelessness page
+
+bold words on ACT page are new pages, immigrant rights, gun responsibility, LGBTQ
+
+'going green/ stuff goes to environmental justice page
+
+picture that syd wanted taken out (do jewish) she wants on 'learn' page
+
+/index sub for cloud pics 'square' pictures (choose 3)
+
+
+
+
+
+
+
+
+
+
+
 SHULCLOUD TRAINING NOTES (4-13-21)
 
 Sandbox for shulcloud: https://templebnaitorah.shulslive.shulcloud.com/
@@ -9,7 +37,7 @@ No more than 3 clicks to get anywhere
 
 If asking for a donation, make it clear what is being asked for, make it easier to donate from the 'contribute' page. Change to 'Donate', also on menu bar. Change to Donate from 'support TBT'
 
-Change donate link to https://templebnaitorah.shulcloud.com/payment.php
+
 
 Make sure the first thing non members see is what you want them to know about you most: friendly, welcoming
 
@@ -17,33 +45,40 @@ Make sure the first thing non members see is what you want them to know about yo
 
 Perhaps take some links from the bottom of index and put towards the top.
 
-ADD GOOGLE ANALYTICS!!!  Look at analytics for old site, find 10-12 most popular, and make those the nicest looking. Greg Lokner
+  
 
 
-Switch out Do Jewish slide and go back to pic of syd holding the scroll, or homepagepic2
+<!-- Switch out Do Jewish slide and go back to pic of syd holding the scroll, or homepagepic2 -->
 
 
-Ocean wave section too much space at bottom
+<!-- Ocean wave section too much space at bottom -->
 
-Our TBT Family Spread wider
+<!-- Our TBT Family Spread wider -->
 
-Add new logo
+<!-- Add new logo -->
 
-too much space between clegy on /clergy
+<!-- too much space between clegy on /clergy -->
+ 
 
 
 
-Syd's notes (4-11-21)
-
-/home page:
+<!-- /home page:
     'Our TBT Family' formatting
 
 /clergy: 
-    cantor david formatting
+    cantor david formatting -->
+
+
+<!-- /act page 'live is underline, previous page -->
 
 
 
 
+
+
+
+
+<!-- Find pictures for the header slider, put slider above the word 'Live' or 'Pray', then content below that -->
 
 
 
@@ -96,22 +131,22 @@ http://thenewcode.com/690/Simple-CSS-3D-Carousel-Gallery
 /contact form should connect to contact@temple (only goes to site admin or specific name, might have to ask Anna)
 
 
-fix mobile logo animation, wrong place.  Tree instead of pomagranet
+
 
 
 MUST HAVES: 
 
-check on different browsers / devices
 
-home slider seems different sizes on other people computers, part of text is cut off
 
-people sign up to newsletters through /subscriptions
 
-menu animates to a X on click
 
-go through entire site on smallest phone
 
-check load times while throttling at 3G
+
+
+
+
+
+
 
 Sub cloud building pictures for new pictures
 
@@ -129,9 +164,9 @@ new pic of Nestor on /staff
 
 DESIGN FIXES BUT NOT ESSENTIAL:
 
-turn brand logo into /home link
 
-Add database spreadsheet for /learn pics? And for previous weeks' youtube vids on /tots?
+
+
 
 should i put links at bottom of footer with my link and designer's?
 
