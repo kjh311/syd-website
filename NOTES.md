@@ -1,32 +1,9 @@
 TRELLO:  https://trello.com/b/Lc5rGZb2/temple-website
 
 
-4-16
-
-Fonts on index slider 'less bubbly' font, letters are too round shaped
-
-Doesn't care about google search not being able to search yahrzeit spreadsheet.
-
-/tikun-olam page, sitemap at top
-
-change link to tent-city-4 to /homelessness and put tent-city-4 info on homelessness page
-
-bold words on ACT page are new pages, immigrant rights, gun responsibility, LGBTQ
-
-'going green/ stuff goes to environmental justice page
-
-picture that syd wanted taken out (do jewish) she wants on 'learn' page
-
-/index sub for cloud pics 'square' pictures (choose 3)
 
 
-
-
-
-
-
-
-
+4-23
 
 
 SHULCLOUD TRAINING NOTES (4-13-21)
