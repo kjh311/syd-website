@@ -27,7 +27,7 @@
 }
 
 .search-bar-small {
-    height: 0px;
+    height: 0px !important;
     transition: all 0.5s;
     overflow: hidden;
     padding: 0 !important;
@@ -52,16 +52,20 @@
     /*border: 2px solid var(--link-color) !important;*/
 }
 
-.search-submit-button {
+.search-submit-button, .search-submit-button-bottom {
     margin: 0 !important;
     padding: 0 !important;
     margin-top: 7px;
     border: none;
-    animation: fadeIn 500ms 1800ms both;
     background: #fff !important;
     border-radius: 5px;
     left: 2vw;
 }
+
+.search-submit-button{
+    animation: fadeIn 1000ms 2200ms both;
+}
+
 
 .search-container button:focus {
     border: none;
@@ -97,9 +101,21 @@
     transition: all 0.7s    ;
 }
 
+.search-button-small {
+        height: 0 !important;
+    /*margin: 0;*/
+    transition: all 0.7s    ;
+}
+
 .search-input-big {
      height: 46px !important;
      margin: 5px 1vw;
+     transition: all 0.7s   ;
+}
+
+.search-button-big {
+     height: 30px !important;
+     /*margin: 5px 1vw;*/
      transition: all 0.7s   ;
 }
 
@@ -336,6 +352,10 @@
 
 .orange-background {
     background: var(--orange) !important;
+}
+
+.info-background {
+    background: #18a2b8 !important;
 }
 
 .blue-background {
@@ -892,7 +912,30 @@ li {
 
 .navbar-top-links {
     /*opacity: 0;*/
+    
 }
+
+.navbar-top-links-text {
+    color: var(--text-blue) !important;
+    transition: all 0.3s;
+    font-size: 1rem;
+    padding: 0 0.5vw;
+    
+}
+
+#events-nav {
+    animation: fadeIn 1000ms 1800ms both;
+}
+
+#my-account-nav {
+    animation: fadeIn 1000ms 2000ms both;
+}
+
+.navbar-top-links-text:hover {
+    color: var(--link-color) !important;
+    transition: all 0.3s;
+    text-decoration: none !important;
+} 
 
 
 
@@ -1092,6 +1135,10 @@ li {
     /*-o-transition: all 200ms ease-in-out;*/
 }
 
+
+
+
+
 /*TABS*/
 
 
@@ -1160,6 +1207,8 @@ li {
     /*margin: -40px 0;*/
     -o-object-fit: cover;
     object-fit: cover;
+    width: 100% !important;
+    min-width: 100% !important;
     
 
     /*object-position: 20% 10%;*/
@@ -1167,8 +1216,8 @@ li {
     /*overflow: hidden;*/
 }
 
-.header_slider_wrapper, .header_slider, .slipperySlidder, .sy-box, .sy-slides-wrap, .sy-slides-crop {
-     -webkit-user-select: none !important; -moz-user-select: none !important; -ms-user-select: none !important; user-select: none !important; 
+.header_slider_wrapper, .header_slider, .slipperySlidder, .sy-box, .sy-slides-wrap, .sy-slides-crop, .sy-list, .sy-slide {
+     width: 100% !important; min-width: 100% !important;-webkit-user-select: none !important; -moz-user-select: none !important; -ms-user-select: none !important; user-select: none !important; 
 }
 
 
@@ -1184,48 +1233,7 @@ li {
 
 }
 
-.header_slider_wrapper {
 
-    /*background: black;*/
-    /*background: url(https://images.shulcloud.com/14479/uploads/loading-white-gif-2a.gif);*/
-    /*background-position: center center;*/
-    /*background-repeat: no-repeat;*/
- 
-    /*-webkit-animation: fadeIn 300ms both;*/
-    /*animation: fadeIn 2000ms 2000ms both;*/
-    /*animation: fadeIn 1000ms  both*/
-    /*background-size: contain;*/
-
-    /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 96%, 0 0);*/
-    /*clip-path: polygon(0 0, 100% 0, 100% 96%, 0 96%, 0 0);*/
-    /* -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5), -4px 4px 4px rgba(0, 0, 0, 0.5) !important;*/
-    /*box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5), -4px 4px 4px rgba(0, 0, 0, 0.5) !important;*/
-}
-
-.sy-controls {
-    /*display: none !important;*/
-}
-
-
-.header_slider {
-    opacity: 0;
-    -webkit-transform: translate3d(-20%, 0, 0);
-    transform: translate3d(-20%, 0, 0);
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-
-
-
-}
-
-.header_slider_final_position {
-    opacity: 1;
-    -webkit-transform: translate3d(0%, 0, 0);
-    transform: translate3d(0%, 0, 0);
-    /*-webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5), -4px 4px 4px rgba(0, 0, 0, 0.5) !important;*/
-    /*box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5), -4px 4px 4px rgba(0, 0, 0, 0.5) !important;   */
-}
 
 
 
