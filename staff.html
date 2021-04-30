@@ -14,11 +14,15 @@
 <style type="text/css">section a{
         color: var(--text-blue) !important;
     }
+    
     @media only screen and (max-width: 1000px) {
         #link-wrapper {
             width: 100%;
         }
         
+    }
+    @media only screen and (max-width: 767px) {
+        /*link-wrapper*/
     }
     @media only screen and (max-width: 639px) {
         .rounded-full>img {
@@ -161,7 +165,10 @@
 </div>
 </section>
 
-<div id="link-wrapper" style="float:left; margin-right: 20px; border-radius: 20px;"><a href="/about-us">About</a><br />
+<section>
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 col-md-4 order-2 order-md-1" id="link-wrapper" style="border-radius: 20px;"><a href="/about-us">About</a><br />
 <a class="indent" href="/vision">Our Vision</a><br />
 <a class="indent" href="/our-people">Our People</a><br />
 <a class="double-indent" href="/board">Board of Directors</a><br />
@@ -173,8 +180,10 @@
 <a class="indent" href="/membership-form">Join Our Community</a><br />
 <a class="indent" href="/contact-us">Contact Us</a></div>
 
-<div class="text-center d-flex justify-content-center flex-column "><a class="hvr  hvr-outline-out hvr-outline-out-blue blue-background poofy-button" href="/board">Board of Directors</a> <a class="hvr  hvr-outline-out hvr-outline-out-blue blue-background poofy-button" href="/clergy">Our Clergy</a><br />
-<!--<a class="btn blue-buttons ripplelink btn-lg hover-grow" href="/board" role="button" style="width: auto; margin: 20px; text-decoration: none;" type="button">Board of Directors</a> <a class="btn blue-buttons ripplelink btn-lg  hover-grow" href="/clergy" role="button" style="width: auto; margin: 20px; text-decoration: none;" type="button">Clergy</a>--></div>
+<div class="text-center d-flex justify-content-center flex-column col-12 col-md-8 order-1 order-md-2"><a class="hvr  hvr-outline-out hvr-outline-out-blue blue-background poofy-button" href="/board">Board of Directors</a> <a class="hvr  hvr-outline-out hvr-outline-out-blue blue-background poofy-button" href="/clergy">Our Clergy</a></div>
+</div>
+</div>
+</section>
 <script>
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
