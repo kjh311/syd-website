@@ -229,18 +229,19 @@
 </div>
 </div>
 </div>
-<script>
-    jQuery(window).on('load', function() {
+
+<p>// <script>
+//     jQuery(window).on('load', function() {
         
-        $('.nav-item').click(function(){
-            if($(this).hasClass('active'){
-                $(this).addClass('white');
-                $(this).siblings().removeClass('white').addClass('light-grey');
-            });
-      });    
+//         $('.nav-item').click(function(){
+//             if($(this).hasClass('active'){
+//                 $(this).addClass('white');
+//                 $(this).siblings().removeClass('white').addClass('light-grey');
+//             });
+//       });    
        
-    });     
-     </script><!--</div>--><!--</div>-->
+//     });     
+//      </script> <!--</div>--><!--</div>-->
 <style type="text/css">.asyncGallery {
       position: fixed;
       top: 0;
@@ -861,15 +862,15 @@
     new AsyncGallery();
     
     
-    </script><script>
+    </script><!--SLIDER FADE IN--> <script>
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
     if (viewportWidth > 767) {
         setTimeout(function(){ 
                 var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
-                activeNavLink.classList.add('bottom-border');
-                var previous = document.querySelector(".no_subcontent:nth-child(5)");
-                previous.classList.remove('bottom-border');
+                activeNavLink.classList.add('bottom-border').classList.remove('hvr-underline-from-center');
+                // var previous = document.querySelector(".no_subcontent:nth-child(5)")
+                // previous.classList.remove('bottom-border').classList.add('hvr-underline-from-center');
             }, 1000);
     } else {
         activeNavLink.classList.add('lightest-grey-background');
@@ -879,8 +880,8 @@
             color: var(--link-color) !important;
         }
 </style>
-<!--SLIDER FADE IN--><script>
+<script>
                 jQuery(window).on('load', function() {
                         $j(".header_slider").addClass('header_slider_final_position');
                 });
- </script>
+ </script></p>
