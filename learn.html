@@ -568,112 +568,8 @@
                 })
  </script>
 <p> </p>
-<!--Get Photo info from google Spreadsheet:--><script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script><script type="text/javascript">  
-// $( document ).ready(function() {
-   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script><script type="text/javascript">  
 
-// USING GOOGLE SHEET AS A DATABASE:
-
-//   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1irCooaDFbFa8JlbC1nkfFM4y2AHKon0ipUCspaAkGpc/edit?usp=sharing';
-  
-//   var jsonUl = document.getElementById('json-ul');
-
-//   function init() {
-//     Tabletop.init( {
-//       key: publicSpreadsheetUrl,
-//       callback: showInfo,
-//       simpleSheet: true 
-//     } )
-//   }
-  
-//   var carousel = $('.carousel');
-  
-//   function showInfo(data, tabletop) {
-
-//     for (var i = 0; i < data.length; i++) {
-        
-        // var learnImageLink = data[i].learn_image_link;
-        // var imageText = data[i].image_text;
-        // // var imageTextNode = document.createTextNode(imageText);
-        // // carousel.appendChild(imageText);
-        //       var el_span = document.createElement('span');
-        //     el_span.setAttribute('class', 'bold');
-        //     el_span.appendChild(document.createTextNode(imageText));
-        //      carousel.appendChild(el_span);
-        // alert(learnImageLink);
-        // alert(imageText);
-        // alert('jhgkjh')
-        // alert(data[i].learn_image_link);
-        
-        
-       
-        
-        
-        
-        
-        // var header = document.createElement('h3');
-        // var currentName = data[i].name;
-        // var headerName = document.createTextNode(currentName);
-        // header.appendChild(headerName);
-        // var currentDateOfDeath = data[i].date_of_death;
-        // var currentBriefComments = data[i].brief_comments;
-        // var currentPersonalPage = data[i].more_info;
-        // var currentImage = data[i].image_link;
-        // var entry = document.createElement('li');
-        // var lineBreak = document.createElement("br");
-        // entry.style.listStyleType = "none";
-        // entry.style.textAlign = "center";
-        // entry.classList.add('json-li');
-        // console.log(currentImage);
-        
-        // if(currentName) {
-        //     var el_span = document.createElement('span');
-        //     el_span.setAttribute('class', 'bold');
-        //     el_span.appendChild(document.createTextNode(currentName));
-        //      entry.appendChild(el_span);
-        // }
-        
-        // if(currentImage) {
-        //     entry.appendChild(document.createElement("br"));
-        //     // var currentPhoto = '<img class="current-photo' src="https://previews.123rf.com/images/kiuikson/kiuikson1608/kiuikson160800101/62132275-portrait-of-sexy-man-in-black-suit.jpg" />
-        //     var currentPhoto = document.createElement('img');
-        //     currentPhoto.setAttribute('class', 'current-photo hover-grow-no-shadow');
-        //     currentPhoto.setAttribute('src', currentImage);
-        //     // alert('image of ' + currentName)
-        //     entry.appendChild(currentPhoto);
-        // }
-        
-        
-        // entry.appendChild(document.createElement("br"));
-        // entry.appendChild(document.createTextNode(currentDateOfDeath));
-        
-        // if(currentBriefComments) {
-        //     entry.appendChild(document.createElement("br"));
-        //     var el_span = document.createElement('span');
-        //     el_span.setAttribute('class', 'italic');
-        //     el_span.appendChild(document.createTextNode(currentBriefComments));
-        //     entry.appendChild(el_span);
-        // }
-        
-        // if(currentPersonalPage) {
-        //     entry.appendChild(document.createElement("br"));
-        //     var el_span = document.createElement('span');
-        //     var personalPageLink = document.createElement('a');
-        //     // personalPageLink.attr('target', '_blank');
-        //     personalPageLink.setAttribute('class', 'link-color');
-        //     el_span.appendChild(personalPageLink);
-        //     personalPageLink.href = currentPersonalPage;
-        //     personalPageLink.appendChild(document.createTextNode("Read more about " + currentName + " →"));
-        //     // personalPageLink.appendChild(document.createTextNode("About " + currentName + " »"));
-        //     entry.appendChild(el_span);
-        // }
-        
-        // entry.appendChild(document.createElement("br"));
-        // var flameImg = document.createElement('img');
-        // flameImg.setAttribute('class', 'flame-img');
-        // flameImg.setAttribute('src', 'https://images.shulcloud.com/14479/uploads/candle.gif');
-        // entry.appendChild(flameImg)
-        // jsonUl.appendChild(entry);
     }
   }
 
@@ -695,22 +591,11 @@
   var carousel = document.getElementById('carousel-example-1z');
 
   function showInfo(data, tabletop) {
-    // alert('Successfully processed!')
-    console.log(data);
-    
-    
     
     for(var i = 0; i < data.length; i++){
-        // console.log(data[i].learn_image_link)
-        
+
         var learnImageLink = data[i].image_link;
         var imageText = data[i].image_text;
-        // var imageTextNode = document.createTextNode(imageText);
-        // carousel.appendChild(imageText);
-        
-        // var span = document.createElement('span');
-        //  carousel.innerHTML = "<span id='carousel-span'>span</span>";
-        // var span = document.getElementById('carousel-span');
         
         var carouselItem = document.createElement('div');
         carouselItem.setAttribute('class', 'carousel-item');
@@ -720,48 +605,20 @@
         }
         
         carousel.appendChild(carouselItem);
-        // carousel.innerHTML += carouselItem;
         
        var currentPhoto = document.createElement('img');
             currentPhoto.setAttribute('class', 'carouselImg');
             currentPhoto.setAttribute('src', learnImageLink);
-            // alert('image of ' + currentName)
             carouselItem.appendChild(currentPhoto);
-            // carouselItem.innerHTML += currentPhoto;
-        // carouselImage.setAttribute("id", "carousel-image"+[i]);
-        // console.log(carouselImage);
-        // // document.getElementById('carousel-image'+[i]).src = learnImageLink;
-        // carouselImage.src = learnImageLink;
-        
-        // carouselItem.appendChild(carouselImage);
-        
-        // var subTextDiv = document.createElement('div');
-        // subTextDiv.setAttribute('class', 'sub-text-div');
-        var subText = document.createElement('h4');
-        subText.setAttribute('class', 'sub-text');
-        subText.innerHTML = imageText;
-        carouselItem.appendChild(subText);
-        
+            
+            
+        if(imageText){
+            var subText = document.createElement('h4');
+             subText.setAttribute('class', 'sub-text');
+             subText.innerHTML = imageText;
+             carouselItem.appendChild(subText);            
+        }
 
-        
-        
-        
-        // var imageText = data[i].image_text;
-        // var imageTextNode = document.createTextNode(imageText);
-        // carousel.appendChild(imageTextNode);
-        
-        
-        
-            //   var el_span = document.createElement('span');
-            // el_span.setAttribute('class', 'bold');
-            // el_span.appendChild(document.createTextNode(imageText));
-            //  carousel.appendChild(el_span);
-        // alert(learnImageLink);
-        // alert(imageText);
-        // alert('jhgkjh')
-        // alert(data[i].learn_image_link);
-        
-        
         
     }
     

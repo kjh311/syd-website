@@ -72,7 +72,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet" />
 <div class="container-fluid" style="width: 100% !important;">
 <div class="row">
-<div class="col-12 col-lg-9 offset-lg-3"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="top-youtube" frameborder="0" src="https://www.youtube.com/embed/PfHFPIKW67U"></iframe></div>
+<div class="col-12 col-lg-9 offset-lg-3" id="current-tot-shabbot-video"> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" class="top-youtube" frameborder="0" id="currentTotVidIframe"></iframe>"</div>
 
 <div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
 <div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"><a href="/learn">Lifelong Learning</a><br />
@@ -143,4 +143,49 @@
     } else {
         activeNavLink.classList.add('lightest-grey-background');
     }
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script><script type="text/javascript">  
+
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', init)
+});
+
+
+
+</script><script><script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script><script type="text/javascript">    
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1HIGhz6TBNfsE-VDPACnsQZWs7Mm0488SM-5BmdSsXI4/edit#gid=0';
+
+  function init() {
+    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
+  
+  
+  var currentTotVideo = document.getElementById('current-tot-shabbot-video');
+
+  function showInfo(data, tabletop) {
+      
+      console.log(data);
+    
+    for(var i = 0; i < data.length; i++){
+        
+        
+        if(data[i].current_week_tot_shabbot_video_embed_link){
+                var currentVidLink = data[i].current_week_tot_shabbot_video_embed_link;
+                var currentVidIframe = document.getElementById('currentTotVidIframe');
+                currentVidIframe.setAttribute('src', currentVidLink);
+        }
+
+        
+
+        
+    }
+    
+    
+    
+  }
+
+  window.addEventListener('DOMContentLoaded', init)
 </script>
