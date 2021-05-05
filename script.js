@@ -4,9 +4,61 @@ var navLink = document.querySelectorAll("#nav_section>.no_subcontent");
 var navSection = document.getElementById("nav_section");
 var homeButton = document.querySelectorAll("#nav_section>.no_subcontent:nth-child(1)>a");
 var firstNavLink = document.querySelector(".no_subcontent:nth-child(1)>a");
+var homeNavLi = document.querySelector(".no_subcontent:nth-child(1)>a");
+var homeNav = document.querySelector(".no_subcontent:nth-child(1)");
+var askNavLi = document.querySelector(".no_subcontent:nth-child(2)>a");
+var prayNavLi = document.querySelector(".no_subcontent:nth-child(3)>a");
+var playNavLi = document.querySelector(".no_subcontent:nth-child(4)>a");
+var actNavLi = document.querySelector(".no_subcontent:nth-child(5)>a");
+var learnNavLi = document.querySelector(".no_subcontent:nth-child(6)>a");
+var joinNavLi = document.querySelector(".no_subcontent:nth-child(7)>a");
+var donateNavLi = document.querySelector(".no_subcontent:nth-child(8)>a");
 var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 var navbar = document.getElementById("mainnav");
 var content = document.getElementById("content");
+
+// var askSubLinks = "<ul><li><a href='/vision'>Our Vision</a></li></ul>";
+// homeNav.appendChild(askSubLinks);
+
+
+// TOOLTIPS:
+homeNavLi.setAttribute('data-toggle', 'tooltip');
+homeNavLi.setAttribute('title', 'Home Page');
+homeNavLi.setAttribute('data-placement', 'top');
+
+askNavLi.setAttribute('data-toggle', 'tooltip');
+askNavLi.setAttribute('data-html', 'true');
+askNavLi.setAttribute('delay', '3200');
+askNavLi.setAttribute('title', 'Our Vision, Our People, Board of Directors, Clergy, Staff, Our Location, Directions, Join our Community, Contact Us');
+askNavLi.setAttribute('data-placement', 'top');
+
+prayNavLi.setAttribute('data-toggle', 'tooltip');
+prayNavLi.setAttribute('title', 'Livestream, Participate, Sponsor an Oneg or Kiddush Luncheon, B-Mitzvah Process, Yahrzeits');
+prayNavLi.setAttribute('data-placement', 'top');
+
+playNavLi.setAttribute('data-toggle', 'tooltip');
+playNavLi.setAttribute('title', 'TBT Committees, Sisterhood, Contact Sisterhood');
+playNavLi.setAttribute('data-placement', 'top');
+
+actNavLi.setAttribute('data-toggle', 'tooltip');
+actNavLi.setAttribute('title', 'Social Action, Combate Homelessness, Fight Hunger, Racial Equality, Gun Responsibility, Immigrant Rights, Pride at TBT, Volunteer, Mitzvah Corp, Environmental Justice, Covid 19');
+actNavLi.setAttribute('data-placement', 'top');
+
+learnNavLi.setAttribute('data-toggle', 'tooltip');
+learnNavLi.setAttribute('title', 'Lifelong Learning, Tots, Kids, Teens, Adults, B-Mitzvah Process');
+learnNavLi.setAttribute('data-placement', 'top');
+
+joinNavLi.setAttribute('data-toggle', 'tooltip');
+joinNavLi.setAttribute('title', 'Join, Connect, Membership, Interest Groups, Judaica Shop');
+joinNavLi.setAttribute('data-placement', 'top');
+
+donateNavLi.setAttribute('data-toggle', 'tooltip');
+donateNavLi.setAttribute('title', 'Donate to TBT');
+donateNavLi.setAttribute('data-placement', 'top');
+
+// homeNavLi.classList.add('tooltip');
+// var toolTipText1 = "<span class='tooltiptext'>Tooltip text</span>";
+// homeNavLi.appendChild(toolTipText1);
 
 
 if ( viewportWidth > 767) {
@@ -113,7 +165,7 @@ ul.appendChild(myAccountButton);
 
 searchIcon = document.createElement('li');
 searchIcon.setAttribute('class', 'search-container');
-searchIcon.innerHTML = '<button onclick="openSearchBar()" class="search-submit-button" ><i class="fa fa-search"></i></button>';
+searchIcon.innerHTML = '<button onclick="openSearchBar()" class="search-submit-button" ><i class="fa fa-search fa-search-1"></i></button>';
 ul.appendChild(searchIcon);
 
 
@@ -129,7 +181,13 @@ navbar.appendChild(templeLogoDiv);
 if ( "onhashchange" in window  && window.screen.width < 767) {
     temple_name_mobile = document.createElement('div');
     temple_name_mobile.setAttribute('id', "temple_name_mobile_div")
-    temple_name_mobile.innerHTML = '<iframe style="width: 90vw; height: 50px;"  id="temple-name-mobile-animation" loop="false"  src="https://kjh311.github.io/Temple_Name_Mobile/" title="#"></iframe>';
+    var templeNameP = document.createElement('p');
+    templeNameP.setAttribute('class', 'temple-name-p');
+    templeNameP.innerHTML = "TEMPLE B'NAI TORAH";
+    temple_name_mobile.appendChild(templeNameP);
+    
+    
+    // temple_name_mobile.innerHTML "<h1>TEMPLE B'NAI TORAH</h1>";
     content.appendChild(temple_name_mobile);
     
     
