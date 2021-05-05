@@ -20,6 +20,15 @@
 .content_title {
     display: none;
 }
+#previous-vids-ul {
+    padding: 0 !important;
+}
+.previous-li {
+     list-style-type: none !important;
+     padding: 0 !important;
+     text-align: center;
+     margin: 5vh auto;
+}
 .solomike-fancy{
         font-family: 'Oregano', cursive !important;
         color: #2881B6 !important;
@@ -72,7 +81,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet" />
 <div class="container-fluid" style="width: 100% !important;">
 <div class="row">
-<div class="col-12 col-lg-9 offset-lg-3" id="current-tot-shabbot-video"> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" class="top-youtube" frameborder="0" id="currentTotVidIframe"></iframe>"</div>
+<div class="col-12 col-lg-9 offset-lg-3" id="current-tot-shabbot-video"> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" class="top-youtube youtube-vid" frameborder="0" id="currentTotVidIframe"></iframe></div>
 
 <div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
 <div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"><a href="/learn">Lifelong Learning</a><br />
@@ -121,11 +130,15 @@
 
 <div class="container-fluid">
 <div class="row">
-<div class="col-12 col-lg-9 offset-lg-3 d-flex justify-content-center flex-column">
+<div class="col-12 col-lg-9 offset-lg-3 d-flex justify-content-center flex-column align-items-center">
 <h3 style="color: var(--text-blue); text-align: center;">More Videos from Previous Weeks</h3>
 
 <p> </p>
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="top-youtube" frameborder="0" src="https://www.youtube.com/embed/3O7YUs75J08"></iframe></div>
+<!--PREVIOUS WEEKS' TOT VIDEOS-->
+
+<ul id="previous-vids-ul">
+</ul>
+<!--<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="top-youtube youtube-vid" frameborder="0" src="https://www.youtube.com/embed/MDKph2XhqXc"></iframe>--></div>
 </div>
 </div>
 
@@ -178,7 +191,30 @@
                 currentVidIframe.setAttribute('src', currentVidLink);
         }
 
-        
+        if(data[i].tot_shabbot_videos_from_previous_weeks_embed_link) {
+            var previousLink = data[i].tot_shabbot_videos_from_previous_weeks_embed_link;
+            // alert(previousLink);
+            var previousUl = document.getElementById('previous-vids-ul');
+            var previousLi = document.createElement('li');
+            previousLi.setAttribute('class', 'previous-li')
+            previousUl.appendChild(previousLi);
+            // var firstLi = document.getElementById('first-li');
+            var previousVid = document.createElement('iframe');
+            // var vidLi = document.createElement('li');
+            var previousVid = document.createElement('iframe');
+            // var previousVid = "blah"
+            previousVid.setAttribute('class', 'youtube-vid top-youtube');
+            previousVid.setAttribute('src', previousLink);
+            previousVid.setAttribute('allowfullscreen', "true");
+            previousVid.setAttribute('frameborder', "0");
+            previousVid.setAttribute('allow', "accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture");
+            // par.innerHTML = 'blah';
+            // vidLi.setAttribute('class' 'previous-li')
+            // vidLi.innerHTML = '<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="top-youtube youtube-vid" frameborder="0" src="https://www.youtube.com/embed/MDKph2XhqXc"></iframe>'
+            previousLi.appendChild(previousVid)
+            
+            
+        }
 
         
     }
