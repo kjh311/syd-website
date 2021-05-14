@@ -1,4 +1,5 @@
 var activeNavLink = document.querySelectorAll(".no_subcontent");
+// var mainNav = document.getElementById('mainnav');
 var selectedNav = document.querySelectorAll(".selected_nav");
 var navLink = document.querySelectorAll("#nav_section>.no_subcontent");
 var navSection = document.getElementById("nav_section");
@@ -7,6 +8,7 @@ var firstNavLink = document.querySelector(".no_subcontent:nth-child(1)>a");
 var homeNavLi = document.querySelector(".no_subcontent:nth-child(1)>a");
 var homeNav = document.querySelector(".no_subcontent:nth-child(1)");
 var askNavLi = document.querySelector(".no_subcontent:nth-child(2)>a");
+var askNav = document.querySelector(".no_subcontent:nth-child(2)");
 var prayNavLi = document.querySelector(".no_subcontent:nth-child(3)>a");
 var playNavLi = document.querySelector(".no_subcontent:nth-child(4)>a");
 var actNavLi = document.querySelector(".no_subcontent:nth-child(5)>a");
@@ -15,58 +17,163 @@ var joinNavLi = document.querySelector(".no_subcontent:nth-child(7)>a");
 var donateNavLi = document.querySelector(".no_subcontent:nth-child(8)>a");
 var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 var navbar = document.getElementById("mainnav");
+var navSection = document.getElementById('nav_section');
 var content = document.getElementById("content");
 
-// var askSubLinks = "<ul><li><a href='/vision'>Our Vision</a></li></ul>";
-// homeNav.appendChild(askSubLinks);
+
+// NAVBAR DROPDOWNS:
+for(var i = 1; i < 7; i++){
+    navLink[i].classList.add('drop-down');
+    var dropdownContent = document.createElement('div');
+dropdownContent.setAttribute('class', 'dropdown-content');
+dropdownContent.setAttribute('id', 'dropdown-content-'+i);
+
+navLink[i].appendChild(dropdownContent);
+// navLink[i].childNodes[0].classList.add('dropbtn');
+    // navLink[i].classList.add(i);
+}
+
+for(var i = 0; i < 8; i++){
+    navLink[i].classList.add('drop-down-'+i);
+}
+
+askNavLi.classList.add('dropbtn');
+prayNavLi.classList.add('dropbtn');
+playNavLi.classList.add('dropbtn');
+actNavLi.classList.add('dropbtn');
+learnNavLi.classList.add('dropbtn');
+joinNavLi.classList.add('dropbtn');
+
+var askInner = document.getElementById('dropdown-content-1')
+askInner.innerHTML = "<a href='vision'>Our Vision</a><a href='/our-people'>Our People</a><a href='/board'>Board of Directors</a><a href='/clergy'>Clergy</a><a href='/staff'>Staff</a><a href='/our-location'>Our Location</a>";
+
+
+var prayInner = document.getElementById('dropdown-content-2')
+prayInner.innerHTML = "<a href='/livestream'>Livestream</a><a href='/participate'>Participate</a><a href='/oneg-kiddush'>Sponsor an Oneg or Kiddush Luncheon</a><a href='/bnai-mitzvah'>B-Mitzvah Process</a><a href='/yahrzeits'>Yahrzeits</a>";
+
+
+var playInner = document.getElementById('dropdown-content-3')
+playInner.innerHTML = "<a href='/live'>Play</a><a href='/chavurot-2'>TBT Committees</a><a href='/sisterhood'>Sisterhood</a><a href='/sisterhood-contact'>Sisterhood Contact</a>"
+
+
+var actInner = document.getElementById('dropdown-content-4')
+actInner.innerHTML = "<a href='/homelessness'>Combate Homelessness</a><a href='/fighting-hunger'>Fight Hunger</a><a href='/racial-equality'>Racial Equality</a><a href='/gun-responsibility'>Gun Responsibility</a><a href='/immigrant-rights'>Immigrant Rights</a><a href='/pride'>Pride at TBT</a><a href='/mitzvah-corps'>Mitzvah Corp</a><a href='/environmental-justice'>Environmental Justice</a><a href='/vaccine'>Vaccine Awareness</a><a href='/volunteer'>Volunteer</a>";
+
+
+var learnInner = document.getElementById('dropdown-content-5')
+learnInner.innerHTML = "<a href='/tots'>Tots</a><a href='/kids'>Kids</a><a href='/teens'>Teens</a><a  href='/adult'>Adults</a><a href='/bnai-mitzvah'>B-Mitzvah Process</a>"
+
+var joinInner = document.getElementById('dropdown-content-6')
+joinInner.innerHTML = "<a href='/membership-form'>Connect</a><a  href='/membership'>Membership</a><a  href='/interest-groups'>Interest Groups</a><a  href='/judaica'>Judaica Shop</a>"
+// for(var i = 0; i < 8; i++){
+//         navLink[i].classList.add("hvr-underline-from-center");
+//     }
+
+
+// var askSubMenu = document.createElement('div');
+
+// askSubMenu.setAttribute('class', 'ask-sub-menu');
+// askSubMenu.setAttribute('class', 'sub-menu');
+
+// askSubMenu.setAttribute('class', 'sub-menu-collapse');
+// .sub-menu-collapse
+// askSubMenu.setAttribute('class', 'd-flex');
+// askSubMenu.setAttribute('class', 'flex-colunn');
+// askSubMenu.setAttribute('id', 'ask-sub-menu');
+// askSubMenu.innerHTML = "<ul class='sub-menu-ul' id='ask-sub-menu-ul><li class='sub-menu-li'><a href='/vision' class='sub-menu-a'>Our Vision</a></li></ul>"
+// askSubMenu.innerHTML = "<a href='/vision' class='sub-menu-a'>Our Vision</a>"
+// var askSubMenuInnerHTML = "<ul class='sub-menu-ul' id='ask-sub-menu-ul'></ul>"
+// askSubMenu.innerHTML = askSubMenuInnerHTML;
+// var askLi = "<li class='sub-menu-li'>"
+// askSubMenuInnerHTML.appendChild(askLi);
+// var askLink1 = "<a href='/vision' class='sub-menu-a'>Our Vision</a>"
+// askLi.innerHTML = askLink1;
+// askNav.appendChild(askSubMenu);
+
+// askNavLi.onmouseover = function(){
+//     askSubMenu.classList.remove('sub-menu-collapse')
+// };
+// askNavLi.onmouseout = function(){ 
+//     askSubMenu.classList.add('sub-menu-collapse')
+// };
+
+// var askSubMenu = "<div class='ask-sub-menu sub-menu' id='ask-sub-menu'><ul class='sub-menu-ul' id='ask-sub-menu-ul><li class='sub-menu-li'><a href='/vision' class='sub-menu-a'>Our Vision</a></li></ul></div>"
+
+
+
+// navbar.classList.add('navbar')
+// navSection.classList.add('navbar-nav')
+// askNav.classList.add('nav-item');
+// askNav.classList.add('dropdown');
+// askNavLi.classList.add('nav-link')
+// askNavLi.classList.add('dropdown-toggle')
+// askNavLi.setAttribute('id', 'navbarDropdown')
+// askNavLi.setAttribute('role', 'button')
+// askNavLi.setAttribute('data-toggle', 'dropdown')
+// askNavLi.setAttribute('aria-haspopup', 'true')
+// askNavLi.setAttribute('aria-expanded', 'false')
+// var dropMenu = document.createElement('div');
+// dropMenu.setAttribute('class', 'dropdown-menu');
+// dropMenu.setAttribute('aria-labelledby', 'navbarDropdown');
+// askNavLi.appendChild(dropMenu)
+// dropMenu.innerHTML = "<a class='dropdown-item' href='#'>Action</a>"
+
+
+
+
+// var askSubMenu = "<div class='dropdown-menu' aria-labelledby='navbarDropdown'><a class='dropdown-item' href='#'>Action</a><a class='dropdown-item' href='#'>Another action</a><div class='dropdown-divider'></div><a class='dropdown-item' href='#'>Something else here</a></div>"
+// askNavLi.appendChild(askSubMenu);
+
+// <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        //   Dropdown
+        // </a>
 
 
 // TOOLTIPS:
-homeNavLi.setAttribute('data-toggle', 'tooltip');
-homeNavLi.setAttribute('title', 'Home Page');
-homeNavLi.setAttribute('data-placement', 'top');
+// homeNavLi.setAttribute('data-toggle', 'tooltip');
+// homeNavLi.setAttribute('title', 'Home Page');
+// homeNavLi.setAttribute('data-placement', 'top');
 
-askNavLi.setAttribute('data-toggle', 'tooltip');
-askNavLi.setAttribute('data-html', 'true');
-askNavLi.setAttribute('delay', '3200');
-askNavLi.setAttribute('title', 'Our Vision, Our People, Board of Directors, Clergy, Staff, Our Location, Directions, Join our Community, Contact Us');
-askNavLi.setAttribute('data-placement', 'top');
+// askNavLi.setAttribute('data-toggle', 'tooltip');
+// askNavLi.setAttribute('data-html', 'true');
+// askNavLi.setAttribute('delay', '3200');
+// askNavLi.setAttribute('title', 'Our Vision, Our People, Board of Directors, Clergy, Staff, Our Location, Directions, Join our Community, Contact Us');
+// askNavLi.setAttribute('data-placement', 'top');
 
-prayNavLi.setAttribute('data-toggle', 'tooltip');
-prayNavLi.setAttribute('title', 'Livestream, Participate, Sponsor an Oneg or Kiddush Luncheon, B-Mitzvah Process, Yahrzeits');
-prayNavLi.setAttribute('data-placement', 'top');
+// prayNavLi.setAttribute('data-toggle', 'tooltip');
+// prayNavLi.setAttribute('title', 'Livestream, Participate, Sponsor an Oneg or Kiddush Luncheon, B-Mitzvah Process, Yahrzeits');
+// prayNavLi.setAttribute('data-placement', 'top');
 
-playNavLi.setAttribute('data-toggle', 'tooltip');
-playNavLi.setAttribute('title', 'TBT Committees, Sisterhood, Contact Sisterhood');
-playNavLi.setAttribute('data-placement', 'top');
+// playNavLi.setAttribute('data-toggle', 'tooltip');
+// playNavLi.setAttribute('title', 'TBT Committees, Sisterhood, Contact Sisterhood');
+// playNavLi.setAttribute('data-placement', 'top');
 
-actNavLi.setAttribute('data-toggle', 'tooltip');
-actNavLi.setAttribute('title', 'Social Action, Combate Homelessness, Fight Hunger, Racial Equality, Gun Responsibility, Immigrant Rights, Pride at TBT, Volunteer, Mitzvah Corp, Environmental Justice, Covid 19');
-actNavLi.setAttribute('data-placement', 'top');
+// actNavLi.setAttribute('data-toggle', 'tooltip');
+// actNavLi.setAttribute('title', 'Social Action, Combate Homelessness, Fight Hunger, Racial Equality, Gun Responsibility, Immigrant Rights, Pride at TBT, Volunteer, Mitzvah Corp, Environmental Justice, Covid 19');
+// actNavLi.setAttribute('data-placement', 'top');
 
-learnNavLi.setAttribute('data-toggle', 'tooltip');
-learnNavLi.setAttribute('title', 'Lifelong Learning, Tots, Kids, Teens, Adults, B-Mitzvah Process');
-learnNavLi.setAttribute('data-placement', 'top');
+// learnNavLi.setAttribute('data-toggle', 'tooltip');
+// learnNavLi.setAttribute('title', 'Lifelong Learning, Tots, Kids, Teens, Adults, B-Mitzvah Process');
+// learnNavLi.setAttribute('data-placement', 'top');
 
-joinNavLi.setAttribute('data-toggle', 'tooltip');
-joinNavLi.setAttribute('title', 'Join, Connect, Membership, Interest Groups, Judaica Shop');
-joinNavLi.setAttribute('data-placement', 'top');
+// joinNavLi.setAttribute('data-toggle', 'tooltip');
+// joinNavLi.setAttribute('title', 'Join, Connect, Membership, Interest Groups, Judaica Shop');
+// joinNavLi.setAttribute('data-placement', 'top');
 
-donateNavLi.setAttribute('data-toggle', 'tooltip');
-donateNavLi.setAttribute('title', 'Donate to TBT');
-donateNavLi.setAttribute('data-placement', 'top');
+// donateNavLi.setAttribute('data-toggle', 'tooltip');
+// donateNavLi.setAttribute('title', 'Donate to TBT');
+// donateNavLi.setAttribute('data-placement', 'top');
 
-// homeNavLi.classList.add('tooltip');
-// var toolTipText1 = "<span class='tooltiptext'>Tooltip text</span>";
-// homeNavLi.appendChild(toolTipText1);
+
+
 
 
 if ( viewportWidth > 767) {
     firstNavLink.innerHTML = '<img class="home-svg"  src="https://images.shulcloud.com/14479/uploads/home-icon-silhouette-blue.svg">';
     
-    for(var i = 0; i < 8; i++){
-        navLink[i].classList.add("hvr-underline-from-center");
-    }
+    // for(var i = 0; i < 8; i++){
+    //     navLink[i].classList.add("hvr-underline-from-center");
+    // }
 }
 
 if ( viewportWidth < 767) { 
@@ -77,7 +184,6 @@ if ( viewportWidth < 767) {
 
 navbar = document.getElementById("mainnav");
 
-// var bottomBorder = '<hr>';
 var blueHr = document.createElement("hr");
 blueHr.setAttribute("class", "blue-hr");
 
@@ -103,20 +209,15 @@ content.appendChild(blueHr);
             navbar = document.getElementById("mainnav");
             navbar.classList.add('bounce-in')
         } else {
-            // navbar.style.display = 'none';
-            // topNav.style.backgroundImage = "url('https://images.shulcloud.com/14479/uploads/greyBurger.png')";
+
         }
     }
-
-
-
 
 
 
 // Dynamically add stuff in navbar
 // DESKTOP:
 if ( "onhashchange" in window  && window.screen.width > 767) {
-    // window.onload = function() {
 
 
 navbar.style.padding = "75px 0 0 0";
@@ -131,7 +232,7 @@ address.setAttribute("id", "nav-address");
 address.setAttribute("class", "navbar-top-links");
 
 address.innerHTML = "15727 NE 4th Street • Bellevue, WA 98008 • (425) 603-9677";
-// address.innerHTML = "'15727 NE 4th Street ' + <span class="d-none d-md-block"> + '•' + </span><br class="d-block d-md-none" /> + ' Bellevue, WA 98008 • (425) 603-9677'";
+
 ul.appendChild(address);
 
 facebook = document.createElement("a");
@@ -187,9 +288,7 @@ if ( "onhashchange" in window  && window.screen.width < 767) {
     temple_name_mobile.appendChild(templeNameP);
     
     
-    // temple_name_mobile.innerHTML "<h1>TEMPLE B'NAI TORAH</h1>";
     content.appendChild(temple_name_mobile);
-    
     
     
     // add search:
@@ -197,7 +296,6 @@ if ( "onhashchange" in window  && window.screen.width < 767) {
     searchMobileLi.setAttribute('class', 'search-mobile-li no_subcontent');
     searchMobileLi.innerHTML = '<a href="#" onclick="openSearchBar()" class="search-mobile-button">Search</a>';
     navSection.appendChild(searchMobileLi);
-
 }
 
 
@@ -237,7 +335,6 @@ if(searchBar.classList.contains('search-bar-small')) {
 
 
 // PAGE SPECIFIC:
-
     var current = window.location.pathname;
 // homepage
     if (current == '/') {
@@ -291,8 +388,8 @@ if(searchBar.classList.contains('search-bar-small')) {
             setTimeout(function(){
                 selectedNavLink.classList.remove('hvr-underline-from-center');
             }, 1000);
-// live
-        } else if (current == '/live') {
+// play
+        } else if (current == '/live' || current == '/sisterhood' || current == '/sisterhood-contact' || current == '/chavurot-2') {
           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
             var activeNavLink = document.querySelector(".no_subcontent:nth-child(4)");
             if (viewportWidth > 767) {
@@ -309,7 +406,7 @@ if(searchBar.classList.contains('search-bar-small')) {
             }, 1000);
     
 // act        
-        } else if (current == '/tikun-olam' || current =='/environmental-justice' || current =='/homelessness' || current == '/volunteer' || current == '/chavurot-2' || current == '/mitzvah-corps'  || current == '/tikun-olam-2' || current == '/fighting-hunger' || current == '/racial-equality'  || current == '/gun-responsibility' || current == '/immigrant-rights' || current == '/pride' || current == '/vaccine') {
+        } else if (current == '/tikun-olam' || current =='/environmental-justice' || current =='/homelessness' || current == '/volunteer'  || current == '/mitzvah-corps'  || current == '/tikun-olam-2' || current == '/fighting-hunger' || current == '/racial-equality'  || current == '/gun-responsibility' || current == '/immigrant-rights' || current == '/pride' || current == '/vaccine') {
           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
             var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
             if (viewportWidth > 767) {
@@ -343,7 +440,7 @@ if(searchBar.classList.contains('search-bar-small')) {
             }, 1000);
             
 // join        
-        } else if (current == '/community' || current == '/membership-form' || current == '/membership' || current == '/interest-groups'  || current == '/judaica' || current == '/sisterhood' || current == '/sisterhood-contact'  || current == '/chavurot') {
+        } else if (current == '/community' || current == '/membership-form' || current == '/membership' || current == '/interest-groups'  || current == '/judaica'  || current == '/chavurot') {
           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
             var activeNavLink = document.querySelector(".no_subcontent:nth-child(7)");
             if (viewportWidth > 767) {
@@ -494,3 +591,44 @@ gsap.from(".link-wrapper-wrapper", {
 
 
 
+// NAVBAR DROPDOWN
+// navbar.classList.add('collapse');
+// navbar.classList.add('navbar-collapse');
+// navSection.classList.add('navbar-nav');
+// navSection.classList.add('mr-auto');
+// var askNav = document.querySelectorAll("#nav_section>.no_subcontent");
+// var prayNav = document.querySelector(".no_subcontent:nth-child(3)");
+// var playNav = document.querySelector(".no_subcontent:nth-child(4)");
+// var actNav = document.querySelector(".no_subcontent:nth-child(5)");
+// var learnNav = document.querySelector(".no_subcontent:nth-child(6)");
+// var joinNav = document.querySelector(".no_subcontent:nth-child(7)");
+
+// askNavLi.classList.add('dropdown');
+// askNavLi
+
+// askNav.classList.add('dropdown');
+// for(var i =0; i < askNav.length; i++){
+//     navLink.classList.add('nav-item');
+//     console.log('add class nav-item')
+// }
+
+// window.onload = function() {
+// var navLink = document.getElementsByClassName("no_subcontent"),
+
+//     // var buttons = document.getElementsByClassName("buttonSubmit"),
+//         len = navLink !== null ? navLink.length : 0,
+//         i = 0;
+//     for(i; i < len; i++) {
+//         navLink[i].className += "nav-item"; 
+//     }
+// }
+
+
+// prayNav.classList.add('dropdown');
+
+// <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+//           Dropdown
+//         </a>
+
+
+// var askSubMenu = "<div class='ask-sub-menu sub-menu' id='ask-sub-menu'><ul class='sub-menu-ul' id='ask-sub-menu-ul><li class='sub-menu-li'><a href='/vision' class='sub-menu-a'>Our Vision</a></li></ul></div>"
