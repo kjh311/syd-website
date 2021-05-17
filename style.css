@@ -39,11 +39,18 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #e2e0e0;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1000 !important;
   overflow: visible !important;
+  border: 2px solid var(--link-color);
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.3);
+  animation: scaleXIn 300ms both;
+  transition: all 0.3s;
+  text-align: center;
+  overflow: hidden;
+  
 }
 
 /* Links inside the dropdown */
@@ -54,14 +61,31 @@
   display: block;
   overflow: visible !important;
   z-index: 1000 !important;
+  transition: all 0.3s;
+  border-style: solid;
+  border-color: rgba(0,0,0,0);
+  border-width: 2px 0px;
+  padding: 1vh 2vw !important;
+  /*font-family: 'Secular One', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
+  /*text-transform: lowercase !important;*/
+  /*margin: 1vh 2vw;*/
+}
+
+.dropdown-content a::first-letter {
+    /*text-transform: uppercase !important;*/
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    /*background-color: #ddd;*/
+    background-color: #fff;
+    border-color: var(--link-color);
     z-index: 1000 !important;
+    transition: all 0.3s;
     
 }
+
+
 
 #sidebar_left{
     z-index: 1000 !important;
@@ -74,7 +98,10 @@
 }
 
 /* Show the dropdown menu on hover */
-.drop-down:hover .dropdown-content {display: block;}
+.drop-down:hover .dropdown-content {
+    display: block;
+    transition: all 0.3s;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 /*.drop-down:hover .dropbtn {*/
@@ -765,14 +792,14 @@ li {
 
 #mainnav {
     background-color: #fff;
-    height: 130px;
+    max-height: 130px;
     z-index: 10;
 
     position: relative;
 
     top: 0 !important;
 
-    max-height: 130px;
+    height: 130px;
 
     padding: 75px 0 0 0 !important;
     -webkit-transition: all 0.5s;
@@ -1605,6 +1632,16 @@ li {
     }
 }
 
+@keyframes scaleXIn {
+    0% {
+        transform: scale(1, 0);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
 
 
 /*COMMENT OUT*/
@@ -1859,7 +1896,9 @@ li {
 
     #mainnav {
         /*height: auto !important;*/
-        max-height: 90vh !important;
+        min-height: auto !important;
+        max-height: auto !important;
+        height: auto !important;
         z-index: 2000;
     }
 
@@ -1904,6 +1943,40 @@ li {
     /*body {*/
     /*    background: red;*/
     /*}*/
+    
+    .dropdown-content{
+        /*display: none !important;*/
+        position: relative !important;
+        display: block;
+    }
+    
+    #mainnav, #nav_section {
+        height: auto !important;
+        max-height: auto !important;
+        background: #F3F3F3 !important;
+    }
+    
+    
+    .dropdown-closed {
+        /*display: none !important;*/
+        transform: scaleY(0) !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        transition: all 0.3 !important;
+        
+    }
+    
+    .dropdown-open {
+        /*display: block !important;*/
+        transform: scaleY(1);
+        height: auto !important;
+        max-height: auto !important;
+   
+        /*overflow: hidden !important;*/
+        transition: all 0.3 !important;
+        
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+    }
     
     .sy-list>.sy-slide>img{
         height: 30vh !important;
@@ -1979,6 +2052,7 @@ li {
     #nav_section {
         flex-direction: column !important;
         padding: 0 0 2vh 0 !important;
+
     }
 
     #nav_section li {
@@ -2026,6 +2100,7 @@ li {
         width: 300px !important;
         max-width: 100% !important;
         height: auto !important;
+        max-height: auto !important;
         padding: 0 !important;
         left: auto !important;
         -webkit-transform: translateX(0%) !important;
@@ -2036,7 +2111,7 @@ li {
         -webkit-animation: bounceInDown 1000ms both;
         animation: bounceInDown 1000ms both;
             /*z-index: 2000 !important;*/
-            border: 2px solid var(--text-blue) !important;
+            /*border: 2px solid var(--text-blue) !important;*/
             /*z-index: 0;*/
     }
 
