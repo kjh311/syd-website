@@ -784,6 +784,10 @@ li {
     -o-transition: all 200ms ease-in-out;
 }
 
+.header_menu {
+        z-index: 2000 !important;
+}
+
 .home-svg, .home-svg svg, .home-svg path {
     /*height: 50px;*/
     /*margin-right: 10px;*/
