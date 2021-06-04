@@ -15,6 +15,16 @@
 
 /*DROPDOWN NAVBAR:*/
 /* Dropdown Button */
+
+.header_menu {
+    /*z-index: 0 !important;*/
+}
+#header_admin_menu_menu {
+    z-index: 2000 !important;
+}
+.ui-helper-hidden-accessible {
+    z-index: 2001 !important;
+}
 .dropbtn {
   /*background-color: #04AA6D;*/
   color: white;

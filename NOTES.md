@@ -3,6 +3,22 @@ TRELLO:  https://trello.com/b/Lc5rGZb2/temple-website
 
 
 
+5/16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 4-23
 
 

@@ -15,6 +15,12 @@
 * Browsers: last 4 version
 */
 
+#streamspot-player {
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+}
+
 .livestream-youtube{
         background: url(https://images.shulcloud.com/14479/uploads/loading1.gif);
         background-size: contain;
@@ -42,7 +48,7 @@
 </style>
 <div class="container-fluid">
 <div class="row">
-<div class="col-12 col-lg-4 order-2 order-lg-1">
+<div class="col-12 col-lg-4 order-4 order-lg-1">
 <div class="text-primary" id="link-wrapper" style=" d-inline   margin-bottom: 30px; border-radius:20px;"><a href="/worship">Pray</a><br />
 <a class="indent active-side-link" href="/livestream">Livestream</a><br />
 <a href="/participate">Participate</a><br />
@@ -69,11 +75,16 @@
 
 <p>We provide age-appropriate services and activities for High Holy Days as well as year-round festivities to engage all ages.</p>
 </div>
-</div>
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="container-fluid">-->
+<!--<div class="row">-->
+<div class="col-12 order-2 order-lg-3"><br />
+<iframe allowfullscreen="" frameborder="0" id="streamspot-player" src="https://player2.streamspot.com/?playerId=b437522d"></iframe><!--Livestream --><!--RESTREAM, currently not working:--><!--<div class="et_pb_code_inner livestream-feed" style="">--><!--<iframe allowfullscreen="" frameborder="0" height="100% !important" src="https://embed.restream.io/player/index.html?token=a47437d5429ef9ba8efed1db2850ab34" width="100% !important"></iframe>--><!--<iframe allowfullscreen="" frameborder="0" height="100% !important" src="rtmp://live.restream.io/live?token=re_2145354_d01daec24c8c5c8f96cf" width="100% !important"></iframe>--><!--<iframe allowfullscreen="" frameborder="0" height="100% !important" src="https://embed.restream.io/player/index.html?token=re_2145354_d01daec24c8c5c8f96cf" width="100% !important"></iframe>--><!--<p style="botom: -40px; position: absolute;">Powered by <a href="https://restream.io" style="color: #2881B6;">Restream.io</a></p>--></div>
 </div>
 
 <p> </p>
-<!--<div class="container-fluid">--><!--    <div class="row">--><!--    </div>--><!--</div>--><!--<div class="col-12 ">--><!--Livestream --><!--RESTREAM, currently not working:--><!--<div class="et_pb_code_inner livestream-feed" style=""><iframe allowfullscreen="" frameborder="0" height="100% !important" src="https://embed.restream.io/player/index.html?token=a47437d5429ef9ba8efed1db2850ab34" width="100% !important"></iframe>--><!--<p style="botom: -40px; position: absolute;">Powered by <a href="https://restream.io" style="color: #2881B6;">Restream.io</a></p>--><!--</div>-->
 
 <div class="col-12">
 <div class="alternate-links-div d-flex flex-column justify-content-center align-items-center" style="width: 100%; padding: 5vh 5vw; background: #E7BF3F;">
@@ -84,9 +95,9 @@
 <p>If you would like to access our feed directly without the same delay, you can also find it on these platforms. Make sure to click on the video to enable controls such as pause and fullscreen viewing:</p>
 
 <ul style="list-style-type:none">
-	<li><a href="https://www.youtube.com/channel/UCAI8ituiK8qcOwQIdV7wVdw?view_as=subscriber" style="color:var(--text-blue);" target="blank">CLICK HERE for YouTube</a></li>
-	<li><a href="https://www.facebook.com/TempleBnaiTorah" style="color:var(--text-blue);" target="blank">CLICK HERE for Facebook</a></li>
-	<li><a href="https://www.twitch.tv/templebnaitorah" style="color:var(--text-blue);" target="blank">CLICK HERE for Twitch</a></li>
+	<li style="list-style-type:none"><a href="https://www.youtube.com/channel/UCAI8ituiK8qcOwQIdV7wVdw?view_as=subscriber" style="color:var(--text-blue);" target="blank">CLICK HERE for YouTube</a></li>
+	<li style="list-style-type:none"><a href="https://www.facebook.com/TempleBnaiTorah" style="color:var(--text-blue);" target="blank">CLICK HERE for Facebook</a></li>
+	<li style="list-style-type:none"><a href="https://www.twitch.tv/templebnaitorah" style="color:var(--text-blue);" target="blank">CLICK HERE for Twitch</a></li>
 </ul>
 </div>
 
@@ -94,7 +105,9 @@
 
 <h3 class="text-center " style=" margin-top: 50px; color: #2881B6;">Below is a Youtube Playlist of Previous Kabbalat Shabbat Services</h3>
 
-<div class="embed-responsive livestream-youtube embed-responsive-16by9" style="z-index:999; display:block; width: 100%; height: 100%;"><iframe allowfullscreen="" class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLEuBdNnSHjrZLazABOyOHZzyOHEQ74bcs"></iframe></div>
+<p> </p>
+
+<div class="embed-responsive livestream-youtube embed-responsive-16by9" style="z-index:999; display:block; width: 100%; height: 100%;"><iframe allowfullscreen="" class="youtube-vid embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLEuBdNnSHjrZLazABOyOHZzyOHEQ74bcs"></iframe><!--<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/live_stream?channel=&lt;UCAI8ituiK8qcOwQIdV7wVdw&gt;" width="100%"></iframe>--></div>
 <!--</div>--><!--</div>--><script>
         var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
         activeNavLink.classList.add('bottom-border');
@@ -104,3 +117,10 @@
         }
 </style>
 </div>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-JFJ8FST2PX"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JFJ8FST2PX');
+</script></div>
