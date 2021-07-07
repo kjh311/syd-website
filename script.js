@@ -22,15 +22,15 @@ var content = document.getElementById("content");
 
 
 // NAVBAR DROPDOWNS:
+//DESKTOP:
+
 for(var i = 1; i < 7; i++){
     navLink[i].classList.add('drop-down');
     var dropdownContent = document.createElement('div');
-dropdownContent.setAttribute('class', 'dropdown-content');
-dropdownContent.setAttribute('id', 'dropdown-content-'+i);
+    dropdownContent.setAttribute('class', 'dropdown-content');
+    dropdownContent.setAttribute('id', 'dropdown-content-'+i);
+    navLink[i].appendChild(dropdownContent);
 
-navLink[i].appendChild(dropdownContent);
-// navLink[i].childNodes[0].classList.add('dropbtn');
-    // navLink[i].classList.add(i);
 }
 
 for(var i = 0; i < 8; i++){
@@ -38,33 +38,252 @@ for(var i = 0; i < 8; i++){
 }
 
 askNavLi.classList.add('dropbtn');
+askNavLi.classList.add('dropbtn-1');
 prayNavLi.classList.add('dropbtn');
+prayNavLi.classList.add('dropbtn-2');
 playNavLi.classList.add('dropbtn');
+playNavLi.classList.add('dropbtn-3');
 actNavLi.classList.add('dropbtn');
+actNavLi.classList.add('dropbtn-4');
 learnNavLi.classList.add('dropbtn');
+learnNavLi.classList.add('dropbtn-5');
 joinNavLi.classList.add('dropbtn');
+joinNavLi.classList.add('dropbtn-6');
+
+// if ( viewportWidth > 767) {
+
 
 var askInner = document.getElementById('dropdown-content-1')
-askInner.innerHTML = "<a href='vision'>Our Vision</a><a href='/our-people'>Our People</a><a href='/board'>Board of Directors</a><a href='/clergy'>Clergy</a><a href='/staff'>Staff</a><a href='/our-location'>Our Location</a>";
+askInner.innerHTML = "<a href='/about-us'>About Us</a><a href='/vision'>Our Vision</a><a href='/our-people'>Our People</a><a href='/board'>Board of Directors</a><a href='/clergy'>Clergy</a><a href='/staff'>Staff</a><a href='/our-location'>Our Location</a><a href='/directions'>Directions</a><a href='/our-history'>Our History</a><a href='/membership-form'>Join our Community</a><a href='/contact-us'>Contact Us</a>";
 
 
 var prayInner = document.getElementById('dropdown-content-2')
-prayInner.innerHTML = "<a href='/livestream'>Livestream</a><a href='/participate'>Participate</a><a href='/oneg-kiddush'>Sponsor an Oneg or Kiddush Luncheon</a><a href='/bnai-mitzvah'>B-Mitzvah Process</a><a href='/yahrzeits'>Yahrzeits</a>";
+prayInner.innerHTML = "<a href='/worship'>Worship</a><a href='/livestream'>Livestream</a><a href='/participate'>Participate</a><a href='/oneg-kiddush'>Sponsor an Oneg or Kiddush Luncheon</a><a href='/bnai-mitzvah'>B-Mitzvah Process</a><a href='/yahrzeits'>Yahrzeits</a>";
 
 
 var playInner = document.getElementById('dropdown-content-3')
-playInner.innerHTML = "<a href='/live'>Play</a><a href='/chavurot-2'>TBT Committees</a><a href='/sisterhood'>Sisterhood</a><a href='/sisterhood-contact'>Sisterhood Contact</a>"
+playInner.innerHTML = "<a href='/live'>Live</a><a href='/chavurot-2'>TBT Committees</a><a href='/interest-groups'>Interest Groups</a><a href='/sisterhood'>Sisterhood</a>"
 
 
 var actInner = document.getElementById('dropdown-content-4')
-actInner.innerHTML = "<a href='/homelessness'>Combate Homelessness</a><a href='/fighting-hunger'>Fight Hunger</a><a href='/racial-equality'>Racial Equality</a><a href='/gun-responsibility'>Gun Responsibility</a><a href='/immigrant-rights'>Immigrant Rights</a><a href='/pride'>Pride at TBT</a><a href='/mitzvah-corps'>Mitzvah Corp</a><a href='/environmental-justice'>Environmental Justice</a><a href='/vaccine'>Vaccine Awareness</a><a href='/volunteer'>Volunteer</a>";
+actInner.innerHTML = "<a href='/tikun-olam'>Social Action</a><a href='/homelessness'>Combat Homelessness</a><a href='/fighting-hunger'>Fight Hunger</a><a href='/racial-equality'>Racial Equality</a><a href='/gun-responsibility'>Gun Responsibility</a><a href='/immigrant-rights'>Immigrant Rights</a><a href='/pride'>Pride at TBT</a><a href='/mitzvah-corps'>Mitzvah Corp</a><a href='/environmental-justice'>Environmental Justice</a><a href='/vaccine'>Vaccine Awareness</a><a href='/volunteer'>Volunteer</a>";
 
 
 var learnInner = document.getElementById('dropdown-content-5')
-learnInner.innerHTML = "<a href='/tots'>Tots</a><a href='/kids'>Kids</a><a href='/teens'>Teens</a><a  href='/adult'>Adults</a><a href='/bnai-mitzvah'>B-Mitzvah Process</a>"
+learnInner.innerHTML = "<a href='/learn'>Lifelong Learning</a><a href='/tots'>Tots</a><a href='/kids'>Kids</a><a href='/teens'>Teens</a><a  href='/adults'>Adults</a><a href='/bnai-mitzvah'>B-Mitzvah Process</a>"
 
 var joinInner = document.getElementById('dropdown-content-6')
-joinInner.innerHTML = "<a href='/membership-form'>Connect</a><a  href='/membership'>Membership</a><a  href='/interest-groups'>Interest Groups</a><a  href='/judaica'>Judaica Shop</a>"
+joinInner.innerHTML = "<a href='/community'>Community</a><a href='/membership-form'>Connect</a><a href='/membership'>Membership</a><a  href='/judaica'>Judaica Shop</a>"
+
+
+// }
+
+
+// MOBILE DROPDOWN:
+if( viewportWidth < 767) {
+    askInner.classList.add('dropdown-closed');
+    prayInner.classList.add('dropdown-closed');
+    playInner.classList.add('dropdown-closed');
+    actInner.classList.add('dropdown-closed');
+    learnInner.classList.add('dropdown-closed');
+    joinInner.classList.add('dropdown-closed');
+    
+    var links = document.getElementsByClassName("dropbtn");
+        for (var i = 0; i < links.length; i++) {
+          links[i].removeAttribute("href");
+          
+        }
+        
+        var askLink = document.getElementsByClassName("dropbtn-1")[0];
+        var prayLink = document.getElementsByClassName("dropbtn-2")[0];
+        var playLink = document.getElementsByClassName("dropbtn-3")[0];
+        var actLink = document.getElementsByClassName("dropbtn-4")[0];
+        var learnLink = document.getElementsByClassName("dropbtn-5")[0];
+        var joinLink = document.getElementsByClassName("dropbtn-6")[0];
+        
+        askLink.addEventListener("click", function(){
+            if(askInner.classList.contains('dropdown-closed')){
+                   askInner.classList.remove('dropdown-closed');
+                   askInner.classList.add('dropdown-open');
+            } else {
+                 askInner.classList.remove('dropdown-open');
+                 askInner.classList.add('dropdown-closed');
+            }
+            if(prayInner.classList.contains('dropdown-open')){
+                prayInner.classList.remove('dropdown-open');
+                prayInner.classList.add('dropdown-closed');
+            }
+             if(playInner.classList.contains('dropdown-open')){
+                playInner.classList.remove('dropdown-open');
+                playInner.classList.add('dropdown-closed');
+            }
+             if(actInner.classList.contains('dropdown-open')){
+                actInner.classList.remove('dropdown-open');
+                actInner.classList.add('dropdown-closed');
+            }
+             if(learnInner.classList.contains('dropdown-open')){
+                learnInner.classList.remove('dropdown-open');
+                learnInner.classList.add('dropdown-closed');
+            }
+             if(joinInner.classList.contains('dropdown-open')){
+                joinInner.classList.remove('dropdown-open');
+                joinInner.classList.add('dropdown-closed');
+            }
+          });
+          
+          prayLink.addEventListener("click", function(){
+            if(prayInner.classList.contains('dropdown-closed')){
+                   prayInner.classList.remove('dropdown-closed');
+                   prayInner.classList.add('dropdown-open');
+            } else {
+                 prayInner.classList.remove('dropdown-open');
+                 prayInner.classList.add('dropdown-closed');
+            }
+            if(askInner.classList.contains('dropdown-open')){
+                askInner.classList.remove('dropdown-open');
+                askInner.classList.add('dropdown-closed');
+            }
+             if(playInner.classList.contains('dropdown-open')){
+                playInner.classList.remove('dropdown-open');
+                playInner.classList.add('dropdown-closed');
+            }
+             if(actInner.classList.contains('dropdown-open')){
+                actInner.classList.remove('dropdown-open');
+                actInner.classList.add('dropdown-closed');
+            }
+             if(learnInner.classList.contains('dropdown-open')){
+                learnInner.classList.remove('dropdown-open');
+                learnInner.classList.add('dropdown-closed');
+            }
+             if(joinInner.classList.contains('dropdown-open')){
+                joinInner.classList.remove('dropdown-open');
+                joinInner.classList.add('dropdown-closed');
+            }
+          });
+          
+          playLink.addEventListener("click", function(){
+            if(playInner.classList.contains('dropdown-closed')){
+                   playInner.classList.remove('dropdown-closed');
+                   playInner.classList.add('dropdown-open');
+            } else {
+                 playInner.classList.remove('dropdown-open');
+                 playInner.classList.add('dropdown-closed');
+            }
+            if(askInner.classList.contains('dropdown-open')){
+                askInner.classList.remove('dropdown-open');
+                askInner.classList.add('dropdown-closed');
+            }
+             if(prayInner.classList.contains('dropdown-open')){
+                prayInner.classList.remove('dropdown-open');
+                prayInner.classList.add('dropdown-closed');
+            }
+             if(actInner.classList.contains('dropdown-open')){
+                actInner.classList.remove('dropdown-open');
+                actInner.classList.add('dropdown-closed');
+            }
+             if(learnInner.classList.contains('dropdown-open')){
+                learnInner.classList.remove('dropdown-open');
+                learnInner.classList.add('dropdown-closed');
+            }
+             if(joinInner.classList.contains('dropdown-open')){
+                joinInner.classList.remove('dropdown-open');
+                joinInner.classList.add('dropdown-closed');
+            }
+          });
+          
+          actLink.addEventListener("click", function(){
+            if(actInner.classList.contains('dropdown-closed')){
+                   actInner.classList.remove('dropdown-closed');
+                   actInner.classList.add('dropdown-open');
+            } else {
+                 actInner.classList.remove('dropdown-open');
+                 actInner.classList.add('dropdown-closed');
+            }
+            if(askInner.classList.contains('dropdown-open')){
+                askInner.classList.remove('dropdown-open');
+                askInner.classList.add('dropdown-closed');
+            }
+             if(playInner.classList.contains('dropdown-open')){
+                playInner.classList.remove('dropdown-open');
+                playInner.classList.add('dropdown-closed');
+            }
+             if(prayInner.classList.contains('dropdown-open')){
+                prayInner.classList.remove('dropdown-open');
+                prayInner.classList.add('dropdown-closed');
+            }
+             if(learnInner.classList.contains('dropdown-open')){
+                learnInner.classList.remove('dropdown-open');
+                learnInner.classList.add('dropdown-closed');
+            }
+             if(joinInner.classList.contains('dropdown-open')){
+                joinInner.classList.remove('dropdown-open');
+                joinInner.classList.add('dropdown-closed');
+            }
+          });
+          
+          learnLink.addEventListener("click", function(){
+            if(learnInner.classList.contains('dropdown-closed')){
+                   learnInner.classList.remove('dropdown-closed');
+                   learnInner.classList.add('dropdown-open');
+            } else {
+                 learnInner.classList.remove('dropdown-open');
+                 learnInner.classList.add('dropdown-closed');
+            }
+            if(askInner.classList.contains('dropdown-open')){
+                askInner.classList.remove('dropdown-open');
+                askInner.classList.add('dropdown-closed');
+            }
+             if(playInner.classList.contains('dropdown-open')){
+                playInner.classList.remove('dropdown-open');
+                playInner.classList.add('dropdown-closed');
+            }
+             if(prayInner.classList.contains('dropdown-open')){
+                prayInner.classList.remove('dropdown-open');
+                prayInner.classList.add('dropdown-closed');
+            }
+             if(actInner.classList.contains('dropdown-open')){
+                actInner.classList.remove('dropdown-open');
+                actInner.classList.add('dropdown-closed');
+            }
+             if(joinInner.classList.contains('dropdown-open')){
+                joinInner.classList.remove('dropdown-open');
+                joinInner.classList.add('dropdown-closed');
+            }
+          });
+          
+          joinLink.addEventListener("click", function(){
+            if(joinInner.classList.contains('dropdown-closed')){
+                   joinInner.classList.remove('dropdown-closed');
+                   joinInner.classList.add('dropdown-open');
+            } else {
+                 joinInner.classList.remove('dropdown-open');
+                 joinInner.classList.add('dropdown-closed');
+            }
+            if(askInner.classList.contains('dropdown-open')){
+                askInner.classList.remove('dropdown-open');
+                askInner.classList.add('dropdown-closed');
+            }
+             if(playInner.classList.contains('dropdown-open')){
+                playInner.classList.remove('dropdown-open');
+                playInner.classList.add('dropdown-closed');
+            }
+             if(prayInner.classList.contains('dropdown-open')){
+                prayInner.classList.remove('dropdown-open');
+                prayInner.classList.add('dropdown-closed');
+            }
+             if(learnInner.classList.contains('dropdown-open')){
+                learnInner.classList.remove('dropdown-open');
+                learnInner.classList.add('dropdown-closed');
+            }
+             if(actInner.classList.contains('dropdown-open')){
+                actInner.classList.remove('dropdown-open');
+                actInner.classList.add('dropdown-closed');
+            }
+          });
+    
+    
+}
+
 // for(var i = 0; i < 8; i++){
 //         navLink[i].classList.add("hvr-underline-from-center");
 //     }
@@ -267,7 +486,7 @@ ul.appendChild(myAccountButton);
 searchIcon = document.createElement('li');
 searchIcon.setAttribute('class', 'search-container');
 searchIcon.innerHTML = '<button onclick="openSearchBar()" class="search-submit-button" ><i class="fa fa-search fa-search-1"></i></button>';
-ul.appendChild(searchIcon);
+// ul.appendChild(searchIcon);
 
 
 templeLogoDiv = document.createElement('div');
@@ -334,6 +553,13 @@ if(searchBar.classList.contains('search-bar-small')) {
 }
 
 
+
+
+
+
+
+// #nav_section>.no_subcontent:nth-child(3)>a 
+
 // PAGE SPECIFIC:
     var current = window.location.pathname;
 // homepage
@@ -347,7 +573,8 @@ if(searchBar.classList.contains('search-bar-small')) {
                     activeNavLink.classList.add('bottom-border');
                 }, 500);
         } else {
-            activeNavLink.classList.add('lightest-grey-background');
+            // activeNavLink.classList.add('lightest-grey-background');
+            activeNavLink.classList.remove('bottom-border');
         }
         var selectedNavLink = document.querySelector(".no_subcontent:nth-child(1)");
         
@@ -364,7 +591,9 @@ if(searchBar.classList.contains('search-bar-small')) {
                         activeNavLink.classList.add('bottom-border');
                     }, 500);
             } else {
-                activeNavLink.classList.add('lightest-grey-background');
+                // activeNavLink.classList.add('lightest-grey-background');
+                // activeNavLink.declaration.setProperty("color", "white", "important")
+                activeNavLink.classList.remove('bottom-border');
             }
             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(2)");
             
@@ -381,7 +610,8 @@ if(searchBar.classList.contains('search-bar-small')) {
                         activeNavLink.classList.add('bottom-border');
                     }, 500);
             } else {
-                activeNavLink.classList.add('lightest-grey-background');
+                // activeNavLink.classList.add('lightest-grey-background');
+                activeNavLink.classList.remove('bottom-border');
             }
             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(3)");
             
@@ -389,7 +619,7 @@ if(searchBar.classList.contains('search-bar-small')) {
                 selectedNavLink.classList.remove('hvr-underline-from-center');
             }, 1000);
 // play
-        } else if (current == '/live' || current == '/sisterhood' || current == '/sisterhood-contact' || current == '/chavurot-2') {
+        } else if (current == '/live' || current == '/sisterhood' || current == '/sisterhood-contact' || current == '/interest-groups' || current == '/chavurot-2') {
           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
             var activeNavLink = document.querySelector(".no_subcontent:nth-child(4)");
             if (viewportWidth > 767) {
@@ -397,7 +627,8 @@ if(searchBar.classList.contains('search-bar-small')) {
                         activeNavLink.classList.add('bottom-border');
                     }, 500);
             } else {
-                activeNavLink.classList.add('lightest-grey-background');
+                // activeNavLink.classList.add('lightest-grey-background');
+                activeNavLink.classList.remove('bottom-border');
             }
             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(4)");
             
@@ -414,7 +645,12 @@ if(searchBar.classList.contains('search-bar-small')) {
                         activeNavLink.classList.add('bottom-border');
                     }, 500);
             } else {
-                activeNavLink.classList.add('lightest-grey-background');
+                // activeNavLink.classList.add('lightest-grey-background');
+                // actNavLi.classList.add('dark-blue');
+                // activeNavLink.style.color = "blue";
+                // actNavLi.style.color = "blue";
+                // askNavLi.classList.add('brightness-filter');
+                activeNavLink.classList.remove('bottom-border');
             }
             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(5)");
             
@@ -431,7 +667,8 @@ if(searchBar.classList.contains('search-bar-small')) {
                         activeNavLink.classList.add('bottom-border');
                     }, 500);
             } else {
-                activeNavLink.classList.add('lightest-grey-background');
+                // activeNavLink.classList.add('lightest-grey-background');
+                activeNavLink.classList.remove('bottom-border');
             }
             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(6)");
             
@@ -440,7 +677,7 @@ if(searchBar.classList.contains('search-bar-small')) {
             }, 1000);
             
 // join        
-        } else if (current == '/community' || current == '/membership-form' || current == '/membership' || current == '/interest-groups'  || current == '/judaica'  || current == '/chavurot') {
+        } else if (current == '/community' || current == '/membership-form' || current == '/membership'  || current == '/judaica'  || current == '/chavurot') {
           var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
             var activeNavLink = document.querySelector(".no_subcontent:nth-child(7)");
             if (viewportWidth > 767) {
@@ -448,7 +685,8 @@ if(searchBar.classList.contains('search-bar-small')) {
                         activeNavLink.classList.add('bottom-border');
                     }, 500);
             } else {
-                activeNavLink.classList.add('lightest-grey-background');
+                // activeNavLink.classList.add('lightest-grey-background');
+                activeNavLink.classList.remove('bottom-border');
             }
             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(7)");
             
@@ -465,7 +703,8 @@ if(searchBar.classList.contains('search-bar-small')) {
                         activeNavLink.classList.add('bottom-border');
                     }, 500);
             } else {
-                activeNavLink.classList.add('lightest-grey-background');
+                // activeNavLink.classList.add('lightest-grey-background');
+                activeNavLink.classList.remove('bottom-border');
             }
             var selectedNavLink = document.querySelector(".no_subcontent:nth-child(8)");
             
@@ -632,3 +871,6 @@ gsap.from(".link-wrapper-wrapper", {
 
 
 // var askSubMenu = "<div class='ask-sub-menu sub-menu' id='ask-sub-menu'><ul class='sub-menu-ul' id='ask-sub-menu-ul><li class='sub-menu-li'><a href='/vision' class='sub-menu-a'>Our Vision</a></li></ul></div>"
+
+
+
