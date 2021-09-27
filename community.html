@@ -1,84 +1,205 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  rel="stylesheet"
+/>
+<link
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  rel="stylesheet"
+/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link
+  href="https://images.shulcloud.com/14479/uploads/tbt-icon.png"
+  rel="icon"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+  rel="stylesheet"
+/>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-<style type="text/css">.content_title {
-        display: none;
-    }
-.blue-font {
-        color: var(--text-blue) !important;
-    }
-    .card {
-        margin-top: 3vh;
-    }
+<link
+  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<style type="text/css">
+  .content_title {
+    /*display: none;*/
+  }
+  .blue-font {
+    color: var(--text-blue) !important;
+  }
+  .card {
+    margin-top: 3vh;
+  }
 </style>
-<div class="container-fluid" style="width: 100%;">
-<div class="row">
-<div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
-<div class="text-primary " id="link-wrapper" style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"><a class="active-side-link" href="/community">Join</a><br />
-<a class="indent" href="/membership-form">Connect</a><br />
-<a class="double-indent " href="/membership">Membership</a><br />
-<a class="indent" href="/interest-groups">Interest Groups</a><br />
-<a class="indent " href="/judaica">Judaica Shop</a><br />
-<a class="indent" href="/sisterhood">Sisterhood</a><br />
-<a class="double-indent" href="/sisterhood-contact">Contact</a><br />
-<!--<a class="indent" href="/chavurot">Chavurot</a>--></div>
-</div>
+<div class="container-fluid" style="width: 100%">
+  <div class="row">
+    <div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
+      <div
+        class="text-primary"
+        id="link-wrapper"
+        style=" d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"
+      >
+        <a class="active-side-link" href="/community">Join</a><br />
+        <a class="indent" href="/membership-form">Connect</a><br />
+        <a class="double-indent" href="/membership">Membership</a><br />
+        <a class="indent" href="/judaica">Judaica Shop</a><br />
+        <!--<a class="indent" href="/chavurot">Chavurot</a>-->
+      </div>
+    </div>
 
-<div class="col-12 col-lg-9 order-1 order-lg-2 right-column"> 
-<div class="d-flex flex-column justify-content-center align-items-center">
-<h3 class="blue-font" style="text-align: center;"><span style="font-size:28px;">Ready to Join?</span></h3>
-<br />
-<a class="hover-grow-no-shadow" href="/membership-form" style="padding: 2vw; background: var(--text-blue); border-radius: 1vw; color: #fff !important; margin: 0 auto; text-align: center; font-size: 2rem;">Membership Form</a></div>
- <br />
-<br />
- 
-<div class="first-text-div">
-<h3 class="blue-font" style="text-align: center;"><span style="font-size:28px;">Ways to be Connected</span></h3>
-</div>
+    <div class="col-12 col-lg-9 order-1 order-lg-2 right-column">
+       
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h3 class="blue-font" style="text-align: center">
+          <span style="font-size: 28px">Ready to Join?</span>
+        </h3>
+        <br />
+        <a
+          class="hover-grow"
+          href="/membership-form#membership-form"
+          style="
+            padding: 2vw;
+            background: var(--text-blue);
+            border-radius: 1vw;
+            color: #fff !important;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 2rem;
+            border: 2px solid #1d658e;
+            cursor: pointer;
+          "
+          >Click here for Membership Form</a
+        >
+      </div>
+       <br />
+      <br />
+       
+      <div class="first-text-div">
+        <h3 class="blue-font" style="text-align: center">
+          <span style="font-size: 28px">Ways to be Connected</span>
+        </h3>
+      </div>
 
-<div id="accordion" style="margin-top: 60px;"><!--</div>-->
-<div class="card">
-<div class="card-header" id="headingThree">
-<h5 class="mb-0"><button aria-controls="collapseThree" aria-expanded="true" class="accordion-button btn btn-link text-white" data-target="#collapseThree" data-toggle="collapse">Interest Groups</button></h5>
-</div>
+      <div id="accordion" style="margin-top: 60px">
+        <!--</div>-->
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                aria-controls="collapseThree"
+                aria-expanded="true"
+                class="accordion-button btn btn-link text-white"
+                data-target="#collapseThree"
+                data-toggle="collapse"
+              >
+                Interest Groups
+              </button>
+            </h5>
+          </div>
 
-<div aria-labelledby="headingThree" class="collapse show" data-parent="#accordion" id="collapseThree" style="">
-<div class="card-body">
-<p>Our congregants like spending time together in a variety of small interest groups. You can choose from groups centered around cultural events, game night, gardening, book discussion groups, knitting, mah jongg, and more. Explore the possibilities – <a class="blue-font" href="mailto:info@templebnaitorah.org" style="color: var(--link-color) !important;">contact our office</a> or <a class="blue-font" href="/interest-groups" style="color: var(--link-color) !important;">click here </a>to learn more.</p>
-</div>
-</div>
-</div>
-<!--div--><!--<div class="card">--><!--<div class="card-header" id="headingFour">--><!--<h5 class="mb-0"><button aria-controls="collapseFour" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapseFour" data-toggle="collapse">Mitzvah Corps</button></h5>--><!--</div>--><!--<div aria-labelledby="headingFour" class="collapse" data-parent="#accordion" id="collapseFour" style="">--><!--<div class="card-body">--><!--<p>The Temple B’nai Torah Mitzvah Corps is you – the congregation – responding to the needs of your neighbors in times of change or crisis. It is providing meals or challah, visiting members who are ill, providing transportation to medical appointments or to worship services, helping with childcare, and making phone calls offering support and condolences. Through these, and other <i><b>mitzvot</b></i>, members become acquainted, and in many cases, become friends.</p>--><!--<p>You can be a part of the Mitzvah Corps: <a class="blue-font" href="/mitzvah-corps" style="color: var(--link-color) !important;">Click here</a> to visit the Mitzvah Corps webpage and learn more.</p>--><!--</div>--><!--</div>--><!--</div>--><!--<div class="card">--><!--<div class="card-header" id="headingFive">--><!--<h5 class="mb-0"><button aria-controls="collapseFive" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapseFive" data-toggle="collapse">Usher and Greeter Trainings</button></h5>--><!--</div>--><!--<div aria-labelledby="headingFive" class="collapse" data-parent="#accordion" id="collapseFive" style="">--><!--<div class="card-body">--><!--<p>Would you be interested in greeting congregants and guests at our Shabbat Services or other events? You can volunteer once, twice or as often as you like. For more information <a href="/volunteer" style="color: var(--text-blue);">click here.</a></p>--><!--</div>--><!--</div>--><!--</div>--><!--<div class="card">--><!--<div class="card-header" id="headingSix">--><!--<h5 class="mb-0"><button aria-controls="collapseSix" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapseSix" data-toggle="collapse">Social Action</button></h5>--><!--</div>--><!--<div aria-labelledby="headingSix" class="collapse" data-parent="#accordion" id="collapseSix" style="">--><!--<div class="card-body">--><!--<p>We are committed to Tikkun Olam (Repair the World) and join together throughout the year to improve our broader community. <a href="/tikun-olam" style="color: var(--link-color) !important;">Learn more</a> about our decades long involvement in social action and join TOWG – our Tikkun Olam Working Group.</p>--><!--</div>--><!--</div>--><!--</div>--><br />
-<!--right-column--><!--row--></div>
-<!--container--></div>
-</div>
-<script>
-    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+          <div
+            aria-labelledby="headingThree"
+            class="collapse show"
+            data-parent="#accordion"
+            id="collapseThree"
+            style=""
+          >
+            <div class="card-body">
+              <p>
+                Our congregants like spending time together in a variety of
+                small interest groups. You can choose from groups centered
+                around cultural events, game night, gardening, book discussion
+                groups, knitting, mah jongg, and more. Explore the possibilities
+                –
+                <a
+                  class="blue-font"
+                  href="mailto:info@templebnaitorah.org"
+                  style="color: var(--link-color) !important"
+                  >contact our office</a
+                >
+                or
+                <a
+                  class="blue-font"
+                  href="/interest-groups"
+                  style="color: var(--link-color) !important"
+                  >click here </a
+                >to learn more.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--div--><!--<div class="card">--><!--<div class="card-header" id="headingFour">--><!--<h5 class="mb-0"><button aria-controls="collapseFour" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapseFour" data-toggle="collapse">Mitzvah Corps</button></h5>--><!--</div>--><!--<div aria-labelledby="headingFour" class="collapse" data-parent="#accordion" id="collapseFour" style="">--><!--<div class="card-body">--><!--<p>The Temple B’nai Torah Mitzvah Corps is you – the congregation – responding to the needs of your neighbors in times of change or crisis. It is providing meals or challah, visiting members who are ill, providing transportation to medical appointments or to worship services, helping with childcare, and making phone calls offering support and condolences. Through these, and other <i><b>mitzvot</b></i>, members become acquainted, and in many cases, become friends.</p>--><!--<p>You can be a part of the Mitzvah Corps: <a class="blue-font" href="/mitzvah-corps" style="color: var(--link-color) !important;">Click here</a> to visit the Mitzvah Corps webpage and learn more.</p>--><!--</div>--><!--</div>--><!--</div>--><!--<div class="card">--><!--<div class="card-header" id="headingFive">--><!--<h5 class="mb-0"><button aria-controls="collapseFive" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapseFive" data-toggle="collapse">Usher and Greeter Trainings</button></h5>--><!--</div>--><!--<div aria-labelledby="headingFive" class="collapse" data-parent="#accordion" id="collapseFive" style="">--><!--<div class="card-body">--><!--<p>Would you be interested in greeting congregants and guests at our Shabbat Services or other events? You can volunteer once, twice or as often as you like. For more information <a href="/volunteer" style="color: var(--text-blue);">click here.</a></p>--><!--</div>--><!--</div>--><!--</div>--><!--<div class="card">--><!--<div class="card-header" id="headingSix">--><!--<h5 class="mb-0"><button aria-controls="collapseSix" aria-expanded="false" class="accordion-button btn btn-link text-white collapsed" data-target="#collapseSix" data-toggle="collapse">Social Action</button></h5>--><!--</div>--><!--<div aria-labelledby="headingSix" class="collapse" data-parent="#accordion" id="collapseSix" style="">--><!--<div class="card-body">--><!--<p>We are committed to Tikkun Olam (Repair the World) and join together throughout the year to improve our broader community. <a href="/tikun-olam" style="color: var(--link-color) !important;">Learn more</a> about our decades long involvement in social action and join TOWG – our Tikkun Olam Working Group.</p>--><!--</div>--><!--</div>--><!--</div>--><br />
+        <!--right-column--><!--row-->
+      </div>
+      <!--container-->
+    </div>
+  </div>
+  <script>
+    var viewportWidth =
+      window.innerWidth || document.documentElement.clientWidth;
     var activeNavLink = document.querySelector(".no_subcontent:nth-child(8)");
     if (viewportWidth > 767) {
-        setTimeout(function(){ 
-                var activeNavLink = document.querySelector(".no_subcontent:nth-child(7)");
-                // var previous  = document.querySelector(".no_subcontent:nth-child(7)");
-                var previous2 = document.querySelector(".no_subcontent:nth-child(5");
-                var previous3 = document.querySelector(".no_subcontent:nth-child(6");
-                activeNavLink.classList.add('bottom-border');
-                // previous.classList.remove('bottom-border');
-                previous2.classList.remove('bottom-border');
-                previous3.classList.remove('bottom-border');
-            }, 1000);
+      setTimeout(function () {
+        var activeNavLink = document.querySelector(
+          ".no_subcontent:nth-child(7)"
+        );
+        // var previous  = document.querySelector(".no_subcontent:nth-child(7)");
+        var previous2 = document.querySelector(".no_subcontent:nth-child(5");
+        var previous3 = document.querySelector(".no_subcontent:nth-child(6");
+        activeNavLink.classList.add("bottom-border");
+        // previous.classList.remove('bottom-border');
+        previous2.classList.remove("bottom-border");
+        previous3.classList.remove("bottom-border");
+      }, 1000);
     } else {
-        activeNavLink.classList.add('lightest-grey-background');
+      activeNavLink.classList.add("lightest-grey-background");
     }
-</script>
-<style type="text/css">#nav_section>.no_subcontent:nth-child(7)>a  {
-            color: var(--link-color) !important;
-        }
-</style>
+  </script>
+  <style type="text/css">
+    #nav_section > .no_subcontent:nth-child(7) > a {
+      color: var(--link-color) !important;
+    }
+  </style>
 </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+  async=""
+  src="https://www.googletagmanager.com/gtag/js?id=G-JFJ8FST2PX"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-JFJ8FST2PX");
+</script>

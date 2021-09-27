@@ -1,295 +1,517 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  rel="stylesheet"
+/>
+<link
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  rel="stylesheet"
+/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link
+  href="https://images.shulcloud.com/14479/uploads/tbt-icon.png"
+  rel="icon"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+  rel="stylesheet"
+/>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-<style type="text/css">/*
+<link
+  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<style type="text/css">
+  /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
 
-#link-wrapper{
-        height: 100%;
-    }
-    #maincontent.default UL, #maincontent UL{
-        padding: 0 !important;
-    }
-    .tab-content{
-        border: 1px solid  #DEE2E6;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        overflow: hidden;
-        /*filter: drop-shadow(5px 5px 5px black);*/
-        
-    }
-     .nav-tabs{
-         border: 1px solid  #DEE2E6;
-       background: #DEE2E6 !important; 
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        overflow: hidden;
-        -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
-                box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
-    }
+  #link-wrapper {
+    height: 100%;
+  }
+  #mozaic {
+    margin-left: 50px !important;
+  }
+  #maincontent.default UL,
+  #maincontent UL {
+    padding: 0 !important;
+  }
+  .tab-content {
+    border: 1px solid #dee2e6;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+    /*filter: drop-shadow(5px 5px 5px black);*/
+  }
+  .nav-tabs {
+    border: 1px solid #dee2e6;
+    background: #dee2e6 !important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  }
 
-    .nav-item{
-        padding: 0 !important;
-        margin: 0 !important;
-       text-align: center;
-    }
-    .tab-wrap-div{
-         padding: 0 !important;
-        margin: 0 !important;
-       
-    }
-    .proverb{
-        font-size: 1.3em !important;
-        color: #2881B6 !important;
-        position: relative;
-        left: 20px !important;
-    }
-    .scroll-img{
-        float: left;
-    }
-    .tab-pane{
-        background: white;
-    }
-    .torah-link{
-        /*border: 1px solid red;*/
-        border: #fff solid 1px;
-    }
+  .nav-item {
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+  .tab-wrap-div {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .proverb {
+    font-size: 1.3em !important;
+    color: #2881b6 !important;
+    position: relative;
+    left: 20px !important;
+  }
+  .scroll-img {
+    float: left;
+  }
+  .tab-pane {
+    background: white;
+  }
+  .torah-link {
+    /*border: 1px solid red;*/
+    border: #fff solid 1px;
+  }
 
-    .orange-green-gradient{
-        width: 100%;
-        margin-top: 5vh;
-        /*height: 60px;*/
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        background: rgb(80,179,144);
-        background: -webkit-gradient(linear, left top, right top, from(rgba(80,179,144,1)), color-stop(15%, rgba(231,191,63,1)), color-stop(85%, rgba(231,191,63,1)), to(rgba(80,179,144,1)));
-        background: -o-linear-gradient(left, rgba(80,179,144,1) 0%, rgba(231,191,63,1) 15%, rgba(231,191,63,1) 85%, rgba(80,179,144,1) 100%);
-        background: linear-gradient(90deg, rgba(80,179,144,1) 0%, rgba(231,191,63,1) 15%, rgba(231,191,63,1) 85%, rgba(80,179,144,1) 100%);
-    }
-    .orange-green-gradient>p{
-        padding: 3vh auto;
-        color: var(--text-blue) !important;
-        font-size: 1.5em !important;
-        padding-top: 17px !important;
-    }
-    #link-wrapper {
-        height: auto !important;
-    }
-    .blue-header-text {
-        font-size: 1.4em !important;
-        color: var(--text-blue) !important;
-        margin-top: 3vh !important;
-    }
-    .link-div{
-        padding: 2vh 3vw;
-        border-left: 5px solid #2881B6 !important;
-    }
-    .left-wall-link {
-        color: var(--text-blue) !important;
-        font-size: 1.3em;
-    }
-    .nav-item1, .nav-item2, .nav-item3, .nav-item4, .nav-item5, .nav-item6, .nav-item7 {
-        width: 33.3%;
-    }
+  .orange-green-gradient {
+    width: 100%;
+    margin-top: 5vh;
+    /*height: 60px;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgb(80, 179, 144);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(80, 179, 144, 1)),
+      color-stop(15%, rgba(231, 191, 63, 1)),
+      color-stop(85%, rgba(231, 191, 63, 1)),
+      to(rgba(80, 179, 144, 1))
+    );
+    background: -o-linear-gradient(
+      left,
+      rgba(80, 179, 144, 1) 0%,
+      rgba(231, 191, 63, 1) 15%,
+      rgba(231, 191, 63, 1) 85%,
+      rgba(80, 179, 144, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(80, 179, 144, 1) 0%,
+      rgba(231, 191, 63, 1) 15%,
+      rgba(231, 191, 63, 1) 85%,
+      rgba(80, 179, 144, 1) 100%
+    );
+  }
+  .orange-green-gradient > p {
+    padding: 3vh auto;
+    color: var(--text-blue) !important;
+    font-size: 1.5em !important;
+    padding-top: 17px !important;
+  }
+  #link-wrapper {
+    height: auto !important;
+  }
+  .blue-header-text {
+    font-size: 1.4em !important;
+    color: var(--text-blue) !important;
+    margin-top: 3vh !important;
+  }
+  .link-div {
+    padding: 2vh 3vw;
+    border-left: 5px solid #2881b6 !important;
+  }
+  .left-wall-link {
+    color: var(--text-blue) !important;
+    font-size: 1.3em;
+  }
+  .nav-item1,
+  .nav-item2,
+  .nav-item3,
+  .nav-item4,
+  .nav-item5,
+  .nav-item6,
+  .nav-item7 {
+    width: 33.3%;
+  }
 
-     @media only screen and (max-width: 767px) {
-         .nav-item1, .nav-item2, .nav-item3,  .nav-item4, .nav-item5, .nav-item6, .nav-item7{
-             width: 100%;
-         }
-     }
+  @media only screen and (max-width: 767px) {
+    .nav-item1,
+    .nav-item2,
+    .nav-item3,
+    .nav-item4,
+    .nav-item5,
+    .nav-item6,
+    .nav-item7 {
+      width: 100%;
+    }
+  }
 </style>
 <div class="container">
-<div class="row p-0 m-0">
-<div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
-<div class="text-primary " id="link-wrapper" style="d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"><a href="/learn">Lifelong Learning</a><br />
-<a class="indent" href="/tots">Tots</a><br />
-<a class="indent " href="/kids">Kids</a><br />
-<a class="indent active-side-link" href="/teens">Teens</a><br />
-<a class="indent " href="/adults">Adults</a><br />
-<a href="/bnai-mitzvah">B-Mitzvah Process</a></div>
-</div>
+  <div class="row p-0 m-0">
+    <div class="col-12 col-lg-3 order-2 order-lg-1 left-column">
+      <div
+        class="text-primary"
+        id="link-wrapper"
+        style="d-inline margin-right: 30px;  margin-top: 30px; border-radius:20px;"
+      >
+        <a href="/learn">Lifelong Learning</a><br />
+        <a class="indent" href="/tots">Tots</a><br />
+        <a class="indent" href="/kids">Kids</a><br />
+        <a class="indent active-side-link" href="/teens">Teens</a><br />
+        <a class="indent" href="/adults">Adults</a><br />
+        <a href="/bnai-mitzvah">B-Mitzvah Process</a>
+      </div>
+    </div>
 
-<div class="col-12 col-lg-9 right-column order-1 order-lg-2 ">
-<div class="orange-green-gradient">
-<p class="text-center">Teen Opportunities for Engagement</p>
-</div>
+    <div class="col-12 col-lg-9 right-column order-1 order-lg-2">
+      <div class="orange-green-gradient">
+        <p class="text-center">Teen Opportunities for Engagement</p>
+      </div>
 
-<div class="col-12 tab-wrap-div"> 
-<ul class="nav nav-tabs" style="list-style-type:none; padding: 0; margin: 0;">
-	<li class="nav-item nav-item1" style="list-style-type:none;"><a class="nav-link active--tab active show" data-toggle="tab" href="#gesher" style="margin:0;">Gesher (Grade 7)</a></li>
-	<li class="nav-item nav-item2" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#mosaic" style="margin:0;">Rosh Hodesh Teen Program (Grades 8-12)</a></li>
-	<li class="nav-item nav-item3" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#youth" style="margin:0;">Youth Group (BTY)</a></li>
-	<li class="nav-item nav-item4" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#madrichim" style="margin:0;">Madrichim Program</a></li>
-</ul>
-<!-- Tab panes --><!--gesher-->
+      <div class="col-12">
+         
+        <!--<ul class="nav nav-tabs" style="list-style-type:none; padding: 0; margin: 0;">-->
+        <!--	<li class="nav-item nav-item1" style="list-style-type:none;"><a class="nav-link active--tab active show" data-toggle="tab" href="#gesher" style="margin:0;">Gesher (Grade 7)</a></li>-->
+        <!--	<li class="nav-item nav-item2" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#mosaic" style="margin:0;">Rosh Hodesh Teen Program (Grades 8-12)</a></li>-->
+        <!--	<li class="nav-item nav-item3" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#youth" style="margin:0;">Youth Group (BTY)</a></li>-->
+        <!--	<li class="nav-item nav-item4" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#madrichim" style="margin:0;">Madrichim Program</a></li>-->
+        <!--</ul>-->
+        <!-- Tab panes --><!--gesher-->
+        <div>
+          <div id="gesher">
+            <h3>
+              <span style="color: #2980b9"
+                >9th-12th Grade Religious School</span
+              >
+            </h3>
 
-<div class="tab-content">
-<div class="container tab-pane active show" id="gesher"> 
-<p>Seventh graders focus on social justice and Jewish values through texts, guest speakers and field trips. Conversations also highlight the historical role Jews have played in the civil rights movement and the root causes of social injustice. This program is held on Sunday mornings from 9:30am - 11:00am. As part of 7th grade, many students participate in the B’nai Mitzvah process, with the understanding that there is a commitment to Jewish education including Confirmation (10th grade) and continuing through 12th grade.</p>
+            <p>
+              9th-12th graders gather roughly twice a month on Saturdays from
+              12pm-2pm, starting with lunch. At the first gathering of the
+              month, teens engage in our
+              <a
+                href="https://www.movingtraditions.org/programs/tzelem/"
+                target="_blank"
+                >Moving Traditions Tzelem</a
+              >
+              program, a safe space to explore the social and emotional aspects
+              of teenage life through a Jewish lens. During the second half of
+              the year, teens will participate in a project-based learning
+              program created in partnership with the
+              <a href="https://www.wsjhs.org/welcome.html" target="_blank"
+                >Washington State Jewish Historical Society</a
+              >.
+            </p>
 
-<p>Our goal is for every 7th student to understand and embrace Judaism’s ethics and traditions, and to feel comfortable participating in the spiritual and cultural life of our community.</p>
+            <p>
+              This year, all 9th-12th graders have the opportunity to
+              participate in a social justice trip to the south with Temple De
+              Hirsch Sinai.
+            </p>
 
-<p><strong>D</strong><strong>ue</strong><strong> to COVID-19, our Religious School is meeting virtually until it is safe for classes to meet in person.</strong></p>
-</div>
-<!--mosaic-->
+            <hr />
+            <p class="blue-header-text">
+              <span style="color: #000000">Class Trips</span>
+            </p>
 
-<div class="container tab-pane fade" id="mosaic"> 
-<p>Our Rosh Hodesh teen program meets roughly once a month on Sundays from 4pm - 5:15pm. This program has two parts. The first focuses on the social and emotional well being of our teens using Jewish wisdom to spark conversation on topics relevant to their lives.</p>
+            <p class="blue-header-text">8th Grade Los Angeles Trip</p>
 
-<p>The second is a social justice focus. This year we are participating in the Religious Action Center's "Social Justice Academy," which includes two virtual seminars on the topics of advocacy and civic engagement.</p>
+            <p>
+              Together with 8th graders from TDHS, we travel to Los Angeles over
+              Martin Luther King weekend. We visit the Museum of Tolerance,
+              celebrate Shabbat on the beach, and attend a Martin Luther King
+              Day service. There is even time to fit in a visit to Universal
+              Studios.
+            </p>
 
-<p class="blue-header-text">Class Trips:</p>
+            <p class="blue-header-text">
+              10th Grade Washington, D. C. L'taken Trip
+            </p>
 
-<p class="blue-header-text">8th Grade LA Trip</p>
+            <p>
+              Our 10th graders have the unique opportunity to learn about Jewish
+              values, social justice, and political action. With 10th graders
+              from TDHS we travel to Washington DC participate in L’Taken. The
+              program exposes high school students to a variety of public policy
+              issues, guides them to explore the Jewish values surrounding these
+              issues and teaches them the skills to be an effective social
+              justice advocate. The weekend culminates as the teens meet with
+              members of Congress to share their views on social justice topics.
+              More information about
+              <a
+                href="https://rac.org/leadership-development/empowering-young-leaders/ltaken-social-justice-seminars"
+                target="_blank"
+                >L’Taken can be found here</a
+              >.
+            </p>
 
-<p>Together with 8th graders from TDHS, we travel to Los Angeles over Martin Luther King weekend. We visit the Museum of Tolerance, celebrate Shabbat on the beach, and attend a Martin Luther King Day service. There is even time to fit in a visit to Universal Studios.</p>
+            <p>
+              <span style="font-size: 24px"
+                ><span style="color: #2980b9"
+                  >Social Justice Trip to the South</span
+                ></span
+              >
+            </p>
 
-<p class="blue-header-text">10th Grade DC Trip</p>
+            <p>
+              This year, all 9th-12th graders have the opportunity to
+              participate in a social justice trip to the south with Temple De
+              Hirsch Sinai. This trip is led in partnership with Etgar36. More
+              information will be sent to families about the trip.
+            </p>
 
-<p>Our 10th graders have the unique opportunity to learn about Jewish values, social justice, and political action. With 10th graders from TDHS we travel to Washington DC participate in L’Taken. The program exposes high school students to a variety of public policy issues, guides them to explore the Jewish values surrounding these issues and teaches them the skills to be an effective social justice advocate. The weekend culminates as the teens meet with members of Congress to share their views on social justice topics. More information about L’Taken can be found here.</p>
-</div>
-<!--youth-->
+            <hr />
+            <h3>
+              <span style="color: #2980b9">9th-12th Grade Youth Group</span>
+            </h3>
 
-<div class="container tab-pane fade" id="youth">
-<p><br />
-BTY (B'nai Torah Youth) is our 8th-12th grade youth group where teens can have fun and be Jewish together. BTY is active and thriving in the TBT community, with regular events, social gatherings, and service opportunities. BTY provides our TBT teens with opportunities to engage in leadership to help grow our youth presence at TBT. We have monthly gatherings that we’re currently holding virtually, including lounge nights and Havdalah events. Please reach out to <a href="mailto:jbrumer@templebnaitorah.org?subject=BTY">Jessica Brumer</a> for more information.</p>
-</div>
-<!--madrichim-->
+            <p>
+              BTY (B'nai Torah Youth) is our 9th-12th grade youth group where
+              teens can have fun and be Jewish together. BTY is active and
+              thriving in the TBT community, with regular events, social
+              gatherings, and service opportunities. BTY provides our TBT teens
+              with opportunities to engage in leadership to help grow our youth
+              presence at TBT. We have monthly gatherings that we’re currently
+              holding virtually, including lounge nights and Havdalah events.
+              Please reach out to
+              <a href="mailto:jbrumer@templebnaitorah.org?subject=BTY"
+                >Jessica Brumer</a
+              > for more information.
+            </p>
 
-<div class="container tab-pane fade" id="madrichim"> 
-<p>Our 8th-12th graders are invited to participate in our madrichim program as teaching assistants. Opportunities range from working in self-contained K-3 classes, 4-6 Hebrew classes or with our Chuggim (electives). All madrichim receive community service credit and 8th-12th graders receive a small stipend. Since classes will be held online this coming fall, madrichim duties will be adjusted to accommodate our virtual learning environment. For more information, please contact <a href="mailto:rabbimolly@templebnaitorah.org?subject=Madrichim">Rabbi Molly</a>.</p>
-</div>
-</div>
-</div>
-<!--tab-wrap-div-->
+            <p>
+              Our 9th-12th graders are invited to participate in our madrichim
+              program as teaching assistants. All madrichim receive community
+              service credit and 9th-12th graders receive a small stipend. For
+              more information, please contact
+              <a href="mailto:rabbimolly@templebnaitorah.org?subject=Madrichim"
+                >Rabbi Molly</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--tab-wrap-div-->
 
-<div class="orange-green-gradient">
-<p class="text-center">Jewish Camping & Immersive Experiences</p>
-</div>
+      <div class="orange-green-gradient">
+        <p class="text-center">Jewish Camping & Immersive Experiences</p>
+      </div>
 
-<div class="col-12 tab-wrap-div"> 
-<ul class="nav nav-tabs" style="list-style-type:none; padding: 0; margin: 0;">
-	<li class="nav-item nav-item5" style="list-style-type:none;"><a class="nav-link active--tab active show" data-toggle="tab" href="#camps" style="margin:0;">URJ Camps and Programs</a></li>
-	<li class="nav-item nav-item6" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#regional" style="margin:0;">NFTY Regional and National</a></li>
-	<li class="nav-item nav-item7" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#" style="margin:0;">Israel Opportunities</a></li>
-</ul>
-<!-- Tab panes --><!--gesher-->
+      <div class="col-12">
+         
+        <!--<ul class="nav nav-tabs" style="list-style-type:none; padding: 0; margin: 0;">-->
+        <!--	<li class="nav-item nav-item5" style="list-style-type:none;"><a class="nav-link active--tab active show" data-toggle="tab" href="#camps" style="margin:0;">URJ Camps and Programs</a></li>-->
+        <!--	<li class="nav-item nav-item6" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#regional" style="margin:0;">NFTY Regional and National</a></li>-->
+        <!--	<li class="nav-item nav-item7" style="list-style-type:none;"><a class="nav-link torah-link" data-toggle="tab" href="#" style="margin:0;">Israel Opportunities</a></li>-->
+        <!--</ul>--><br />
+        <!-- Tab panes --><!--gesher-->
+        <div>
+          <div id="camps">
+            <p class="blue-header-text">
+              <a href="https://campkalsman.org" target="_blank"
+                >URJ Camp Kalsman</a
+              >
+            </p>
 
-<div class="tab-content">
-<div class="container tab-pane active show" id="camps"> 
-<p class="blue-header-text">URJ Camp Kalsman</p>
+            <p>
+              URJ Camp Kalsman is the Union for Reform Judaism’s camp right here
+              in Washington! Located in Arlington, WA. Camp Kalsman offers
+              overnight programs for children grades 2-11. Camp Kalsman’s 300
+              beautiful acres offer a great balance of education and recreation.
+              Campers learn new skills and hone existing ones in athletic,
+              aquatic, artistic, and nature programs. Camp Kalsman practices
+              active Jewish education, which incorporates Judaism into many
+              different activities. A summer at Kalsman is an unforgettable
+              religious, cultural, recreational, and emotional experience; it is
+              the place for a summer of fun, friendships of a lifetime, and an
+              unparalleled Jewish experience. Camp Kalsman is the premiere
+              Jewish camp in the Pacific Northwest. We can’t wait to welcome you
+              home this summer!
+              <a href="https://campkalsman.org" target="_blank"
+                >Learn more about sessions for next summer</a
+              >.
+            </p>
 
-<p>URJ Camp Kalsman is the Union for Reform Judaism’s camp right here in Washington! Located in Arlington, WA. Camp Kalsman offers overnight programs for children grades 2-11. Camp Kalsman’s 300 beautiful acres offer a great balance of education and recreation. Campers learn new skills and hone existing ones in athletic, aquatic, artistic, and nature programs. Camp Kalsman practices active Jewish education, which incorporates Judaism into many different activities. A summer at Kalsman is an unforgettable religious, cultural, recreational, and emotional experience; it is the place for a summer of fun, friendships of a lifetime, and an unparalleled Jewish experience. Camp Kalsman is the premiere Jewish camp in the Pacific Northwest. We can’t wait to welcome you home this summer!</p>
+            <p class="blue-header-text">
+              <a
+                href="https://urj.org/youth-programs/mitzvah-corps"
+                target="_blank"
+                >URJ Mitzvah Corps</a
+              >
+            </p>
 
-<div class="link-div"><a class="left-wall-link" href="http://kalsman.urjcamps.org/" style="color: var(--link-color) !important;" target="_blank">Visit http://kalsman.urjcamps.org/ for more information on sessions and programs.</a></div>
+            <p>
+              Mitzvah Corps connects Jewish teens with immersive social action
+              opportunities across North America, Central America, and Israel.
+              Alongside a group of committed peers and dedicated staff,
+              volunteer with grassroots organizations that provide participants
+              with unique hands-on experiences and a deeper understanding of the
+              major issues facing their communities. Spend your summer building
+              lifelong relationships while obtaining the skills to play an
+              active role in making our world a better place. If you want to
+              make a difference, Mitzvah Corps wants you!
+              <a
+                href="https://urj.org/youth-programs/mitzvah-corps"
+                target="_blank"
+                >Get more information</a
+              >.
+            </p>
 
-<p> </p>
+            <p>
+              <a href="https://nfty.org/" target="_blank"
+                ><span style="font-size: 22px"
+                  ><span style="color: #2980b9"
+                    >NFTY - North American Federation of Temple Youth</span
+                  ></span
+                ></a
+              >
+            </p>
+          </div>
+          <!--regional-->
 
-<p class="blue-header-text">URJ Kutz Camp</p>
+          <div class="container" id="regional">
+            <p>
+              NFTY is a <b>Movement</b> that builds strong, welcoming, inspired
+              <b>communities</b> through <b>teen-powered engagement</b>.
+              Together, we pursue
+              <b>tikkun olam, personal growth, youth empowerment</b>, and
+              <b>deep connections</b>, all rooted in <b>Reform Judaism.</b>
+            </p>
 
-<p>The recipe for Kutz is simple: just choose a Major, which you will sign up for when you are ready to register. Once you get to camp, you will be able to choose from session-long and week-long Minors and choose new Electives every day.</p>
+            <p>
+              The Northwest region of NFTY serves Jewish Teens in Washington,
+              Oregon, Idaho, Montana, and Alaska, as well as the Canadian
+              provinces of British Columbia and Alberta. We work in partnership
+              with
+              <a
+                href="http://www.urj.org"
+                style="color: var(--link-color) !important"
+                target="_blank"
+                >Union for Reform Judaism</a
+              >
+              affiliated congregations to provide meaningful Jewish experiences
+              for middle and high school students.
+              <a href="https://nfty.org/" target="_blank"
+                >Get more information</a
+              >.
+            </p>
+          </div>
 
-<div class="link-div"><a class="left-wall-link" href="http://kutz.urjcamps.org/summer/" style="color: var(--link-color) !important;" target="_blank">Visit http://kutz.urjcamps.org/summer/ for more information on programs</a></div>
+          <div class="container" id="trips">
+            <p class="blue-header-text">
+              <a href="https://nftyisrael.org/kalsman/" target="_blank"
+                >NFTY in Israel</a
+              >
+            </p>
 
-<p> </p>
+            <p>
+              NFTY in Israel is an epic journey through the story of your
+              people.
+            </p>
 
-<p class="blue-header-text">URJ Mitzvah Corps</p>
+            <p>
+              Touch ancient ruins visited by your ancestors for thousands of
+              years. Eat delicious pita fresh off the fire. Climb sand dunes.
+              Hike mountains. Swim in the Mediterranean. Float in the Dead Sea.
+              Wander with your friends and meet amazing new people. Explore your
+              progressive Jewish values from new angles. Discover yourself on
+              the adventure of a lifetime.
+            </p>
 
-<p>Mitzvah Corps connects Jewish teens with immersive social action opportunities across North America, Central America, and Israel. Alongside a group of committed peers and dedicated staff, volunteer with grassroots organizations that provide participants with unique hands-on experiences and a deeper understanding of the major issues facing their communities. Spend your summer building lifelong relationships while obtaining the skills to play an active role in making our world a better place. If you want to make a difference, Mitzvah Corps wants you!</p>
+            <p>
+              Choose from 5 specialty trips, including a visit to Eastern
+              Europe, a high school semester, a trip through the lens of social
+              justice, and a sci-tech Israel trip.
+              <a href="https://nftyisrael.org/kalsman/" target="_blank"
+                >Find out more</a
+              >.
+            </p>
 
-<div class="link-div"><a class="left-wall-link" href="http://www.mitzvahcorps.org/" style="color: var(--link-color) !important;" target="_blank">Visit http://www.mitzvahcorps.org/ for more information on locations and programs</a></div>
+            <p class="blue-header-text">
+              <a href="https://hellerhigh.org/" target="_blank"
+                >URJ Heller High Semester in Israel</a
+              >
+            </p>
 
-<p> </p>
-</div>
-<!--regional-->
-
-<div class="container tab-pane fade" id="regional"> 
-<p>NFTY is a <b>Movement</b> that builds strong, welcoming, inspired <b>communities</b> through <b>teen-powered engagement</b>. Together, we pursue <b>tikkun olam, personal growth, youth empowerment</b>, and <b>deep connections</b>, all rooted in <b>Reform Judaism.</b></p>
-
-<p>The Northwest region of NFTY serves Jewish Teens in Washington, Oregon, Idaho, Montana, and Alaska, as well as the Canadian provinces of British Columbia and Alberta. We work in partnership with <a href="http://www.urj.org" style="color: var(--link-color) !important;" target="_blank">Union for Reform Judaism</a> affiliated congregations to provide meaningful Jewish experiences for middle and high school students.</p>
-
-<div class="link-div"><a class="left-wall-link" href="https://nfty.org/" style="color: var(--link-color) !important;" target="blank">https://nfty.org/</a></div>
-
-<p> </p>
-</div>
-<!--youth-->
-
-<div class="container tab-pane fade" id="trips"> 
-<p class="blue-header-text">NFTY Israel</p>
-
-<p>NFTY in Israel is an epic journey through the story of your people.</p>
-
-<p>Touch ancient ruins visited by your ancestors for thousands of years. Eat delicious pita fresh off the fire. Climb sand dunes. Hike mountains. Swim in the Mediterranean. Float in the Dead Sea. Wander with your friends and meet amazing new people. Explore your progressive Jewish values from new angles. Discover yourself on the adventure of a lifetime.</p>
-
-<p>Choose from 5 specialty trips, including a visit to Eastern Europe, a high school semester, a trip through the lens of social justice, and a sci-tech Israel trip.</p>
-
-<div class="link-div"><a class="left-wall-link" href="https://nftyisrael.org/" style="color: var(--link-color) !important;" target="_blank">https://nftyisrael.org/</a></div>
-
-<p class="blue-header-text">Heller High School in Israel</p>
-
-<p>This accredited semester or summer-long program for Reform Jewish high school students in grades 10 to 12 offers an unparalleled opportunity to be immersed in the richness of the land, culture, people and history of Israel, all while earning high school and college credit. Based on Kibbutz Tzuba, approximately fifteen minutes outside of Jerusalem, students have a unique opportunity to benefit from experiential learning. Tiyulim (field trips), are taken to visit whatever they are learning about in their Jewish history class. There are also numerous week long trips throughout the semester, including a pilgrimage to Poland to study the Holocaust, a week in Gadna, a simulated Israeli army training experience, a week-long hike across the country from sea to sea in the north, and much more!</p>
-
-<div class="link-div"><a class="left-wall-link" href="https://hellerhigh.org/" style="color: var(--link-color) !important;" target="_blank">https://hellerhigh.org/</a></div>
-
-<p> </p>
-</div>
-</div>
-</div>
-<!--tab-wrap-div--></div>
-</div>
-<!--row--></div>
-<!--container--><script>
-jQuery(window).on('load', function() {
-    
-    $('.nav-item').click(function(){
-        if($(this).hasClass('active'){
-            $(this).addClass('white');
-            $(this).siblings().removeClass('white').addClass('light-grey');
-        });
-   });    
-   
-});     
-</script><script>
-    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
-    if (viewportWidth > 767) {
-        setTimeout(function(){ 
-                var activeNavLink = document.querySelector(".no_subcontent:nth-child(6)");
-                var previous  = document.querySelector(".no_subcontent:nth-child(5)");
-                activeNavLink.classList.add('bottom-border');
-                previous.classList.remove('bottom-border');
-            }, 1000);
-    } else {
-        activeNavLink.classList.add('lightest-grey-background');
+            <p>
+              This accredited semester or summer-long program for Reform Jewish
+              high school students in grades 10 to 12 offers an unparalleled
+              opportunity to be immersed in the richness of the land, culture,
+              people and history of Israel, all while earning high school and
+              college credit. Based on Kibbutz Tzuba, approximately fifteen
+              minutes outside of Jerusalem, students have a unique opportunity
+              to benefit from experiential learning. Tiyulim (field trips), are
+              taken to visit whatever they are learning about in their Jewish
+              history class. There are also numerous week long trips throughout
+              the semester, including a pilgrimage to Poland to study the
+              Holocaust, a week in Gadna, a simulated Israeli army training
+              experience, a week-long hike across the country from sea to sea in
+              the north, and much more!
+              <a href="https://hellerhigh.org/" target="_blank">Find out more</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async=""
+    src="https://www.googletagmanager.com/gtag/js?id=G-JFJ8FST2PX"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
     }
-</script>
-<style type="text/css">#nav_section>.no_subcontent:nth-child(6)>a  {
-            color: var(--link-color) !important;
-        }
-</style>
-<p> </p>
-<!-- Global site tag (gtag.js) - Google Analytics --><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-JFJ8FST2PX"></script><script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    gtag("js", new Date());
 
-  gtag('config', 'G-JFJ8FST2PX');
-</script>
+    gtag("config", "G-JFJ8FST2PX");
+  </script>
+</div>

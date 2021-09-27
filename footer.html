@@ -1,35 +1,78 @@
-<style type="text/css">#footer{
+<style type="text/css">
+  #footer {
     /*background-color: #B2B2B2; */
     background-color: #7f7f7f;
     background-image: linear-gradient(#a8a8a8, #232323);
+    /*<div class="col-sm-offset-2 col-12 col-md-2 order-2 order-md-1"><img class="candle-gif img-fluid mx-auto stagger-animate" loop="infinite"  data-cke-saved-src="https://images.shulcloud.com/14479/uploads/candle.gif" src="https://images.shulcloud.com/14479/uploads/candle.gif" /></div>*/
+    /*background-image: url('https://images.shulcloud.com/14479/uploads/Background-Bokeh-Skinny.mp4');*/
+
     color: white;
     position: relative;
     margin: 0;
     padding: 0;
     max-width: 1500px !important;
     margin: 0 auto 4vh auto !important;
- /*overflow: hidden;*/
- z-index: 0;
- width: 90vw !important;
-  /*-webkit-box-shadow:  0px 0px 20px rgba(0,0,0,0.5);*/
-  /*               box-shadow: 0px 0px 20px rgba(0,0,0,0.5);*/
-  box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.5); 
-  /*box-shadow: 0px 20px 20px rgba(0,0,0,0.5), */
-  /*  20px 20px20px gray, 20px 20px 20px rgba(0,0,0,0.5);*/
-}
-.copyright {
+    /*overflow: hidden;*/
+    z-index: 0 !important;
+    width: 90vw !important;
+    /*-webkit-box-shadow:  0px 0px 20px rgba(0,0,0,0.5);*/
+    /*               box-shadow: 0px 0px 20px rgba(0,0,0,0.5);*/
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
+    /*box-shadow: 0px 20px 20px rgba(0,0,0,0.5), */
+    /*  20px 20px20px gray, 20px 20px 20px rgba(0,0,0,0.5);*/
+    border-top: 7px solid #01bfb9;
+  }
+
+  .edit-buttons-overlay,
+  .content_button,
+  .edit_content {
+    z-index: 1000 !important;
+  }
+
+  #videoDiv {
+    /*background-image: url('https://images.shulcloud.com/14479/uploads/Background-Bokeh-Skinny.mp4');*/
+    /*background-position: cover;*/
+  }
+  .blue-video-footer {
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*width: auto;*/
+    /*height: 100% !important;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*z-index: 0;*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    min-height: 200px;
+    height: 100%;
+    z-index: -1 !important;
+    -o-object-fit: fill;
+    object-fit: fill;
+    border-bottom: 2px solid #3a3a3a;
+  }
+  .global_terms_links,
+  .copyright,
+  .footer_inner > .global_terms_links > a,
+  .footer_inner > .copyright > a {
+    z-index: 1000 !important;
+  }
+  .copyright {
     color: #fff !important;
-}
-.footer-ul>li{
+  }
+  .footer-ul > li {
     display: inline-block;
-}
-.footer_inner{
+  }
+  .footer_inner {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-}
-.footer-link-div>a, .footer_inner>.global_terms_links>a, .footer_inner>.copyright>a{
+  }
+  .footer-link-div > a,
+  .footer_inner > .global_terms_links > a,
+  .footer_inner > .copyright > a {
     -webkit-filter: invert(0.1);
-            filter: invert(0.1);
+    filter: invert(0.1);
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -40,95 +83,175 @@
     /*font-size: 1rem;*/
     display: inline-block;
     margin: 10px 10px;
-}
-.footer-link-div>a:hover, .footer_inner>.global_terms_links>a:hover, .footer_inner>.copyright>a:hover{
+  }
+  .footer-link-div > a:hover,
+  .footer_inner > .global_terms_links > a:hover,
+  .footer_inner > .copyright > a:hover {
     color: white !important;
-    -webkit-filter:  invert(0);
-            filter:  invert(0);
+    -webkit-filter: invert(0);
+    filter: invert(0);
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-}
-.social-icons{
+  }
+  .social-icons {
     width: 40px;
     height: 40px;
     border-radius: 5%;
     -webkit-filter: invert(0.95);
-            filter: invert(0.95);
+    filter: invert(0.95);
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-}
-.social-icons:hover{
+  }
+  .social-icons:hover {
     -webkit-filter: invert(1);
-            filter: invert(1);
+    filter: invert(1);
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-}
-.urj-img{
+  }
+  .urj-img {
     display: inline-block;
-}
-.list-group-item{
-    border: 0px solid rgba(0,0,0,0);
-}
-.footer-link-div{
+  }
+  .list-group-item {
+    border: 0px solid rgba(0, 0, 0, 0);
+  }
+  .footer-link-div {
     text-align: center;
     margin: 0 3vw;
+    z-index: 1;
     /*margin-top: -20px;*/
-}
-.global_terms_links{
+  }
+  .global_terms_links {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
     margin-top: 0 !important;
-}
-.row{
+  }
+  .row {
     margin: 0 !important;
-}
-.footer-anchor{
+  }
+  .footer-anchor {
     /*color: #464D52 !important;*/
     margin: 1.5vh 5vw !important;
     font-size: 1.1rem;
-}
-.footer_inner>.global_terms_links>a, .copyrite {
+  }
+  .footer_inner > .global_terms_links > a,
+  .copyrite {
     font-size: 1.1rem;
-}
-.footer-link-div>.footer-anchor, .footer_inner>.global_terms_links>a, .footer_inner>.copyright>a {
+  }
+  .footer-link-div > .footer-anchor,
+  .footer_inner > .global_terms_links > a,
+  .footer_inner > .copyright > a {
     text-decoration: underline !important;
-}
-@media only screen and (max-width: 992px){
-    .footer-link-div{
-           margin: 5px 0;
-       }
-}
-   @media only screen and (max-width: 767px){
-       .footer-link-div{
-           /*margin: 0;*/
-       }
-       .copyright{
-           padding-bottom: 30px;
-       }
-   }
+    /*-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;*/
+  }
+  .footer-link-div > .footer-anchor:hover,
+  .footer_inner > .global_terms_links > a:hover,
+  .footer_inner > .copyright > a:hover {
+    text-decoration: none !important;
+    /*-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;*/
+  }
+  @media only screen and (max-width: 992px) {
+    .footer-link-div {
+      margin: 5px 0;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .footer-link-div {
+      /*margin: 0;*/
+    }
+    .copyright {
+      padding-bottom: 30px;
+    }
+  }
 </style>
-<div class="footer-links-div container-fluid"> 
-<div class="row d-flex justify-content-center align-items-center text-center mx-auto">
-<div class="footer-link-div  "><a class="footer-anchor" href="https://www.urj.org" target="_blank"><img class="img-fluid mx-auto" src="https://images.shulcloud.com/14479/uploads/urj-new-logo.png" /> </a></div>
+<div class="footer-links-div container-fluid">
+   
+  <div
+    class="
+      row
+      d-flex
+      justify-content-center
+      align-items-center
+      text-center
+      mx-auto
+    "
+  >
+    <div class="footer-link-div">
+      <a class="footer-anchor" href="https://www.urj.org" target="_blank"
+        ><img
+          class="img-fluid mx-auto"
+          src="https://images.shulcloud.com/14479/uploads/urj-new-logo.png"
+        />
+      </a>
+    </div>
 
-<div class="footer-link-div text-center"><a class="footer-anchor" href="https://www.facebook.com/templebnaitorah" target="_blank"><img class="img-fluid  mx-auto facebook-img social-icons " src="https://images.shulcloud.com/14479/uploads/facebook-icon.svg" /> </a></div>
+    <div class="footer-link-div text-center">
+      <a
+        class="footer-anchor"
+        href="https://www.facebook.com/templebnaitorah"
+        target="_blank"
+        ><img
+          class="img-fluid mx-auto facebook-img social-icons"
+          src="https://images.shulcloud.com/14479/uploads/facebook-icon.svg"
+        />
+      </a>
+    </div>
 
-<div class="footer-link-div text-center"><a class="footer-anchor" href="https://www.youtube.com/channel/UCAI8ituiK8qcOwQIdV7wVdw" target="_blank"><img class="img-fluid  mx-auto youtube-img social-icons " src="https://images.shulcloud.com/14479/uploads/youtube-icon.svg" /> </a></div>
+    <div class="footer-link-div text-center">
+      <a
+        class="footer-anchor"
+        href="https://www.youtube.com/channel/UCAI8ituiK8qcOwQIdV7wVdw"
+        target="_blank"
+        ><img
+          class="img-fluid mx-auto youtube-img social-icons"
+          src="https://images.shulcloud.com/14479/uploads/youtube-icon.svg"
+        />
+      </a>
+    </div>
 
-<div class="footer-link-div text-center"><a class="footer-anchor" href="/contribute" target="_blank">Make a Donation</a></div>
+    <div class="footer-link-div text-center">
+      <a class="footer-anchor" href="/contribute" target="_blank"
+        >Make a Donation</a
+      >
+    </div>
 
-<div class="footer-link-div text-center"><a class="footer-anchor" href="/events">Events</a></div>
+    <div class="footer-link-div text-center">
+      <a class="footer-anchor" href="/events">Events</a>
+    </div>
 
-<div class="footer-link-div text-center"><a class="footer-anchor" href="/livestream">Livestream </a></div>
+    <div class="footer-link-div text-center">
+      <a class="footer-anchor" href="/livestream">Livestream </a>
+    </div>
 
-<div class="footer-link-div text-center"><a class="footer-anchor" href="/directions">Directions </a></div>
+    <div class="footer-link-div text-center">
+      <a class="footer-anchor" href="/directions">Directions </a>
+    </div>
 
-<div class="footer-link-div text-center"><a class="footer-anchor" href="/member/subscriptions">Subscribe to Newsletter</a></div>
+    <div class="footer-link-div text-center">
+      <a class="footer-anchor" href="/member/subscriptions"
+        >Subscribe to Newsletter</a
+      >
+    </div>
 
-<div class="footer-link-div text-center"><a class="footer-anchor" href="/contact-us">Contact </a></div>
+    <div class="footer-link-div text-center">
+      <a class="footer-anchor" href="/contact-us">Contact </a>
+    </div>
+  </div>
 </div>
-</div>
+<script>
+  var videoDiv = document.createElement("span"),
+    footer = document.getElementById("footer");
+  videoDiv.setAttribute("id", "videoDiv");
+  videoDiv.innerHTML =
+    "<video autobuffer='' autoplay='true' class='blue-video-footer' loop='' muted='' playsinline=''><source src='https://images.shulcloud.com/14479/uploads/Background-Bokeh-Skinny.mp4' type='video/mp4' /> <source src='https://images.shulcloud.com/14479/uploads/Background_Bokeh_01Videvo_1.webm' type='video/webm' /></video>";
+
+  // PAGE SPECIFIC:
+  var current = window.location.pathname;
+  // homepage
+  if (current !== "/") {
+    footer.appendChild(videoDiv);
+  }
+</script>

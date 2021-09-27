@@ -461,22 +461,23 @@
 
 .temple-logo-img, .temple-logo-SVG {
     position: absolute !important;
-    top: 10px !important;
-    left: 4vw !important;
-    max-height: 110px !important;
+    bottom: 10px !important;
+    left: 6vw !important;
+    max-height: 210px !important;
     width: auto;
     animation: fadeIn 1000ms 500ms both;
 }
 
 .temple-logo-div {
     /*border: 2px solid red;*/
-    height: 128px;
-    width: 228px;
+    height: 130px;
+    width: 320px;
     position: absolute !important;
-    top: 0 !important;
-    left: 4vw !important;
+    top: 5px !important;
+    left: 6vw !important;
     
-    background-image: url('https://images.shulcloud.com/14479/uploads/OldLogoSVG.svg'), url('https://images.shulcloud.com/14479/uploads/logo-original.png');
+    /* background-image: url('https://images.shulcloud.com/14479/uploads/OldLogoSVG.svg'), url('https://images.shulcloud.com/14479/uploads/logo-original.png'); */
+    background-image: url('https://images.shulcloud.com/14479/uploads/TempleBnaiTorahLogo-Horizontal-Color.png');
      background-repeat:no-repeat;
      background-size: 100%;
      animation: fadeIn 1000ms both;
@@ -1976,6 +1977,22 @@ li {
 
 
 /*MEDIA QEURIES*/
+@media only screen and (max-width: 1150px) {
+    .temple-logo-div {
+            width: 120px;
+    /*width: 50px;*/
+    /*position: absolute !important;*/
+    /*top: 5px !important;*/
+    /*left: 6vw !important;*/
+    
+    /* background-image: url('https://images.shulcloud.com/14479/uploads/OldLogoSVG.svg'), url('https://images.shulcloud.com/14479/uploads/logo-original.png'); */
+    background-image: url('https://images.shulcloud.com/14479/uploads/TempleBnaiTorahLogo-Square-Color.png');
+     /*background-repeat:no-repeat;*/
+     /*background-size: 100%;*/
+     /*animation: fadeIn 1000ms both;*/
+    }
+    
+}
 
 @media only screen and (max-width: 1000px) {
     /*#nav-logo-link>img, .nav-logo-link {*/
@@ -1987,6 +2004,8 @@ li {
     /*#navbar-top-links {*/
     /*    right: 1vw !important;*/
     /*}*/
+    
+
     
     #nav-address{
         /*width: 100px !important;*/

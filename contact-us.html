@@ -1,193 +1,458 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  rel="stylesheet"
+/>
+<link
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  rel="stylesheet"
+/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link
+  href="https://images.shulcloud.com/14479/uploads/tbt-icon.png"
+  rel="icon"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+  rel="stylesheet"
+/>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-<style type="text/css">.join-container a{
-        color: var(--text-blue) !important;
-    }
-    .newsletter-div {
-        padding: 10px;
-        background: #c6c6c6;
-    }
-    .lower {
-        border-width: 0px 3px 3px 3px; 
-        border-style: solid;
-        border-color: #DADFE4;
-    }
-    .upper {
-        border-width: 3px 3px 0px 3px; 
-        border-style: solid;
-        border-color: #DADFE4;
-    }
-    .lower::before {
-        content: "";
-        position: absolute;
-        top: -1px;
-        width: 100%;
-        height: 30px;
-        background: #c6c6c6;
-        /*clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 100% 0%);*/
-        z-index: 100;
-            -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
-                    clip-path: polygon(0 0, 50% 100%, 100% 0);
-    }
-    .search-bar, .subscribe-form {
-        padding: 3vh 3vw;
-        border: 2px solid var(--dark-grey);
-    }
+<link
+  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<style type="text/css">
+  .join-container a {
+    color: var(--text-blue) !important;
+  }
+  .newsletter-div {
+    padding: 10px;
+    background: #c6c6c6;
+    /*margin: 0 5vw 5vh 5vw;*/
+    /*width: 90%;*/
+    margin-bottom: 5vh;
+  }
+  .lower {
+    border-width: 0px 3px 3px 3px;
+    border-style: solid;
+    border-color: #dadfe4;
+  }
+  .upper {
+    border-width: 3px 3px 0px 3px;
+    border-style: solid;
+    border-color: #dadfe4;
+  }
+  .lower::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: 30px;
+    background: #c6c6c6;
+    /*clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 100% 0%);*/
+    z-index: 100;
+    -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+  }
+  .search-bar,
+  .subscribe-form {
+    padding: 3vh 3vw;
+    border: 2px solid var(--dark-grey);
+  }
 </style>
 <div class="container-fluid join-container">
-<div class="row">
-<div class="col-12">
-<div class="et_pb_column et_pb_column_3_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
-<div class="et_pb_module et_pb_code et_pb_code_0">
-<div class="et_pb_code_inner">
-<div class="forminator-ui forminator-custom-form forminator-custom-form-3473 forminator-design--flat  forminator_ajax" data-form="forminator-module-3473" data-forminator-render="0" style="text-align: center;"><span style="font-size:28px;"><strong>Temple B'nai Torah</strong></span></div>
-</div>
-</div>
-</div>
+  <div class="row">
+    <div class="col-12">
+      <div
+        class="
+          et_pb_column
+          et_pb_column_3_4
+          et_pb_column_0
+          et_pb_css_mix_blend_mode_passthrough
+        "
+      >
+        <div class="et_pb_module et_pb_code et_pb_code_0">
+          <div class="et_pb_code_inner">
+            <div
+              class="
+                forminator-ui forminator-custom-form forminator-custom-form-3473
+                forminator-design--flat
+                forminator_ajax
+              "
+              data-form="forminator-module-3473"
+              data-forminator-render="0"
+              style="text-align: center"
+            >
+              <span style="font-size: 28px"
+                ><strong>Temple B'nai Torah</strong></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="et_pb_column et_pb_column_1_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
-<div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
-<div class="et_pb_blurb_content">
-<div class="et_pb_blurb_container">
-<div class="et_pb_blurb_description">
-<p style="text-align: center;"><span style="font-size:24px;">15727 NE 4th St<br />
-Bellevue WA 98008<br />
-425.603.9677</span><br />
-<span style="font-size:24px;"><a href="mailto:contact@templebnaitorah.org" style="color: var(--link-color) !important;">contact@templebnaitorah.org</a></span></p>
+      <div
+        class="
+          et_pb_column
+          et_pb_column_1_4
+          et_pb_column_1
+          et_pb_css_mix_blend_mode_passthrough
+          et-last-child
+        "
+      >
+        <div
+          class="
+            et_pb_module
+            et_pb_blurb
+            et_pb_blurb_0
+            et_pb_text_align_left
+            et_pb_blurb_position_top
+            et_pb_bg_layout_light
+          "
+        >
+          <div class="et_pb_blurb_content">
+            <div class="et_pb_blurb_container">
+              <div class="et_pb_blurb_description">
+                <p style="text-align: center">
+                  <span style="font-size: 24px"
+                    >15727 NE 4th St<br />
+                    Bellevue WA 98008<br />
+                    425.603.9677</span
+                  ><br />
+                  <span style="font-size: 24px"
+                    ><a
+                      href="mailto:contact@templebnaitorah.org"
+                      style="color: var(--link-color) !important"
+                      >contact@templebnaitorah.org</a
+                    ></span
+                  >
+                </p>
 
-<p style="text-align: center;"> </p>
-</div>
-</div>
-</div>
-</div>
-</div>
+                <p style="text-align: center"> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<h4 class="text-blue" style="text-align: left;">We are looking forward for the opportunity to connect with you and learn more about you and your interest in our community. Please use the message box to let us know more about what you are looking for and how we can best help you get connected!</h4>
+      <h4 class="text-blue" style="text-align: left">
+        We are looking forward for the opportunity to connect with you and learn
+        more about you and your interest in our community. Please use the
+        message box to let us know more about what you are looking for and how
+        we can best help you get connected!
+      </h4>
 
-<div alt="" class="fck_widget_contact" contenteditable="false"><script src="https://www.google.com/recaptcha/api.js"></script><script>
-            function onSubmitemail6079d33caa6b4() {
-                 document.getElementById("frmemail6079d33caa6b4").submit();
-               }
-            </script>
-<form action="https://templebnaitorah.shulcloud.com/contact_us.php" class="contact_form" id="frmemail6079d33caa6b4" method="post">
-<fieldset><input name="destination" type="hidden" value="" />
-<div><label>Your Name: </label><input name="vars[name]" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" type="text" value="" /></div>
+      <div alt="" class="fck_widget_contact" contenteditable="false">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+          function onSubmitemail6151e9fc893ce() {
+            document.getElementById("frmemail6151e9fc893ce").submit();
+          }
+        </script>
+        <form
+          action="https://www.templebnaitorah.org/contact_us.php"
+          class="contact_form"
+          id="frmemail6151e9fc893ce"
+          method="post"
+        >
+          <fieldset>
+            <input name="destination" type="hidden" value="" />
+            <div>
+              <label>Your Name: </label
+              ><input
+                name="vars[name]"
+                style="
+                  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=');
+                  background-repeat: no-repeat;
+                  background-attachment: scroll;
+                  background-size: 16px 18px;
+                  background-position: 98% 50%;
+                "
+                type="text"
+                value=""
+              />
+            </div>
 
-<div><label>Your Email: </label><input name="vars[email]" type="text" value="" /></div>
+            <div>
+              <label>Your Email: </label
+              ><input name="vars[email]" type="text" value="" />
+            </div>
 
-<div style="display:none;"><label>URL: </label><input name="url" type="text" value="email6079d33caa6b4" /></div>
+            <div style="display: none">
+              <label>URL: </label
+              ><input name="url" type="text" value="email6151e9fc893ce" />
+            </div>
 
-<div style="display:none;"><label>Website: </label><input name="website" type="text" value="" /></div>
+            <div style="display: none">
+              <label>Website: </label
+              ><input name="website" type="text" value="" />
+            </div>
 
-<div><label>Subject (optional): </label><input name="vars[subject]" type="text" value="" /></div>
+            <div>
+              <label>Subject (optional): </label
+              ><input name="vars[subject]" type="text" value="" />
+            </div>
 
-<div><label class="message">Message: </label><textarea cols="40" name="vars[message]" rows="8"></textarea></div>
+            <div>
+              <label class="message">Message: </label
+              ><textarea cols="40" name="vars[message]" rows="8"></textarea>
+            </div>
 
-<div><label> </label> <input class="submit" type="submit" value="Submit" /></div>
-</fieldset>
-</form>
-</div>
+            <div>
+              <label> </label>
+              <input class="submit" type="submit" value="Submit" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
 
-<br />
-<br />
+      <p> </p>
 
-<div class="d-flex justify-content-between">
-<div id="link-wrapper" style="float: left; margin-right: 20px;"><a href="/about-us">About</a><br />
-<a class="indent" href="/vision">Our Vision</a><br />
-<a class="indent" href="/our-people">Our People</a><br />
-<a class="double-indent" href="/board">Board of Directors</a><br />
-<a class="double-indent" href="/clergy">Clergy</a><br />
-<a class="double-indent" href="/staff">Staff</a><br />
-<a class="indent" href="/our-location">Our Location</a><br />
-<!--<a class="double-indent" href="/kashrut-policy">Kashrut Policy</a><br />--> <!--<a class="double-indent" href="/rosen-ritt-library">Rosen-Ritt Library</a><br />--> <a class="double-indent" href="/directions">Directions</a><br />
-<a class="indent" href="/our-history">Our History</a><br />
-<!--<a class="double-indent" href="/wall-of-connections">Wall of Connections Art Gallery</a><br />--> <a class="indent" href="/membership-form">Join Our Community</a><br />
-<a class="indent active-side-link" href="/contact-us">Contact Us</a></div>
+      <p> </p>
 
-<div class="newsletter-div d-flex flex-column justify-content-center align-items-center">
-<div class="upper" style="background: #c6c6c6; padding: 5vh 5vw; text-align:center;">
-<h3>Subscribe To Our Weekly Email</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-4 order-2 order-md-1">
+            <div id="link-wrapper" style="">
+              <a href="/about-us">About</a><br />
+              <a class="indent" href="/vision">Our Vision</a><br />
+              <a class="indent" href="/our-people">Our People</a><br />
+              <a class="double-indent" href="/board">Board of Directors</a
+              ><br />
+              <a class="double-indent" href="/clergy">Clergy</a><br />
+              <a class="double-indent" href="/staff">Staff</a><br />
+              <a class="indent" href="/our-location">Our Location</a><br />
+              <!--<a class="double-indent" href="/kashrut-policy">Kashrut Policy</a><br />-->
+              <!--<a class="double-indent" href="/rosen-ritt-library">Rosen-Ritt Library</a><br />-->
+              <a class="double-indent" href="/directions">Directions</a><br />
+              <a class="indent" href="/our-history">Our History</a><br />
+              <!--<a class="double-indent" href="/wall-of-connections">Wall of Connections Art Gallery</a><br />-->
+              <a class="indent" href="/membership-form">Join Our Community</a
+              ><br />
+              <a class="indent active-side-link" href="/contact-us"
+                >Contact Us</a
+              >
+            </div>
+          </div>
 
-<p>Our Weekly Email will keep you up to date on everything going on with TBT.</p>
-<img src="https://images.shulcloud.com/14479/uploads/subscribe.png" style="width:50%; text-align:center; margin: 0 auto;" /></div>
+          <div
+            class="
+              newsletter-div
+              d-flex
+              flex-column
+              justify-content-center
+              align-items-center
+              col-12 col-md-8
+              order-1 order-md-2
+            "
+          >
+            <div
+              class="upper"
+              style="background: #c6c6c6; padding: 5vh 5vw; text-align: center"
+            >
+              <h3>Subscribe To Our Weekly Email</h3>
 
-<div class="lower d-flex justify-content-center align-items-center" style="position: relative; background-color: #349DE8 !important;  padding: 8vh 0; text-align:center; width: 100%;"><a class="subscription-button hover-grow-no-shadow" href="/member/subscriptions" style="padding: 20px; border-radius: 5px; background-color: #164363; color: #fff !important;">Subscribe!</a></div>
-</div>
-</div>
-</div>
+              <p>
+                Our Weekly Email will keep you up to date on everything going on
+                with TBT.
+              </p>
+              <img
+                src="https://images.shulcloud.com/14479/uploads/subscribe.png"
+                style="width: 50%; text-align: center; margin: 0 auto"
+              />
+            </div>
 
-<div class="col-12">
-<div id="main-content">
-<article class="post-126 page type-page status-publish hentry" id="post-126">
-<div class="entry-content">
-<div class="et-boc" id="et-boc">
-<div class="et-l et-l--post">
-<div class="et_builder_inner_content et_pb_gutters3">
-<div class="et_pb_section et_pb_section_0 et_section_regular">
-<div class="et_pb_row et_pb_row_0">
-<div class="et_pb_column et_pb_column_3_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
-<div class="et_pb_module et_pb_code et_pb_code_0">
-<div class="et_pb_code_inner">
-<div class="forminator-ui forminator-custom-form forminator-custom-form-3473 forminator-design--flat  forminator_ajax" data-form="forminator-module-3473" data-forminator-render="0" style="text-align: center;"> </div>
+            <div
+              class="lower d-flex justify-content-center align-items-center"
+              style="
+                position: relative;
+                background-color: #349de8 !important;
+                padding: 8vh 0;
+                text-align: center;
+                width: 100%;
+              "
+            >
+              <a
+                class="subscription-button hover-grow-no-shadow"
+                href="/member/subscriptions"
+                style="
+                  padding: 20px;
+                  border-radius: 5px;
+                  background-color: #164363;
+                  color: #fff !important;
+                "
+                >Subscribe!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="forminator-ui forminator-custom-form forminator-custom-form-3473 forminator-design--flat  forminator_ajax" data-form="forminator-module-3473" data-forminator-render="0" style="text-align: center;"> </div>
-</div>
-</div>
-</div>
+    <div class="col-12">
+      <div id="main-content">
+        <article
+          class="post-126 page type-page status-publish hentry"
+          id="post-126"
+        >
+          <div class="entry-content">
+            <div class="et-boc" id="et-boc">
+              <div class="et-l et-l--post">
+                <div class="et_builder_inner_content et_pb_gutters3">
+                  <div class="et_pb_section et_pb_section_0 et_section_regular">
+                    <div class="et_pb_row et_pb_row_0">
+                      <div
+                        class="
+                          et_pb_column
+                          et_pb_column_3_4
+                          et_pb_column_0
+                          et_pb_css_mix_blend_mode_passthrough
+                        "
+                      >
+                        <div class="et_pb_module et_pb_code et_pb_code_0">
+                          <div class="et_pb_code_inner">
+                            <div
+                              class="
+                                forminator-ui
+                                forminator-custom-form
+                                forminator-custom-form-3473
+                                forminator-design--flat
+                                forminator_ajax
+                              "
+                              data-form="forminator-module-3473"
+                              data-forminator-render="0"
+                              style="text-align: center"
+                            >
+                               
+                            </div>
 
-<div class="et_pb_column et_pb_column_1_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
-<div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
-<div class="et_pb_blurb_content">
-<div class="et_pb_blurb_container">
-<div class="et_pb_blurb_description"> </div>
-</div>
-</div>
-</div>
-</div>
-<!--<div class="et_pb_module et_pb_sidebar_0 et_pb_widget_area clearfix et_pb_widget_area_left et_pb_bg_layout_light">--><!--<p style="text-align: center;">--><!--<div class="et_pb_widget widget_search" id="search-2">--><!--<form action="https://www.templebnaitorah.shulcloud.com/" class="searchform" id="searchform" method="get" role="search">--><!--<div><label class="screen-reader-text" for="s">Search for:</label> <input id="s" name="s" style="background: rgb(255, 255, 255);" type="text" value="" /> <input id="searchsubmit" style="background: rgb(255, 255, 255);" type="submit" value="Search" /></div>--><!--</form>--><!--</div>--><!-- end .et_pb_widget --><!--<div class="et_pb_widget widget_media_image" id="media_image-5" style="text-align: center;">--><!--<p> </p>--><!--</div>--></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</article>
-</div>
-</div>
-<!-- #main-content --></div>
-<script>
-    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                            <div
+                              class="
+                                forminator-ui
+                                forminator-custom-form
+                                forminator-custom-form-3473
+                                forminator-design--flat
+                                forminator_ajax
+                              "
+                              data-form="forminator-module-3473"
+                              data-forminator-render="0"
+                              style="text-align: center"
+                            >
+                               
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="
+                          et_pb_column
+                          et_pb_column_1_4
+                          et_pb_column_1
+                          et_pb_css_mix_blend_mode_passthrough
+                          et-last-child
+                        "
+                      >
+                        <div
+                          class="
+                            et_pb_module
+                            et_pb_blurb
+                            et_pb_blurb_0
+                            et_pb_text_align_left
+                            et_pb_blurb_position_top
+                            et_pb_bg_layout_light
+                          "
+                        >
+                          <div class="et_pb_blurb_content">
+                            <div class="et_pb_blurb_container">
+                              <div class="et_pb_blurb_description"> </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--<div class="et_pb_module et_pb_sidebar_0 et_pb_widget_area clearfix et_pb_widget_area_left et_pb_bg_layout_light">--><!--<p style="text-align: center;">--><!--<div class="et_pb_widget widget_search" id="search-2">--><!--<form action="https://www.templebnaitorah.shulcloud.com/" class="searchform" id="searchform" method="get" role="search">--><!--<div><label class="screen-reader-text" for="s">Search for:</label> <input id="s" name="s" style="background: rgb(255, 255, 255);" type="text" value="" /> <input id="searchsubmit" style="background: rgb(255, 255, 255);" type="submit" value="Search" /></div>--><!--</form>--><!--</div>--><!-- end .et_pb_widget --><!--<div class="et_pb_widget widget_media_image" id="media_image-5" style="text-align: center;">--><!--<p> </p>--><!--</div>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- #main-content -->
+  </div>
+  <script>
+    var viewportWidth =
+      window.innerWidth || document.documentElement.clientWidth;
     var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
     if (viewportWidth > 767) {
-        setTimeout(function(){ 
-                var activeNavLink = document.querySelector(".no_subcontent:nth-child(2)");
-                activeNavLink.classList.add('bottom-border');
-            }, 2000);
+      setTimeout(function () {
+        var activeNavLink = document.querySelector(
+          ".no_subcontent:nth-child(2)"
+        );
+        activeNavLink.classList.add("bottom-border");
+      }, 2000);
     } else {
-        activeNavLink.classList.add('lightest-grey-background');
+      activeNavLink.classList.add("lightest-grey-background");
     }
-</script>
-<style type="text/css">/*
+  </script>
+  <style type="text/css">
+    /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
 
-#nav_section>li:nth-child(2)>a  {
-            color: var(--link-color) !important;
-        }
-        @media only screen and (max-width: 1000px){
-            #link-wrapper {
-                width: 100%;
-            }
-        }
-</style>
+    #nav_section > li:nth-child(2) > a {
+      color: var(--link-color) !important;
+    }
+    @media only screen and (max-width: 1000px) {
+      #link-wrapper {
+        width: 100%;
+      }
+    }
+  </style>
 </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+  async=""
+  src="https://www.googletagmanager.com/gtag/js?id=G-JFJ8FST2PX"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-JFJ8FST2PX");
+</script>

@@ -1,227 +1,367 @@
-<!--MY STUFF, DON'T DELETE!!--><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--MY STUFF, DON'T DELETE!!--><meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+/>
+<link
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  rel="stylesheet"
+/>
+<link
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  rel="stylesheet"
+/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link
+  href="https://images.shulcloud.com/14479/uploads/tbt-icon.png"
+  rel="icon"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+  rel="stylesheet"
+/>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet" />
-<style type="text/css">/*
+<link
+  href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+  rel="stylesheet"
+/>
+<style type="text/css">
+  /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
 
-section {
+  section {
     padding-bottom: 10vh;
     word-wrap: break-word;
-}
+  }
 
-section a {
-    color: #2881B6 !important;
-}
+  .wavy-lines {
+    position: relative;
+    top: -30px;
+    width: 70%;
+    /*height: 50%;*/
+    margin: 0 auto;
+  }
 
-.poem-font{
+  section a {
+    color: #2881b6 !important;
+  }
+
+  .poem-font {
     /*font-family: 'Alex Brush', cursive;*/
     /*font-size: 2em;*/
-}
-.social-action-text p,
-.community-text,
-.dialogue-text {
-    color: #2881B6 !important;
+  }
+  .social-action-text p,
+  .community-text,
+  .dialogue-text {
+    color: #2881b6 !important;
     display: inline-block;
     font-size: 1.7em !important;
     font-weight: 400 !important;
-    font-family: 'Quicksand', Helvetica, Arial, Lucida, sans-serif;
+    font-family: "Quicksand", Helvetica, Arial, Lucida, sans-serif;
     line-height: 1em;
     /*margin-left: 2em; */
     /*text-indent: -2em */
+  }
 
-}
-
-.community-text {
+  .community-text {
     position: relative;
     margin-left: 0;
     text-indent: 0;
-}
+  }
 
-.span-2 {
+  .span-2 {
     margin-left: 2vw;
     margin-top: 2vh;
     position: relative;
-}
+  }
 
-.span-3 {
+  .span-3 {
     margin-bottom: 2vh;
     left: 350px !important;
-}
+  }
 
-.right-column {
+  .right-column {
     position: relative;
-}
+  }
 
-.section-1-subtext {
+  .section-1-subtext {
     font-size: 0.8em;
-    color: #464D52;
-}
+    color: #464d52;
+  }
 
-.prayer-text {
+  .prayer-text {
     padding: 40px;
-}
+  }
 
-.section-2-ul li {
+  .section-2-ul li {
     margin: 0 !important;
     padding: 0 !important;
     list-style-type: circle !important;
-}
+  }
 
-.img-div {
+  .img-div {
     width: 100%;
     /*border: 2px solid red;*/
-}
+  }
 
-.img-div img {
+  .img-div img {
     max-width: 100%;
     -o-object-fit: contain;
-       object-fit: contain;
-}
+    object-fit: contain;
+  }
 
-
-.feed-text-div {
+  .feed-text-div {
     padding: 0;
-}
+  }
 
-
-
-.iframe-container iframe {
+  .iframe-container iframe {
     border: 0;
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
-}
+  }
 
-#player {
+  #player {
     background: black;
-}
+  }
 
-.iframe-container {
+  .iframe-container {
     overflow: hidden;
     position: relative;
-}
+  }
 
-.build-img, .garden-img {
+  .build-img,
+  .garden-img {
     padding-left: 3vw;
     padding-bottom: 3vw;
     width: 50%;
-}
+  }
 
-.poverty-p {
+  .poverty-p {
     width: 90%;
-}
+  }
 
-
-@media only screen and (max-width: 767px) {
-    .interfaith-imgs{
-        width: 100% !important;
-        margin: 3vw 0;
+  @media only screen and (max-width: 767px) {
+    .interfaith-imgs {
+      width: 100% !important;
+      margin: 3vw 0;
     }
     .second-img-div {
-        height: 300px;
+      height: 300px;
     }
-    .garden-img{
-        display: block;
-        width: 100%;
-        padding: 0;
-        
+    .garden-img {
+      display: block;
+      width: 100%;
+      padding: 0;
     }
     .poverty-p {
-    width: 100%;
-}
-#link-wrapper {
-    width: 100%;
-}
-    .build-img, .garden-img {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+      width: 100%;
+    }
+    #link-wrapper {
+      width: 100%;
+    }
+    .build-img,
+    .garden-img {
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
     .mazon {
-        margin-top: 3vh !important;
+      margin-top: 3vh !important;
     }
 
     .poverty-p {
-        width: 80%;
+      width: 80%;
     }
     iframe {
-        width: 100%;
-        max-width: 100%;
+      width: 100%;
+      max-width: 100%;
     }
-}
+  }
 </style>
 <!--SECTION 1--><!--</div>--><!--<div class="col-12 col-lg-8  order-1 order-lg-2 right-column ">--><!--<section class="social-action-section section-1">--><!--<div class="social-action-text"> --><!--<p>Tikun Olam Task Force (Social Action)</p>--><!--<p class="text-center prayer-text"><span class="poem-font">l’taken olam b’malchut shaddai ~ to establish/fix the world under the kingdom of God.</span> ~Aleinu Prayer</p>--><!--</div>--><!--<p> </p>--><!--<div class="section-1-subtext">--><!--<p>Temple B’nai Torah has a strong tradition of social action and social justice work. We are currently focused on a number of initiatives:</p>--><!--<p>Homelessness and Hunger – From working with the City of Bellevue to adopt a more humane approach to hosting Tent City and participating in several programs that provide meals for those in need, we have a long history of advocating for homeless people, legally and practically.</p>--><!--<p>Gun Law Awareness and Advocacy – Keeping abreast of current advocacy work underway in our state and nation by Jewish organizations, we plan to continue our own discussions and advocacy in this area.</p>--><!--<p>Syrian Refugees – We have partnered with Jewish Family Services and our friends in the Muslim community to begin the process of setting our long-term goals in this pressing global crisis.</p>--><!--<p>Environmental Impact – Our Greening subcommittee is committed to revising our internal processes to reduce waste and costs and decrease our impact on the earth.</p>--><!--<p>We also participate in numerous other events throughout the year, including a community-wide service day, a bone marrow drive, “Gardening for Good” providing fresh produce for our local food bank, and voter registration. Contact Donna Blankinship at <a href="mailto:donnablankinship@gmail.com" style="color: var(--link-color) !important;">donnablankinship@gmail.com</a>.</p>--><!--<p>Temple B’nai Torah has a decades-long history of leading social action initiatives in the Pacific Northwest Jewish community. Our social action projects have included bi-annual hosting of Tent City (a 90-day encampment of homeless adults), providing volunteers each year to Habitat for Humanity, supporting <a href="https://www.cfhomeless.org/" style="color: var(--link-color) !important;" target="-blank">Congregations for the Homeless</a>, and participating in monthly food banks, strong support of <a href="https://washingtonunitedformarriage.org/" style="color: var(--link-color) !important;" target="-blank">Marriage Equality</a> and among many other initiatives. We strive to support and amplify URJ and <a href="http://rac.org/index.cfm?" style="color: var(--link-color) !important;" target="-blank">Religious Action Center</a> initiatives.</p>--><!--</div>--><!--</section>--><!--SETION 2--><!--<section class="section-2">--><!--<p class="community-text">What does it mean that we are “Lifting Up Our Community”?</p>--><!--<p>Each person who is a part of our TBT community – whether a member or a friend – has a part to play in our work of Tikun Olam. Whether we share our time, our talent, or our treasure, we each have a specific gift to bring or way in which we can give back to both TBT and our wider community.</p>--><!--<ul class="section-2-ul">--><!--	<li>Be a part of Good Deeds Day, or our Interfaith Hearts & Hammers service projects.</li>--><!--	<li>Volunteer as an usher or greeter at our services.</li>--><!--	<li>Offer a workshop for the community in your area of expertise for our Lifelong Learning opportunities.</li>--><!--	<li>Sing in the choir.</li>--><!--	<li>Care for people who are unwell or grieving with a meal or simply some quiet company.</li>--><!--	<li>Join a committee in an area that you are curious about.</li>--><!--	<li>Commit a portion of your financial resources to fund the incredible work that TBT is doing in the community – or think about leaving a legacy with an estate plan in our “Life & Legacy” program.No matter how you choose to get involved, you are a precious and critical part of Lifting Up Our Community.</li>--><!--</ul>--><!--<div class="row">--><!--<div class="col-12 col-md-6 d-flex justify-content-center img-div first-img-div"><img src="https://images.shulcloud.com/14479/uploads/yes-on.png" /></div>--><!--<div class="col-12 col-md-6 d-flex justify-content-center img-div second-img-div"><img src="https://images.shulcloud.com/14479/uploads/faith-blue.jpg" /></div>--><!--<div>--><!--<p> </p>--><!--<p>Ballot Initiative I-594 to institute universal background checks including for private sales in Washington passed by an overwhelming majority of 59.7% while the counter-initiative that would have prevented background checks in Washington State failed resoundingly. Laws similar to this one have been passed by other states, including last year in Maryland where the new law has already led to a significant drop in gun deaths state-wide. Leading up to November 4, Reform congregations in the state – including Temple B’nai Torah – marched with a diverse group of interfaith communities in the Seattle area from Temple de Hirsch Sinai to the King County Administration Building to cast their ballots.</p>--><!--<p> </p>--><!--<p>Rachel Laser, Religious Action Center for Reform Judaim Deputy Director, wrote earlier this month in the Huffington Post: “Each of us – gun owner or not- has an obligation to combat this national epidemic. As Reform Jews, we feel a particular responsibility. We take to heart the words we read in the book of Exodus that command: ‘Thou shalt not kill.’ ”</p>--><!--</div>--><!--</div>--><!--</section>--><!--SECTION 3--><!--<section class="section-3">--><!--<p class="dialogue-text">Promote and Participate in Interfaith Dialogue</p>--><!--<div class="row">--><!--<div class="dialogue-images-div">--><!--<div>--><!--<img class="img-fluid interfaith-imgs float-left hover-grow-no-shadow" src="https://images.shulcloud.com/14479/uploads/dinner_prep.jpg" style="width: 50%; margin-right: 3vh; margin-bottom: 3vw;" /> --><!--</div>--><!--<div>--><!--</div>--><!--</div>--><!--<div class="dialogue-text-div">--><!--<p>The summer of 2013 at TBT saw an unprecedented moment in Interfaith history. TBT and the local Ahmadiyya Muslim community came together to pray, learn, and eat. <b>Together we broke the fasts of Tisha B’av and Ramadan</b> in an event that received attention from <a href="https://jewishweek.timesofisrael.com/fasting-separately-breaking-the-fast-together/" style="color: var(--link-color) !important;" target="_blank">press as far away as New York!</a> We participate in an <b>Interfaith Covenant</b> in cooperation with neighboring religious institutions. This has lead to educational programs as well as joint social action programs, a multi-faith Thanksgiving service, and other events.</p>--><!--<img class="img-fluid interfaith-imgs float-left hover-grow-no-shadow" src="https://templebnaitorah.shulcloud.com/_preview/medium/uploads/break_the_fast.jpg" style="width: 50%; margin-right: 3vh; margin-bottom: 3vw;" />--><!--<p><b>Together we Build</b> – an Interfaith Coalition of Christians, Jews, and Muslims seeking to find common ground and learning from one another as we work together to build houses for low-income families in East King County, Washington. TBT has been a part of this effort since its inception in 2001. In addition to building at a Habitat site for six days each year, some participants cook together in one of the congregation’s kitchens to provide the volunteers at the build site with nutritious meals that follow all the faith groups’ dietary rules and the group has an interfaith service at the end of each build season. This successful program has led to other educational and cross cultural events during the rest of the year as well as long term friendships.</p>--><!--<   /div>--><!--</div>--><!--</div>--><!--</section>--><!--SECTION 4--><!--<section class="section-4">--><!--<div class="container-fluid">--><!--<div class="row">--><!--<p class="dialogue-text">Fight Hunger</p>--><!--<div class="2-collumn-flex">--><!--<div class="col-12 col-lg-4 feed-text-div"> --><!--<img class="img-fluid garden-img hover-grow-no-shadow " src="https://images.shulcloud.com/14479/uploads/mitzvah_garden.jpg" style="float: right; padding-top: 1vh; --><!--padding-bottom: 3vw;" />--><!--<p>Once a month hot dinners are provided for those in need at the Crossroads Community Dinner. Help is needed with cooking, shopping (or providing grocery gift cards), serving, and clean up. Contact Suzanne or Jody at crossroads2ndtuesdays@a.templebnaitorah.org.</p>--><!--<p>We maintain a Mitzvah Garden to provide fresh produce for area food banks and for Crossroads Community dinners and also organize an annual gleaning at Stocker’s Farm in Snohomish to harvest food to donate.</p>--><!--</div>--><!--</div>--><!--row--><!--<div class="row">--><!--<p class="mazon"><i>Mazon</i> – donations are sought at the High Holy Days and other notable times of the year to help with this Jewish organization respond to hunger needs worldwide. Our 25 year commitment to Mazon has been recognized nationally.</p>--><!--<p><i>Jewish Family Service Food Bank</i> – TBT actively participates in holiday food drives and food bank sorting events.</p>--><!--</div>--><!--row--><!--</div>--><!--</div>--><!--</div>--><!--</section>--><!--SECTION 5--><!--<section class="section-5"><!--<div class="container-fluid">--><!--NEW STUFF --><!--<div class="col-12 col-lg-3 order-2 order-lg-1 left-column">-->
-<div class="text-primary " id="link-wrapper" style="float:left; margin-right: 50px;  margin-bottom: 30px; border-radius:20px;"><a class="active-side-link" href="/tikun-olam">Social Action</a><br />
-<a class="indent" href="/homelessness">Combate Homelessness</a><br />
-<a class="indent" href="/fighting-hunger">Fight Hunger</a><br />
-<a class="indent" href="/racial-equality">Racial Equality</a><br />
-<a class="indent" href="/gun-responsibility">Gun Responsibility</a><br />
-<a class="indent" href="/immigrant-rights">Immigrant Rights</a><br />
-<a class="indent" href="/pride">Pride at TBT</a><br />
-<a class="indent" href="/volunteer">Volunteer</a><br />
-<a class="indent " href="/chavurot-2">TBT Committies</a><br />
-<a class="indent" href="/mitzvah-corps">Mitzvah Corp</a><br />
-<a class="indent" href="/environmental-justice">Environmental Justice</a><br />
-<a class="indent" href="/vaccine">Covid 19</a></div>
+<div class="d-flex justify-content-center"> </div>
+
+<div
+  class="text-primary"
+  id="link-wrapper"
+  style="
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+  "
+>
+  <a class="active-side-link" href="/tikun-olam">Social Action</a><br />
+  <a class="indent" href="/homelessness">Combat Homelessness</a><br />
+  <a class="indent" href="/fighting-hunger">Fight Hunger</a><br />
+  <a class="indent" href="/racial-equality">Racial Equality</a><br />
+  <a class="indent" href="/gun-responsibility">Gun Responsibility</a><br />
+  <a class="indent" href="/immigrant-rights">Immigrant Rights</a><br />
+  <a class="indent" href="/pride">Pride at TBT</a><br />
+  <a class="indent" href="/mitzvah-corps">Mitzvah Corp</a><br />
+  <a class="indent" href="/environmental-justice">Environmental Justice</a
+  ><br />
+  <a class="indent" href="/vaccine">Vaccine Awareness</a><br />
+  <a class="indent" href="/volunteer">Volunteer</a>
+</div>
 
 <div style="">
-<p>Judaism is a religion of action, rather than merely a religion of belief. Pirkei Avot, The Ethics of our Fathers, teaches that one right action, <em>mitzvah</em>, leads to another. At Temple B'nai Torah, we believe our mission is to make the world a better place, one mitzvah at a time.  We have a decades-long history of leading social action initiatives in the Pacific Northwest. Our goal is to <strong>educate</strong> our community, <strong>advocate</strong> on behalf of our Jewish values, and <strong>activate</strong> our members to participate in meaningful acts of tikkun olam, repairing the world.</p>
+  <p>
+    Judaism is a religion of action, rather than merely a religion of belief.
+    Pirkei Avot, The Ethics of our Fathers, teaches that one right action,
+    <em>mitzvah</em>, leads to another. At Temple B'nai Torah, we believe our
+    mission is to make the world a better place, one mitzvah at a time.  We
+    have a decades-long history of leading social action initiatives in the
+    Pacific Northwest. Our goal is to <strong>educate</strong> our
+    community, <strong>advocate</strong> on behalf of our Jewish
+    values and <strong>activate</strong> our members to participate in
+    meaningful acts of tikkun olam, repairing the world.
+  </p>
 
-<p>Twice a year we choose a primary focus for our social justice work while simultaneously supporting other social projects that are particularly meaningful to our TBT family. Currently, our main focus is <strong>combating homelessness</strong>. Simultaneously, we  are working to:</p>
-
-<p><strong>fight hunger</strong>, promote <strong>gun responsibility</strong>, advocate for <strong>racial equality</strong>, take <strong>PRIDE in our LGBTQ+ </strong>community, promote <strong>immigrant rights</strong>, and pursue <strong>environmental justice.</strong></p>
+  <p>
+    Twice a year we choose a primary focus for our social justice work while
+    simultaneously supporting other projects that are particularly meaningful to
+    our TBT family. Currently, our main focus is
+    <strong>combating homelessness</strong>. Simultaneously, we  are working
+    to:<strong> fight hunger</strong>, promote
+    <strong>gun responsibility</strong>, advocate for
+    <strong>racial equality</strong>, take
+    <strong>PRIDE in our LGBTQ+ </strong>community, promote
+    <strong>immigrant rights</strong>, and pursue
+    <strong>environmental justice.</strong>
+  </p>
 </div>
 
-<div style="text-align:start">
-<div>
-<div>
-<p> </p>
-</div>
-</div>
+<div style="text-align: start">
+  <div>
+    <div>
+      <p> </p>
+    </div>
+  </div>
 </div>
 
-<div style="text-align:start">
-<div>
-<div>
-<h3><samp><small><span style="font-size:20px;"><span style="font-family:Verdana,Geneva,sans-serif;"><big><strong><span style="font-style:normal"><span style="font-weight:normal"><span style="white-space:normal"><span style="text-decoration:none"><span style="color:#000000"><span style="color:#2a2a2a">As a proud member of the Union for Reform Judaism, we strive to support and amplify all </span></span><a href="http://rac.org/index.cfm?" rel="noreferrer" target="_blank" title="Religious Action Center"><span style="color:#2980b9;"><span style="border: 1pt none windowtext; padding: 0in;">Religious Action Center</span></span></a><span style="color:#2980b9;"> </span><span style="color:#000000"><span style="color:#2a2a2a">initiatives.</span> </span></span></span></span></span></strong></big></span></span></small></samp></h3>
+<div style="text-align: start">
+  <div>
+    <div>
+      <h3>
+        <samp
+          ><small
+            ><span style="font-size: 20px"
+              ><span style="font-family: Verdana, Geneva, sans-serif"
+                ><big
+                  ><strong
+                    ><span style="font-style: normal"
+                      ><span style="font-weight: normal"
+                        ><span style="white-space: normal"
+                          ><span style="text-decoration: none"
+                            ><span style="color: #000000"
+                              ><span style="color: #2a2a2a"
+                                >As a proud member of the Union for Reform
+                                Judaism, we strive to support and amplify
+                                all </span
+                              ></span
+                            ><span style="color: #2980b9"
+                              ><a href="http://rac.org" target="_blank"
+                                ><span
+                                  style="
+                                    border: 1pt none windowtext;
+                                    padding: 0in;
+                                  "
+                                  >Religious Action Center</span
+                                ></a
+                              > </span
+                            ><span style="color: #000000"
+                              ><span style="color: #2a2a2a">initiatives.</span
+                              > </span
+                            ></span
+                          ></span
+                        ></span
+                      ></span
+                    ></strong
+                  ></big
+                ></span
+              ></span
+            ></small
+          ></samp
+        >
+      </h3>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<!--<div class="container-fluid">--><!--<div class="row">--><!--</div>--><!--</div>--><!--SLIDER FADE IN--><script>
-                jQuery(window).on('load', function() {
-                        $j(".header_slider").addClass('header_slider_final_position');
-                });
- </script>
-<style type="text/css">#nav_section>li:nth-child(5)>a  {
-            color: var(--link-color) !important;
-        }
+<!--<div class="container-fluid">--><!--<div class="row">--><!--</div>--><!--</div>--><!--SLIDER FADE IN-->
+<script>
+  // jQuery(window).on('load', function() {
+  //         $j(".header_slider").addClass('header_slider_final_position');
+  // });
+</script>
+<style type="text/css">
+  #nav_section > li:nth-child(5) > a {
+    color: var(--link-color) !important;
+  }
 </style>
 <script>
-    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
-    if (viewportWidth > 767) {
-        setTimeout(function(){ 
-                var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
-                activeNavLink.classList.add('bottom-border');
-                var previous = document.querySelector(".no_subcontent:nth-child(4)");
-                previous.classList.remove('bottom-border');
-            }, 2000);
-    } else {
-        activeNavLink.classList.add('lightest-grey-background');
-    }
+  var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+  var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
+  if (viewportWidth > 767) {
+    setTimeout(function () {
+      var activeNavLink = document.querySelector(".no_subcontent:nth-child(5)");
+      activeNavLink.classList.add("bottom-border");
+      var previous = document.querySelector(".no_subcontent:nth-child(4)");
+      previous.classList.remove("bottom-border");
+    }, 2000);
+  } else {
+    activeNavLink.classList.add("lightest-grey-background");
+  }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+  async=""
+  src="https://www.googletagmanager.com/gtag/js?id=G-JFJ8FST2PX"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-JFJ8FST2PX");
 </script>
