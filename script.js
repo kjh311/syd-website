@@ -452,7 +452,7 @@ if ("onhashchange" in window && window.screen.width > 767) {
   ul.appendChild(youtube);
 
   events = document.createElement("a");
-  events.setAttribute("href", "/events");
+  events.setAttribute("href", "/calendar");
   events.setAttribute("id", "events-nav");
   events.setAttribute("class", "navbar-top-links-text");
   events.innerHTML = "Events";
