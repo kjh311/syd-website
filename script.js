@@ -455,7 +455,7 @@ if ("onhashchange" in window && window.screen.width > 767) {
   events.setAttribute("href", "/calendar");
   events.setAttribute("id", "events-nav");
   events.setAttribute("class", "navbar-top-links-text");
-  events.innerHTML = "Events";
+  events.innerHTML = "Calendar";
   ul.appendChild(events);
 
   newsletter = document.createElement("a");
@@ -482,6 +482,152 @@ if ("onhashchange" in window && window.screen.width > 767) {
   templeLogoDiv.setAttribute("class", "temple-logo-div");
   navbar.appendChild(templeLogoDiv);
 }
+
+//Dynamically Add button to 'ical-settings.php' page
+
+var object = document.querySelector(
+  "#maincontent>.pad-helper>.featured_article"
+);
+var menu = document.querySelector(
+  ".pad-helper>.featured_article>.dropdown-menu"
+);
+
+var a1 = document.createElement("a");
+
+//     var checkboxes = document.querySelectorAll('input[type=checkbox][class=ical_checkbox]');
+
+// for (var checkbox of checkboxes)
+// {
+//     checkbox.addEventListener('change', function(event)
+//     {
+//         if (event.target.checked) {
+//             alert(`${event.target.value} is checked`);
+// // a1.setAttribute("href", googleText);
+// // a2.setAttribute("href", iPhoneText);
+// // a3.setAttribute("href", outlookText);
+// // a4.setAttribute("href", downloadText);            }
+//         else {
+//             alert(`${event.target.value} is unchecked`);
+//                 // a1.setAttribute("href", googleText);
+// // a2.setAttribute("href", iPhoneText);
+// // a3.setAttribute("href", outlookText);
+// // a4.setAttribute("href", downloadText);
+//         }
+//     });
+// }
+//wait for window to load for data to populate
+window.addEventListener("load", function (event) {
+  var googleText = document.getElementById("google_cal").getAttribute("href");
+  a1.setAttribute("href", googleText);
+  a1.innerHTML = "Add to Google Calendar";
+  object.appendChild(a1);
+  // var iPhoneText = document.getElementById('iphone_pad_cal').getAttribute("href");
+  // var outlookText = document.getElementById('outlook_desktop_cal').getAttribute("href");
+  // var downloadText = document.getElementById('download_cal').getAttribute("href");
+  // alert(googleText)
+  // alert('asdf')
+
+  // a2.setAttribute("href", iPhoneText);
+  // a3.setAttribute("href", outlookText);
+  // a4.setAttribute("href", downloadText);
+});
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    var checkboxes = document.querySelectorAll(
+      "input[type=checkbox][class=ical_checkbox]"
+    );
+
+    for (var checkbox of checkboxes) {
+      checkbox.addEventListener("change", function (event) {
+        if (event.target.checked) {
+          alert(`${event.target.value} is checked`);
+        } else {
+          alert(`${event.target.value} is unchecked`);
+        }
+      });
+    }
+  },
+  false
+);
+
+// window.addEventListener('load', function(event) {
+
+// });
+//Detect if checkboxes are filled
+// document.addEventListener('DOMContentLoaded', function() {
+//     // var googleText = document.getElementById('google_cal').getAttribute("href");
+//     // alert(googleText)
+//     var checkboxes = document.querySelectorAll('input[type=checkbox][class=ical_checkbox]');
+
+//     for (var checkbox of checkboxes)
+//     {
+//         checkbox.addEventListener('change', function(event)
+//         {
+//             if (event.target.checked) {
+//                 alert(`${event.target.value} is checked`);
+//     a1.setAttribute("href", googleText);
+//     // a2.setAttribute("href", iPhoneText);
+//     // a3.setAttribute("href", outlookText);
+//     // a4.setAttribute("href", downloadText);            }
+//             else {
+//                 alert(`${event.target.value} is unchecked`);
+//                     a1.setAttribute("href", googleText);
+//     // a2.setAttribute("href", iPhoneText);
+//     // a3.setAttribute("href", outlookText);
+//     // a4.setAttribute("href", downloadText);
+//             }
+//         });
+//     }
+// }, false);
+
+a1.setAttribute("target", "_blank");
+a1.setAttribute("id", "google_cal_slave");
+a1.setAttribute("class", "text-blue");
+// a1.style.color = "#36A8EC";
+// window.addEventListener('load', function(event) {
+
+// });
+
+// var br1 = document.createElement("BR");
+// object.appendChild(br1);
+
+// var a2 = document.createElement("a");
+// a2.setAttribute("href", "https://calendar.google.com/calendar/u/0/r?cid=webcal%3A%2F%2Fwww.templebnaitorah.org%2Fical2.php%3F11629384%2C3a276d%2Cschedule%2Cmitzvah%2Cufruf%2Cweddings%2Cparsha%2Choliday%2Cbirthday_hebrew%2Cbirthday_english%2Canniversary%2Cyahrzeit");
+// a2.setAttribute("target", "_blank");
+// // a2.style.color = "#36A8EC";
+// a2.setAttribute("id", "iphone_pad_cal_slave");
+// a2.setAttribute("class", "text-blue");
+// a2.innerHTML = "Add to iPhone/iPad";
+
+// object.appendChild(a2)
+
+// var br2 = document.createElement("BR");
+// object.appendChild(br2);
+
+// var a3 = document.createElement("a");
+// a3.setAttribute("href", "https://www.templebnaitorah.org/ical2.php?11629384,3a276d,schedule,mitzvah,ufruf,weddings,parsha,holiday,birthday_hebrew,birthday_english,anniversary,yahrzeit");
+// a3.setAttribute("target", "_blank");
+// // a4.style.color = "#36A8EC";
+// a3.setAttribute("id", "outlook_desktop_cal_slave");
+// a3.setAttribute("class", "text-blue");
+// a3.innerHTML = "Add to Outlook (Desktop Version)"
+
+// object.appendChild(a3)
+
+// var br3 = document.createElement("BR");
+// object.appendChild(br3);
+
+// var a4 = document.createElement("a");
+// a4.setAttribute("href", "https://www.templebnaitorah.org/ical2.php?11629384,3a276d,schedule,mitzvah,ufruf,weddings,parsha,holiday,birthday_hebrew,birthday_english,anniversary,yahrzeit");
+// a4.setAttribute("target", "_blank");
+// a4.setAttribute("class", "text-blue");
+
+// a4.setAttribute("id", "download_cal_slave");
+// // a4.style.color = "#36A8EC";
+// a4.innerHTML = "Download iCal File";
+
+// object.appendChild(a4);
 
 // MOBILE:
 if ("onhashchange" in window && window.screen.width < 767) {
