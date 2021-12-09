@@ -515,12 +515,18 @@ var a1 = document.createElement("a");
 //         }
 //     });
 // }
+
 //wait for window to load for data to populate
 window.addEventListener("load", function (event) {
+  // document.addEventListener('DOMContentLoaded', function() {
   var googleText = document.getElementById("google_cal").getAttribute("href");
   a1.setAttribute("href", googleText);
   a1.innerHTML = "Add to Google Calendar";
+  a1.setAttribute("target", "_blank");
+  a1.setAttribute("id", "google_cal_slave");
+  a1.setAttribute("class", "text-blue");
   object.appendChild(a1);
+  // let googleText = document.getElementById('google_cal').getAttribute("href");
   // var iPhoneText = document.getElementById('iphone_pad_cal').getAttribute("href");
   // var outlookText = document.getElementById('outlook_desktop_cal').getAttribute("href");
   // var downloadText = document.getElementById('download_cal').getAttribute("href");
@@ -530,26 +536,51 @@ window.addEventListener("load", function (event) {
   // a2.setAttribute("href", iPhoneText);
   // a3.setAttribute("href", outlookText);
   // a4.setAttribute("href", downloadText);
-});
-document.addEventListener(
-  "DOMContentLoaded",
-  function () {
-    var checkboxes = document.querySelectorAll(
-      "input[type=checkbox][class=ical_checkbox]"
-    );
 
-    for (var checkbox of checkboxes) {
-      checkbox.addEventListener("change", function (event) {
-        if (event.target.checked) {
-          alert(`${event.target.value} is checked`);
-        } else {
-          alert(`${event.target.value} is unchecked`);
-        }
-      });
-    }
-  },
-  false
-);
+  //     setTimeout(function(){
+
+  // // document.addEventListener('DOMContentLoaded', function() {
+  var checkboxes = document.querySelectorAll("input[type=checkbox]");
+
+  for (var checkbox of checkboxes) {
+    checkbox.addEventListener("change", function (event) {
+      if (event.target.checked) {
+        // alert(`${event.target.value} is checked`);
+        googleText = document.getElementById("google_cal").getAttribute("href");
+        a1.setAttribute("href", googleText);
+      } else {
+        // alert(`${event.target.value} is unchecked`);
+        googleText = document.getElementById("google_cal").getAttribute("href");
+        a1.setAttribute("href", googleText);
+      }
+    });
+  }
+
+  // // }, false);
+  //     }, 100);
+});
+// document.addEventListener('DOMContentLoaded', function() {
+//     var checkboxes = document.querySelectorAll('input[type=checkbox][class=ical_checkbox]');
+//     // var googleText = document.getElementById('google_cal').getAttribute("href");
+
+//     for (var checkbox of checkboxes)
+//     {
+//         checkbox.addEventListener('change', function(event)
+//         {
+
+//                 // alert(`${event.target.value} is checked`);
+//                 // let googleText = document.getElementById('google_cal').getAttribute("href");
+//                  alert(googleText)
+//                 a1.setAttribute("href", googleText);
+//             }
+//             else {
+//                 // let googleText = document.getElementById('google_cal').getAttribute("href");
+//                 // alert(`${event.target.value} is unchecked`);
+//                 a1.setAttribute("href", googleText);
+//             }
+//         });
+//     }
+// }, false);
 
 // window.addEventListener('load', function(event) {
 
@@ -581,9 +612,6 @@ document.addEventListener(
 //     }
 // }, false);
 
-a1.setAttribute("target", "_blank");
-a1.setAttribute("id", "google_cal_slave");
-a1.setAttribute("class", "text-blue");
 // a1.style.color = "#36A8EC";
 // window.addEventListener('load', function(event) {
 
