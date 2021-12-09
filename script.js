@@ -493,53 +493,61 @@ var menu = document.querySelector(
 );
 
 var a1 = document.createElement("a");
-
-//     var checkboxes = document.querySelectorAll('input[type=checkbox][class=ical_checkbox]');
-
-// for (var checkbox of checkboxes)
-// {
-//     checkbox.addEventListener('change', function(event)
-//     {
-//         if (event.target.checked) {
-//             alert(`${event.target.value} is checked`);
-// // a1.setAttribute("href", googleText);
-// // a2.setAttribute("href", iPhoneText);
-// // a3.setAttribute("href", outlookText);
-// // a4.setAttribute("href", downloadText);            }
-//         else {
-//             alert(`${event.target.value} is unchecked`);
-//                 // a1.setAttribute("href", googleText);
-// // a2.setAttribute("href", iPhoneText);
-// // a3.setAttribute("href", outlookText);
-// // a4.setAttribute("href", downloadText);
-//         }
-//     });
-// }
+var a2 = document.createElement("a");
+var a3 = document.createElement("a");
+var a4 = document.createElement("a");
 
 //wait for window to load for data to populate
 window.addEventListener("load", function (event) {
   // document.addEventListener('DOMContentLoaded', function() {
   var googleText = document.getElementById("google_cal").getAttribute("href");
+  var iPhoneText = document
+    .getElementById("iphone_pad_cal")
+    .getAttribute("href");
+  var outlookText = document
+    .getElementById("outlook_desktop_cal")
+    .getAttribute("href");
+  var downloadText = document
+    .getElementById("download_cal")
+    .getAttribute("href");
   a1.setAttribute("href", googleText);
   a1.innerHTML = "Add to Google Calendar";
   a1.setAttribute("target", "_blank");
   a1.setAttribute("id", "google_cal_slave");
   a1.setAttribute("class", "text-blue");
   object.appendChild(a1);
-  // let googleText = document.getElementById('google_cal').getAttribute("href");
-  // var iPhoneText = document.getElementById('iphone_pad_cal').getAttribute("href");
-  // var outlookText = document.getElementById('outlook_desktop_cal').getAttribute("href");
-  // var downloadText = document.getElementById('download_cal').getAttribute("href");
-  // alert(googleText)
-  // alert('asdf')
 
-  // a2.setAttribute("href", iPhoneText);
-  // a3.setAttribute("href", outlookText);
-  // a4.setAttribute("href", downloadText);
+  var br1 = document.createElement("BR");
+  object.appendChild(br1);
 
-  //     setTimeout(function(){
+  a2.setAttribute("href", iPhoneText);
+  a2.setAttribute("target", "_blank");
+  a2.setAttribute("id", "iphone_pad_cal_slave");
+  a2.setAttribute("class", "text-blue");
+  a2.innerHTML = "Add to iPhone/iPad";
+  object.appendChild(a2);
 
-  // // document.addEventListener('DOMContentLoaded', function() {
+  var br2 = document.createElement("BR");
+  object.appendChild(br2);
+
+  a3.setAttribute("href", outlookText);
+  a3.setAttribute("target", "_blank");
+  a3.setAttribute("id", "outlook_desktop_cal_slave");
+  a3.setAttribute("class", "text-blue");
+  a3.innerHTML = "Add to Outlook (Desktop Version)";
+  object.appendChild(a3);
+
+  var br3 = document.createElement("BR");
+  object.appendChild(br3);
+
+  a4.setAttribute("href", downloadText);
+  a4.setAttribute("target", "_blank");
+  a4.setAttribute("class", "text-blue");
+  a4.setAttribute("id", "download_cal_slave");
+  a4.innerHTML = "Download iCal File";
+  object.appendChild(a4);
+
+  //see if checkboxes are checked, then check links to slave
   var checkboxes = document.querySelectorAll("input[type=checkbox]");
 
   for (var checkbox of checkboxes) {
@@ -547,11 +555,35 @@ window.addEventListener("load", function (event) {
       if (event.target.checked) {
         // alert(`${event.target.value} is checked`);
         googleText = document.getElementById("google_cal").getAttribute("href");
+        iPhoneText = document
+          .getElementById("iphone_pad_cal")
+          .getAttribute("href");
+        outlookText = document
+          .getElementById("outlook_desktop_cal")
+          .getAttribute("href");
+        downloadText = document
+          .getElementById("download_cal")
+          .getAttribute("href");
         a1.setAttribute("href", googleText);
+        a2.setAttribute("href", iPhoneText);
+        a3.setAttribute("href", outlookText);
+        a4.setAttribute("href", downloadText);
       } else {
         // alert(`${event.target.value} is unchecked`);
         googleText = document.getElementById("google_cal").getAttribute("href");
+        iPhoneText = document
+          .getElementById("iphone_pad_cal")
+          .getAttribute("href");
+        outlookText = document
+          .getElementById("outlook_desktop_cal")
+          .getAttribute("href");
+        downloadText = document
+          .getElementById("download_cal")
+          .getAttribute("href");
         a1.setAttribute("href", googleText);
+        a2.setAttribute("href", iPhoneText);
+        a3.setAttribute("href", outlookText);
+        a4.setAttribute("href", downloadText);
       }
     });
   }
