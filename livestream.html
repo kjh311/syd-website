@@ -1,126 +1,194 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet" />
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  rel="stylesheet"
+/>
+<link
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  rel="stylesheet"
+/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://images.shulcloud.com/14479/uploads/tbt-icon.png" rel="icon" />
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap" rel="stylesheet" />
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link
+  href="https://images.shulcloud.com/14479/uploads/tbt-icon.png"
+  rel="icon"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Paytone+One&family=Righteous&family=Sansita+Swashed&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+  rel="stylesheet"
+/>
 <link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-<style type="text/css">/*
+<link
+  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<style type="text/css">
+  /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
 
-#streamspot-player {
+  #streamspot-player {
     width: 100%;
     height: auto;
     min-height: 70vh;
-}
+  }
 
-.livestream-youtube{
-        background: url(https://images.shulcloud.com/14479/uploads/loading1.gif);
-        background-size: contain;
-        background-position: center;
+  .livestream-youtube {
+    background: url(https://images.shulcloud.com/14479/uploads/loading1.gif);
+    background-size: contain;
+    background-position: center;
+  }
+  .livestream-feed {
+    width: 100%;
+    height: 100%;
+    background: black;
+  }
+  #link-wrapper {
+    float: right;
+  }
+  #link-wrapper > a {
+    line-height: 30px !important;
+  }
+  @media only screen and (max-width: 767px) {
+    #link-wrapper {
+      margin: 10px auto;
+      clear: both;
+      float: none;
+      width: 100%;
     }
-    .livestream-feed{
-        width: 100%;
-        height: 100%;
-        background: black;
-    }
-    #link-wrapper{
-        float: right;
-    }
-    #link-wrapper>a {
-        line-height: 30px !important;
-    }
-    @media only screen and (max-width: 767px){
-    #link-wrapper{
-        margin: 10px auto;
-        clear:both;
-        float: none;
-        width: 100%;
-    }
-}
+  }
 </style>
 <div class="container-fluid">
-<div class="row">
-<div class="col-12 col-lg-4 order-4 order-lg-1">
-<div class="text-primary" id="link-wrapper" style=" d-inline   margin-bottom: 30px; border-radius:20px;"><a href="/worship">Pray</a><br />
-<a class="indent active-side-link" href="/livestream">Livestream</a><br />
-<a href="/participate">Participate</a><br />
-<a class="oneg-kiddush" href="/oneg-kiddush">Sponsor an Oneg or Kiddush Luncheon</a><br />
-<a href="/bnai-mitzvah">B-Mitzvah Process</a><br />
-<a href="/yahrzeits">Yahrzeits</a></div>
-</div>
+  <div class="row">
+    <div class="col-12 col-lg-4 order-4 order-lg-1">
+      <div
+        class="text-primary"
+        id="link-wrapper"
+        style=" d-inline   margin-bottom: 30px; border-radius:20px;"
+      >
+        <a href="/worship">Pray</a><br />
+        <a class="indent active-side-link" href="/livestream">Livestream</a
+        ><br />
+        <a href="/participate">Participate</a><br />
+        <a class="oneg-kiddush" href="/oneg-kiddush"
+          >Sponsor an Oneg or Kiddush Luncheon</a
+        ><br />
+        <a href="/bnai-mitzvah">B-Mitzvah Process</a><br />
+        <a href="/yahrzeits">Yahrzeits</a>
+      </div>
+    </div>
 
-<div class="col-12 col-lg-8 order-1 order-lg-2">
-<p><b>Livestream Shabbat Services</b></p>
+    <div class="col-12 col-lg-8 order-1 order-lg-2">
+      <p><b> Livestream Shabbat Services</b></p>
 
-<ul>
-	<li>Friday, 7:00-8:00 PM, Kabbalat Shabbat
-	<ul>
-		<li>Spend an evening with your TBT family as we welcome in Shabbat, our taste of what the world should be. These musical, contemplative and informal services are the perfect way to shift from secular to sacred and end your busy week on a high note.</li>
-	</ul>
-	</li>
-	<li>Saturday 10:30-11:30 AM Shabbat Morning
-	<ul>
-		<li>Grab yourself some coffee and join us for some musical Shabbat morning prayers and our weekly Torah reading.</li>
-	</ul>
-	</li>
-</ul>
+      <ul>
+        <li>
+          Friday, 7:00-8:00 PM, Kabbalat Shabbat
+          <ul>
+            <li>
+              Spend an evening with your TBT family as we welcome in Shabbat,
+              our taste of what the world should be. These musical,
+              contemplative and informal services are the perfect way to shift
+              from secular to sacred and end your busy week on a high note.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Saturday 10:30-11:30 AM Shabbat Morning
+          <ul>
+            <li>
+              Grab yourself some coffee and join us for some musical Shabbat
+              morning prayers and our weekly Torah reading.
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-<p>We provide age-appropriate services and activities for High Holy Days as well as year-round festivities to engage all ages.</p>
-</div>
-<!--</div>--><!--</div>--><!--<div class="container-fluid">--><!--<div class="row">-->
+      <p>
+        We provide age-appropriate services and activities for High Holy Days as
+        well as year-round festivities to engage all ages.
+      </p>
+    </div>
+    <!--</div>--><!--</div>--><!--<div class="container-fluid">--><!--<div class="row">--><!--<div class="col-12 order-2 order-lg-3">  <!--<h2 class="livestream-h3 text-center">Livestream:</h2>--><!--BEGINNING COMMENT OUT FOR LIVESTREAM--><!-- Current livestream: --><!--<iframe allowfullscreen="" frameborder="0" id="streamspot-player" src="https://player2.streamspot.com/?playerId=b437522d"></iframe>--><!-- End of Current Livestream --><!--Livestream --><!--RESTREAM, currently not working:--><!--<div class="et_pb_code_inner livestream-feed" style="">--><!--<iframe allowfullscreen="" frameborder="0" height="100% !important" src="https://embed.restream.io/player/index.html?token=a47437d5429ef9ba8efed1db2850ab34" width="100% !important"></iframe>--><!--<iframe allowfullscreen="" frameborder="0" height="100% !important" src="rtmp://live.restream.io/live?token=re_2145354_d01daec24c8c5c8f96cf" width="100% !important"></iframe>--><!--<iframe allowfullscreen="" frameborder="0" height="100% !important" src="https://embed.restream.io/player/index.html?token=re_2145354_d01daec24c8c5c8f96cf" width="100% !important"></iframe>--><!--<p style="botom: -40px; position: absolute;">Powered by <a href="https://restream.io" style="color: #2881B6;">Restream.io</a></p></div>--><!--<div class="chat-box-div">--><!--<iframe class="chat-box" src="http://venue.streamspot.com/chat/71770871" style="width: 100%; height: auto; min-height: 50vh;"></iframe>--><!--</div>-->
+  </div>
+  <!--BEGIN COMMENT OUT--><!--Chat--><!--<div class="chat-box-div col-12 order-3 order-lg-4"><iframe class="chat-box" src="https://venue.streamspot.com/chat/71770871" style="width: 100%; height: auto; min-height: 60vh;"></iframe>
 
-<div class="col-12 order-2 order-lg-3"> 
-<h2 class="livestream-h3 text-center">Livestream:</h2>
-<iframe allowfullscreen="" frameborder="0" id="streamspot-player" src="https://player2.streamspot.com/?playerId=b437522d"></iframe><!--Livestream --><!--RESTREAM, currently not working:--><!--<div class="et_pb_code_inner livestream-feed" style="">--><!--<iframe allowfullscreen="" frameborder="0" height="100% !important" src="https://embed.restream.io/player/index.html?token=a47437d5429ef9ba8efed1db2850ab34" width="100% !important"></iframe>--><!--<iframe allowfullscreen="" frameborder="0" height="100% !important" src="rtmp://live.restream.io/live?token=re_2145354_d01daec24c8c5c8f96cf" width="100% !important"></iframe>--><!--<iframe allowfullscreen="" frameborder="0" height="100% !important" src="https://embed.restream.io/player/index.html?token=re_2145354_d01daec24c8c5c8f96cf" width="100% !important"></iframe>--><!--<p style="botom: -40px; position: absolute;">Powered by <a href="https://restream.io" style="color: #2881B6;">Restream.io</a></p>--></div>
-<!--<div class="chat-box-div">--><!--<iframe class="chat-box" src="http://venue.streamspot.com/chat/71770871" style="width: 100%; height: auto; min-height: 50vh;"></iframe>--><!--</div>--></div>
-<p></p>
-<div class="chat-box-div col-12 order-3 order-lg-4"><iframe class="chat-box" src="https://venue.streamspot.com/chat/71770871" style="width: 100%; height: auto; min-height: 50vh; background: red;"></iframe></div>
+</div>--> <!--End of Chat-->
 
-<p> </p>
+  <div class="col-12">
+    <p> </p>
 
-<div class="col-12">
-<div class="alternate-links-div d-flex flex-column justify-content-center align-items-center" style="width: 100%; padding: 5vh 5vw; background: #E7BF3F;">
-<h3 style="">Livestream Direct Links</h3>
+    <h3 class="text-center" style="margin-top: 50px; color: #2881b6">
+      Below is a Youtube Playlist of Current and Previous Kabbalat Shabbat
+      Services
+    </h3>
 
-<p>We are aware that our feed on this page occasionally has configuration problems, and are working diligently on fixing these with the streaming services. This feed is a delayed stream from Facebook; however, you do not need a Facebook account to view this feed.</p>
+    <p> </p>
+    <!--BEGINNING COMMENT OUT-->
 
-<p>If you would like to access our feed directly without the same delay, you can also find it on these platforms. Make sure to click on the video to enable controls such as pause and fullscreen viewing:</p>
-
-<ul style="list-style-type:none">
-	<li style="list-style-type:none"><a href="https://www.youtube.com/channel/UCAI8ituiK8qcOwQIdV7wVdw?view_as=subscriber" style="color:var(--text-blue);" target="blank">CLICK HERE for YouTube</a></li>
-	<li style="list-style-type:none"><a href="https://www.facebook.com/TempleBnaiTorah" style="color:var(--text-blue);" target="blank">CLICK HERE for Facebook</a></li>
-	<li style="list-style-type:none"><a href="https://www.twitch.tv/templebnaitorah" style="color:var(--text-blue);" target="blank">CLICK HERE for Twitch</a></li>
-</ul>
-</div>
-
-<p> </p>
-
-<h3 class="text-center " style=" margin-top: 50px; color: #2881B6;">Below is a Youtube Playlist of Previous Kabbalat Shabbat Services</h3>
-
-<p> </p>
-
-<div class="embed-responsive livestream-youtube embed-responsive-16by9" style="z-index:999; display:block; width: 100%; height: 100%;"><iframe allowfullscreen="" class="youtube-vid embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLEuBdNnSHjrZLazABOyOHZzyOHEQ74bcs"></iframe><!--<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/live_stream?channel=&lt;UCAI8ituiK8qcOwQIdV7wVdw&gt;" width="100%"></iframe>--></div>
-<!--</div>--><!--</div>--><script>
-        var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
-        activeNavLink.classList.add('bottom-border');
+    <div
+      class="embed-responsive livestream-youtube embed-responsive-16by9"
+      style="z-index: 999; display: block; width: 100%; height: 100%"
+    >
+      <iframe
+        allowfullscreen=""
+        class="youtube-vid embed-responsive-item"
+        src="https://www.youtube.com/embed/videoseries?list=PLEuBdNnSHjrZLazABOyOHZzyOHEQ74bcs"
+      ></iframe
+      ><!--<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/live_stream?channel=&lt;UCAI8ituiK8qcOwQIdV7wVdw&gt;" width="100%"></iframe>-->
+    </div>
+    <!--</div>--><!--</div>-->
+    <script>
+      var activeNavLink = document.querySelector(".no_subcontent:nth-child(3)");
+      activeNavLink.classList.add("bottom-border");
     </script>
-<style type="text/css">#nav_section>.no_subcontent:nth-child(3)>a  {
-            color: var(--link-color) !important;
-        }
-</style>
-</div>
-<!-- Global site tag (gtag.js) - Google Analytics --><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-JFJ8FST2PX"></script><script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <style type="text/css">
+      #nav_section > .no_subcontent:nth-child(3) > a {
+        color: var(--link-color) !important;
+      }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-JFJ8FST2PX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-JFJ8FST2PX');
-</script></div>
+      gtag("config", "G-JFJ8FST2PX");
+    </script>
+  </div>
+</div>
